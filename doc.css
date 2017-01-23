@@ -1,0 +1,66 @@
+@charset "UTF-8";
+/*
+Theme Name: West Side Music Academy
+Author: Mark Pfaff, Andy Davis, Tracey Talevich, Anna Atiagina
+Description: This theme is expressly designed for West Side Music Academy
+License: The MIT License
+License URI: https://opensource.org/licenses/MIT
+Text Domain: WSMA 
+
+Plugins Used (Plugin settings can be configured in Admin Panel):
+
+    All-in-One Event Calendar by Time.ly - https://wordpress.org/plugins/all-in-one-event-calendar/
+        Settings: Admin Panel Sidebar > Events > Settings
+        
+        Adding New Events: Admin Panel Sidebar > Events > Add New
+
+    Breadcrumb NavXT By John Havlik - https://wordpress.org/plugins/breadcrumb-navxt/
+    
+    Easy Testimonials by Gold Plugins - https://wordpress.org/plugins/easy-testimonials/
+        Settings: Admin Panel Sidebar > Easy Testimonials Settings
+        
+        Adding New Testimonials: Admin Panel Sidebar > Testimonials > Add New Testimonial
+
+
+    Contact Form 7 by Takayuki Miyoshi - https://wordpress.org/plugins/contact-form-7/  
+        Settings: Note: Settings are edited inside each form you create! 
+                  Admin Panel Sidebar > Contact > Contact Forms > Select the form you’d like to configure settings for
+    
+        Adding New Form:  Admin Panel Sidebar > Contact > Add New
+
+    Photo Express for Google -  https://wordpress.org/plugins/photo-express-for-google/
+        Settings: Admin Panel Sidebar > Settings > Photo Express for Google
+
+        Adding New Gallery: Admin Panel Sidebar > Settings > Slickr Flickr > 
+                        Extras Section > Click on “How to Use the Plugin”
+
+    Really Simple CAPTCHA by Takayuki Miyoshi -  https://wordpress.org/plugins/really-simple-captcha/
+        Settings: Note: This is setup WITHIN the Contact Form 7 Plugin. 
+                  Admin Panel Sidebar > Contact > Integration > Configure Keys > Enter a Site Key and Secret Key > Save
+
+    Shortcodes Ultimate by By Vladimir Anokhin - http://gndev.info/shortcodes-ultimate/
+        Adding Accordian to page: Add the following shortcode directly into editor and replace section title and section content
+
+            [su_accordion]
+              [su_spoiler title="Section Title" style="fancy"] Section Content [/su_spoiler]
+            [/su_accordion]
+            
+
+    Simple Staff List by Brett Shumaker  - https://wordpress.org/plugins/simple-staff-list/
+        Settings: Admin Panel Sidebar > Staff Members > Settings
+        To add list of all staff to page add [simple-staff-list] into the editor
+        To add a list of staff that belong to a group add [simple-staff-list group="group"] into the editor and replace "group" with group name
+
+    SoundCloud ShortCode by SoundCloud - https://wordpress.org/plugins/soundcloud-shortcode/
+        Adding New SoundCloud to page: insert the following shortcode directly into editor:
+                        [soundcloud]http://soundcloud.com/username/songtitle[/soundcloud]
+            replace 'username' and 'songtitle' with your username and song title
+
+    YouTube Embed Plugin by embedplus -  https://wordpress.org/plugins/youtube-embed-plus/
+        Settings: Admin Panel Sidebar > YouTube Free > Settings are displayed on its main page
+
+        Adding New Form:  Note: Consult the documentation on the plugins main page
+                      Admin Panel Sidebar > YouTube Free
+
+*/
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImRvYy5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsaUJBQWlCO0FBQ2pCOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7RUErREUiLCJmaWxlIjoiZG9jLmNzcyIsInNvdXJjZXNDb250ZW50IjpbIkBjaGFyc2V0IFwiVVRGLThcIjtcbi8qXG5UaGVtZSBOYW1lOiBXZXN0IFNpZGUgTXVzaWMgQWNhZGVteVxuQXV0aG9yOiBNYXJrIFBmYWZmLCBBbmR5IERhdmlzLCBUcmFjZXkgVGFsZXZpY2gsIEFubmEgQXRpYWdpbmFcbkRlc2NyaXB0aW9uOiBUaGlzIHRoZW1lIGlzIGV4cHJlc3NseSBkZXNpZ25lZCBmb3IgV2VzdCBTaWRlIE11c2ljIEFjYWRlbXlcbkxpY2Vuc2U6IFRoZSBNSVQgTGljZW5zZVxuTGljZW5zZSBVUkk6IGh0dHBzOi8vb3BlbnNvdXJjZS5vcmcvbGljZW5zZXMvTUlUXG5UZXh0IERvbWFpbjogV1NNQSBcblxuUGx1Z2lucyBVc2VkIChQbHVnaW4gc2V0dGluZ3MgY2FuIGJlIGNvbmZpZ3VyZWQgaW4gQWRtaW4gUGFuZWwpOlxuXG4gICAgQWxsLWluLU9uZSBFdmVudCBDYWxlbmRhciBieSBUaW1lLmx5IC0gaHR0cHM6Ly93b3JkcHJlc3Mub3JnL3BsdWdpbnMvYWxsLWluLW9uZS1ldmVudC1jYWxlbmRhci9cbiAgICAgICAgU2V0dGluZ3M6IEFkbWluIFBhbmVsIFNpZGViYXIgPiBFdmVudHMgPiBTZXR0aW5nc1xuICAgICAgICBcbiAgICAgICAgQWRkaW5nIE5ldyBFdmVudHM6IEFkbWluIFBhbmVsIFNpZGViYXIgPiBFdmVudHMgPiBBZGQgTmV3XG5cbiAgICBCcmVhZGNydW1iIE5hdlhUIEJ5IEpvaG4gSGF2bGlrIC0gaHR0cHM6Ly93b3JkcHJlc3Mub3JnL3BsdWdpbnMvYnJlYWRjcnVtYi1uYXZ4dC9cbiAgICBcbiAgICBFYXN5IFRlc3RpbW9uaWFscyBieSBHb2xkIFBsdWdpbnMgLSBodHRwczovL3dvcmRwcmVzcy5vcmcvcGx1Z2lucy9lYXN5LXRlc3RpbW9uaWFscy9cbiAgICAgICAgU2V0dGluZ3M6IEFkbWluIFBhbmVsIFNpZGViYXIgPiBFYXN5IFRlc3RpbW9uaWFscyBTZXR0aW5nc1xuICAgICAgICBcbiAgICAgICAgQWRkaW5nIE5ldyBUZXN0aW1vbmlhbHM6IEFkbWluIFBhbmVsIFNpZGViYXIgPiBUZXN0aW1vbmlhbHMgPiBBZGQgTmV3IFRlc3RpbW9uaWFsXG5cblxuICAgIENvbnRhY3QgRm9ybSA3IGJ5IFRha2F5dWtpIE1peW9zaGkgLSBodHRwczovL3dvcmRwcmVzcy5vcmcvcGx1Z2lucy9jb250YWN0LWZvcm0tNy8gIFxuICAgICAgICBTZXR0aW5nczogTm90ZTogU2V0dGluZ3MgYXJlIGVkaXRlZCBpbnNpZGUgZWFjaCBmb3JtIHlvdSBjcmVhdGUhIFxuICAgICAgICAgICAgICAgICAgQWRtaW4gUGFuZWwgU2lkZWJhciA+IENvbnRhY3QgPiBDb250YWN0IEZvcm1zID4gU2VsZWN0IHRoZSBmb3JtIHlvdeKAmWQgbGlrZSB0byBjb25maWd1cmUgc2V0dGluZ3MgZm9yXG4gICAgXG4gICAgICAgIEFkZGluZyBOZXcgRm9ybTogIEFkbWluIFBhbmVsIFNpZGViYXIgPiBDb250YWN0ID4gQWRkIE5ld1xuXG4gICAgUGhvdG8gRXhwcmVzcyBmb3IgR29vZ2xlIC0gIGh0dHBzOi8vd29yZHByZXNzLm9yZy9wbHVnaW5zL3Bob3RvLWV4cHJlc3MtZm9yLWdvb2dsZS9cbiAgICAgICAgU2V0dGluZ3M6IEFkbWluIFBhbmVsIFNpZGViYXIgPiBTZXR0aW5ncyA+IFBob3RvIEV4cHJlc3MgZm9yIEdvb2dsZVxuXG4gICAgICAgIEFkZGluZyBOZXcgR2FsbGVyeTogQWRtaW4gUGFuZWwgU2lkZWJhciA+IFNldHRpbmdzID4gU2xpY2tyIEZsaWNrciA+IFxuICAgICAgICAgICAgICAgICAgICAgICAgRXh0cmFzIFNlY3Rpb24gPiBDbGljayBvbiDigJxIb3cgdG8gVXNlIHRoZSBQbHVnaW7igJ1cblxuICAgIFJlYWxseSBTaW1wbGUgQ0FQVENIQSBieSBUYWtheXVraSBNaXlvc2hpIC0gIGh0dHBzOi8vd29yZHByZXNzLm9yZy9wbHVnaW5zL3JlYWxseS1zaW1wbGUtY2FwdGNoYS9cbiAgICAgICAgU2V0dGluZ3M6IE5vdGU6IFRoaXMgaXMgc2V0dXAgV0lUSElOIHRoZSBDb250YWN0IEZvcm0gNyBQbHVnaW4uIFxuICAgICAgICAgICAgICAgICAgQWRtaW4gUGFuZWwgU2lkZWJhciA+IENvbnRhY3QgPiBJbnRlZ3JhdGlvbiA+IENvbmZpZ3VyZSBLZXlzID4gRW50ZXIgYSBTaXRlIEtleSBhbmQgU2VjcmV0IEtleSA+IFNhdmVcblxuICAgIFNob3J0Y29kZXMgVWx0aW1hdGUgYnkgQnkgVmxhZGltaXIgQW5va2hpbiAtIGh0dHA6Ly9nbmRldi5pbmZvL3Nob3J0Y29kZXMtdWx0aW1hdGUvXG4gICAgICAgIEFkZGluZyBBY2NvcmRpYW4gdG8gcGFnZTogQWRkIHRoZSBmb2xsb3dpbmcgc2hvcnRjb2RlIGRpcmVjdGx5IGludG8gZWRpdG9yIGFuZCByZXBsYWNlIHNlY3Rpb24gdGl0bGUgYW5kIHNlY3Rpb24gY29udGVudFxuXG4gICAgICAgICAgICBbc3VfYWNjb3JkaW9uXVxuICAgICAgICAgICAgICBbc3Vfc3BvaWxlciB0aXRsZT1cIlNlY3Rpb24gVGl0bGVcIiBzdHlsZT1cImZhbmN5XCJdIFNlY3Rpb24gQ29udGVudCBbL3N1X3Nwb2lsZXJdXG4gICAgICAgICAgICBbL3N1X2FjY29yZGlvbl1cbiAgICAgICAgICAgIFxuXG4gICAgU2ltcGxlIFN0YWZmIExpc3QgYnkgQnJldHQgU2h1bWFrZXIgIC0gaHR0cHM6Ly93b3JkcHJlc3Mub3JnL3BsdWdpbnMvc2ltcGxlLXN0YWZmLWxpc3QvXG4gICAgICAgIFNldHRpbmdzOiBBZG1pbiBQYW5lbCBTaWRlYmFyID4gU3RhZmYgTWVtYmVycyA+IFNldHRpbmdzXG4gICAgICAgIFRvIGFkZCBsaXN0IG9mIGFsbCBzdGFmZiB0byBwYWdlIGFkZCBbc2ltcGxlLXN0YWZmLWxpc3RdIGludG8gdGhlIGVkaXRvclxuICAgICAgICBUbyBhZGQgYSBsaXN0IG9mIHN0YWZmIHRoYXQgYmVsb25nIHRvIGEgZ3JvdXAgYWRkIFtzaW1wbGUtc3RhZmYtbGlzdCBncm91cD1cImdyb3VwXCJdIGludG8gdGhlIGVkaXRvciBhbmQgcmVwbGFjZSBcImdyb3VwXCIgd2l0aCBncm91cCBuYW1lXG5cbiAgICBTb3VuZENsb3VkIFNob3J0Q29kZSBieSBTb3VuZENsb3VkIC0gaHR0cHM6Ly93b3JkcHJlc3Mub3JnL3BsdWdpbnMvc291bmRjbG91ZC1zaG9ydGNvZGUvXG4gICAgICAgIEFkZGluZyBOZXcgU291bmRDbG91ZCB0byBwYWdlOiBpbnNlcnQgdGhlIGZvbGxvd2luZyBzaG9ydGNvZGUgZGlyZWN0bHkgaW50byBlZGl0b3I6XG4gICAgICAgICAgICAgICAgICAgICAgICBbc291bmRjbG91ZF1odHRwOi8vc291bmRjbG91ZC5jb20vdXNlcm5hbWUvc29uZ3RpdGxlWy9zb3VuZGNsb3VkXVxuICAgICAgICAgICAgcmVwbGFjZSAndXNlcm5hbWUnIGFuZCAnc29uZ3RpdGxlJyB3aXRoIHlvdXIgdXNlcm5hbWUgYW5kIHNvbmcgdGl0bGVcblxuICAgIFlvdVR1YmUgRW1iZWQgUGx1Z2luIGJ5IGVtYmVkcGx1cyAtICBodHRwczovL3dvcmRwcmVzcy5vcmcvcGx1Z2lucy95b3V0dWJlLWVtYmVkLXBsdXMvXG4gICAgICAgIFNldHRpbmdzOiBBZG1pbiBQYW5lbCBTaWRlYmFyID4gWW91VHViZSBGcmVlID4gU2V0dGluZ3MgYXJlIGRpc3BsYXllZCBvbiBpdHMgbWFpbiBwYWdlXG5cbiAgICAgICAgQWRkaW5nIE5ldyBGb3JtOiAgTm90ZTogQ29uc3VsdCB0aGUgZG9jdW1lbnRhdGlvbiBvbiB0aGUgcGx1Z2lucyBtYWluIHBhZ2VcbiAgICAgICAgICAgICAgICAgICAgICBBZG1pbiBQYW5lbCBTaWRlYmFyID4gWW91VHViZSBGcmVlXG5cbiovXG4iXX0= */

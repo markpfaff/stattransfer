@@ -1,0 +1,50 @@
+
+//Created on : Nov 17, 2015, 4:38:02 PM
+//Author     : markp
+
+
+@mixin row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+}
+@mixin pull-right {
+  float: right !important;
+}
+@mixin pull-left {
+  float: left !important;
+}
+
+@mixin fontawesome-icon {
+ font-family: FontAwesome;
+ text-rendering: auto;
+ -webkit-font-smoothing: antialiased;
+ -moz-osx-font-smoothing: grayscale;
+}
+
+@mixin home-fa-icon {
+    @include fontawesome-icon();
+    color: $brand-light-blue;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    width: 90%;
+    text-align: center;
+    font-size: 3em;
+    z-index: 2;
+}
+
+@mixin home-fa-bg {
+    @include fontawesome-icon();
+    color: $brand-lightest-blue;
+    margin: 0 auto;
+    margin-left: -10px;//correct centering issue with 10px margin on parent container
+    display: block;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    font-size: 13em;
+    top: -15%;
+    z-index: 1;
+}

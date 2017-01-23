@@ -1,0 +1,74 @@
+/*
+Error: File to import not found or unreadable: bootstrap/variables.less.
+       Load paths:
+         Compass::SpriteImporter
+         /Applications/MAMP/htdocs/stattransfer/wordpress/wp-content/themes/stattransfer/sass
+         /Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets
+         /Library/Ruby/Gems/2.0.0/gems/sassy-maps-0.4.0/sass
+         /Library/Ruby/Gems/2.0.0/gems/breakpoint-2.5.0/stylesheets
+         /Library/Ruby/Gems/2.0.0/gems/singularitygs-1.6.2/stylesheets
+        on line 8 of /Applications/MAMP/htdocs/stattransfer/wordpress/wp-content/themes/stattransfer/sass/custom-bootstrap.scss
+
+3:  * Copyright 2011-2015 Twitter, Inc.
+4:  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+5:  *\/
+6: 
+7: // Core variables and mixins
+8: @import "bootstrap/variables.less";
+9: @import "bootstrap/mixins.less";
+10: 
+11: // Reset and dependencies
+12: @import "bootstrap/normalize.less";
+13: @import "bootstrap/print.less";
+
+Backtrace:
+/Applications/MAMP/htdocs/stattransfer/wordpress/wp-content/themes/stattransfer/sass/custom-bootstrap.scss:8
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/import_node.rb:67:in `rescue in import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/import_node.rb:45:in `import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/import_node.rb:28:in `imported_file'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/import_node.rb:37:in `css_import?'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:313:in `visit_import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `map'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:159:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/root_node.rb:20:in `render'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/engine.rb:281:in `render'
+/Library/Ruby/Gems/2.0.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:17:in `block in render'
+/Library/Ruby/Gems/2.0.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:29:in `with_import_scope'
+/Library/Ruby/Gems/2.0.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:16:in `render'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:494:in `update_stylesheet'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/compass-1.0.3/lib/compass/sass_compiler.rb:40:in `compile!'
+/Library/Ruby/Gems/2.0.0/gems/compass-1.0.3/lib/compass/commands/update_project.rb:49:in `perform'
+/Library/Ruby/Gems/2.0.0/gems/compass-1.0.3/lib/compass/commands/base.rb:18:in `execute'
+/Library/Ruby/Gems/2.0.0/gems/compass-1.0.3/lib/compass/commands/project_base.rb:19:in `execute'
+/Library/Ruby/Gems/2.0.0/gems/compass-1.0.3/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+/Library/Ruby/Gems/2.0.0/gems/compass-1.0.3/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+/Library/Ruby/Gems/2.0.0/gems/compass-1.0.3/bin/compass:30:in `block in <top (required)>'
+/Library/Ruby/Gems/2.0.0/gems/compass-1.0.3/bin/compass:44:in `call'
+/Library/Ruby/Gems/2.0.0/gems/compass-1.0.3/bin/compass:44:in `<top (required)>'
+/usr/local/bin/compass:23:in `load'
+/usr/local/bin/compass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: bootstrap/variables.less.\A        Load paths:\A          Compass::SpriteImporter\A          /Applications/MAMP/htdocs/stattransfer/wordpress/wp-content/themes/stattransfer/sass\A          /Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets\A          /Library/Ruby/Gems/2.0.0/gems/sassy-maps-0.4.0/sass\A          /Library/Ruby/Gems/2.0.0/gems/breakpoint-2.5.0/stylesheets\A          /Library/Ruby/Gems/2.0.0/gems/singularitygs-1.6.2/stylesheets\A         on line 8 of /Applications/MAMP/htdocs/stattransfer/wordpress/wp-content/themes/stattransfer/sass/custom-bootstrap.scss\A \A 3:  * Copyright 2011-2015 Twitter, Inc.\A 4:  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)\A 5:  */\A 6: \A 7: // Core variables and mixins\A 8: @import \"bootstrap/variables.less\";\A 9: @import \"bootstrap/mixins.less\";\A 10: \A 11: // Reset and dependencies\A 12: @import \"bootstrap/normalize.less\";\A 13: @import \"bootstrap/print.less\";"; }
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImN1c3RvbS1ib290c3RyYXAuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztFQW9FRTtBQUNGO0VBQ0UsaUJBQWlCO0VBQ2pCLHVCQUF1QjtFQUN2QixtZ0NBQW1nQyxFQUFFIiwiZmlsZSI6ImN1c3RvbS1ib290c3RyYXAuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLypcbkVycm9yOiBGaWxlIHRvIGltcG9ydCBub3QgZm91bmQgb3IgdW5yZWFkYWJsZTogYm9vdHN0cmFwL3ZhcmlhYmxlcy5sZXNzLlxuICAgICAgIExvYWQgcGF0aHM6XG4gICAgICAgICBDb21wYXNzOjpTcHJpdGVJbXBvcnRlclxuICAgICAgICAgL0FwcGxpY2F0aW9ucy9NQU1QL2h0ZG9jcy9zdGF0dHJhbnNmZXIvd29yZHByZXNzL3dwLWNvbnRlbnQvdGhlbWVzL3N0YXR0cmFuc2Zlci9zYXNzXG4gICAgICAgICAvTGlicmFyeS9SdWJ5L0dlbXMvMi4wLjAvZ2Vtcy9jb21wYXNzLWNvcmUtMS4wLjMvc3R5bGVzaGVldHNcbiAgICAgICAgIC9MaWJyYXJ5L1J1YnkvR2Vtcy8yLjAuMC9nZW1zL3Nhc3N5LW1hcHMtMC40LjAvc2Fzc1xuICAgICAgICAgL0xpYnJhcnkvUnVieS9HZW1zLzIuMC4wL2dlbXMvYnJlYWtwb2ludC0yLjUuMC9zdHlsZXNoZWV0c1xuICAgICAgICAgL0xpYnJhcnkvUnVieS9HZW1zLzIuMC4wL2dlbXMvc2luZ3VsYXJpdHlncy0xLjYuMi9zdHlsZXNoZWV0c1xuICAgICAgICBvbiBsaW5lIDggb2YgL0FwcGxpY2F0aW9ucy9NQU1QL2h0ZG9jcy9zdGF0dHJhbnNmZXIvd29yZHByZXNzL3dwLWNvbnRlbnQvdGhlbWVzL3N0YXR0cmFuc2Zlci9zYXNzL2N1c3RvbS1ib290c3RyYXAuc2Nzc1xuXG4zOiAgKiBDb3B5cmlnaHQgMjAxMS0yMDE1IFR3aXR0ZXIsIEluYy5cbjQ6ICAqIExpY2Vuc2VkIHVuZGVyIE1JVCAoaHR0cHM6Ly9naXRodWIuY29tL3R3YnMvYm9vdHN0cmFwL2Jsb2IvbWFzdGVyL0xJQ0VOU0UpXG41OiAgKlxcL1xuNjogXG43OiAvLyBDb3JlIHZhcmlhYmxlcyBhbmQgbWl4aW5zXG44OiBAaW1wb3J0IFwiYm9vdHN0cmFwL3ZhcmlhYmxlcy5sZXNzXCI7XG45OiBAaW1wb3J0IFwiYm9vdHN0cmFwL21peGlucy5sZXNzXCI7XG4xMDogXG4xMTogLy8gUmVzZXQgYW5kIGRlcGVuZGVuY2llc1xuMTI6IEBpbXBvcnQgXCJib290c3RyYXAvbm9ybWFsaXplLmxlc3NcIjtcbjEzOiBAaW1wb3J0IFwiYm9vdHN0cmFwL3ByaW50Lmxlc3NcIjtcblxuQmFja3RyYWNlOlxuL0FwcGxpY2F0aW9ucy9NQU1QL2h0ZG9jcy9zdGF0dHJhbnNmZXIvd29yZHByZXNzL3dwLWNvbnRlbnQvdGhlbWVzL3N0YXR0cmFuc2Zlci9zYXNzL2N1c3RvbS1ib290c3RyYXAuc2Nzczo4XG4vTGlicmFyeS9SdWJ5L0dlbXMvMi4wLjAvZ2Vtcy9zYXNzLTMuNC4yMi9saWIvc2Fzcy90cmVlL2ltcG9ydF9ub2RlLnJiOjY3OmluIGByZXNjdWUgaW4gaW1wb3J0J1xuL0xpYnJhcnkvUnVieS9HZW1zLzIuMC4wL2dlbXMvc2Fzcy0zLjQuMjIvbGliL3Nhc3MvdHJlZS9pbXBvcnRfbm9kZS5yYjo0NTppbiBgaW1wb3J0J1xuL0xpYnJhcnkvUnVieS9HZW1zLzIuMC4wL2dlbXMvc2Fzcy0zLjQuMjIvbGliL3Nhc3MvdHJlZS9pbXBvcnRfbm9kZS5yYjoyODppbiBgaW1wb3J0ZWRfZmlsZSdcbi9MaWJyYXJ5L1J1YnkvR2Vtcy8yLjAuMC9nZW1zL3Nhc3MtMy40LjIyL2xpYi9zYXNzL3RyZWUvaW1wb3J0X25vZGUucmI6Mzc6aW4gYGNzc19pbXBvcnQ/J1xuL0xpYnJhcnkvUnVieS9HZW1zLzIuMC4wL2dlbXMvc2Fzcy0zLjQuMjIvbGliL3Nhc3MvdHJlZS92aXNpdG9ycy9wZXJmb3JtLnJiOjMxMzppbiBgdmlzaXRfaW1wb3J0J1xuL0xpYnJhcnkvUnVieS9HZW1zLzIuMC4wL2dlbXMvc2Fzcy0zLjQuMjIvbGliL3Nhc3MvdHJlZS92aXNpdG9ycy9iYXNlLnJiOjM2OmluIGB2aXNpdCdcbi9MaWJyYXJ5L1J1YnkvR2Vtcy8yLjAuMC9nZW1zL3Nhc3MtMy40LjIyL2xpYi9zYXNzL3RyZWUvdmlzaXRvcnMvcGVyZm9ybS5yYjoxNjA6aW4gYGJsb2NrIGluIHZpc2l0J1xuL0xpYnJhcnkvUnVieS9HZW1zLzIuMC4wL2dlbXMvc2Fzcy0zLjQuMjIvbGliL3Nhc3Mvc3RhY2sucmI6Nzk6aW4gYGJsb2NrIGluIHdpdGhfYmFzZSdcbi9MaWJyYXJ5L1J1YnkvR2Vtcy8yLjAuMC9nZW1zL3Nhc3MtMy40LjIyL2xpYi9zYXNzL3N0YWNrLnJiOjExNTppbiBgd2l0aF9mcmFtZSdcbi9MaWJyYXJ5L1J1YnkvR2Vtcy8yLjAuMC9nZW1zL3Nhc3MtMy40LjIyL2xpYi9zYXNzL3N0YWNrLnJiOjc5OmluIGB3aXRoX2Jhc2UnXG4vTGlicmFyeS9SdWJ5L0dlbXMvMi4wLjAvZ2Vtcy9zYXNzLTMuNC4yMi9saWIvc2Fzcy90cmVlL3Zpc2l0b3JzL3BlcmZvcm0ucmI6MTYwOmluIGB2aXNpdCdcbi9MaWJyYXJ5L1J1YnkvR2Vtcy8yLjAuMC9nZW1zL3Nhc3MtMy40LjIyL2xpYi9zYXNzL3RyZWUvdmlzaXRvcnMvYmFzZS5yYjo1MjppbiBgYmxvY2sgaW4gdmlzaXRfY2hpbGRyZW4nXG4vTGlicmFyeS9SdWJ5L0dlbXMvMi4wLjAvZ2Vtcy9zYXNzLTMuNC4yMi9saWIvc2Fzcy90cmVlL3Zpc2l0b3JzL2Jhc2UucmI6NTI6aW4gYG1hcCdcbi9MaWJyYXJ5L1J1YnkvR2Vtcy8yLjAuMC9nZW1zL3Nhc3MtMy40LjIyL2xpYi9zYXNzL3RyZWUvdmlzaXRvcnMvYmFzZS5yYjo1MjppbiBgdmlzaXRfY2hpbGRyZW4nXG4vTGlicmFyeS9SdWJ5L0dlbXMvMi4wLjAvZ2Vtcy9zYXNzLTMuNC4yMi9saWIvc2Fzcy90cmVlL3Zpc2l0b3JzL3BlcmZvcm0ucmI6MTY5OmluIGBibG9jayBpbiB2aXNpdF9jaGlsZHJlbidcbi9MaWJyYXJ5L1J1YnkvR2Vtcy8yLjAuMC9nZW1zL3Nhc3MtMy40LjIyL2xpYi9zYXNzL3RyZWUvdmlzaXRvcnMvcGVyZm9ybS5yYjoxODE6aW4gYHdpdGhfZW52aXJvbm1lbnQnXG4vTGlicmFyeS9SdWJ5L0dlbXMvMi4wLjAvZ2Vtcy9zYXNzLTMuNC4yMi9saWIvc2Fzcy90cmVlL3Zpc2l0b3JzL3BlcmZvcm0ucmI6MTY4OmluIGB2aXNpdF9jaGlsZHJlbidcbi9MaWJyYXJ5L1J1YnkvR2Vtcy8yLjAuMC9nZW1zL3Nhc3MtMy40LjIyL2xpYi9zYXNzL3RyZWUvdmlzaXRvcnMvYmFzZS5yYjozNjppbiBgYmxvY2sgaW4gdmlzaXQnXG4vTGlicmFyeS9SdWJ5L0dlbXMvMi4wLjAvZ2Vtcy9zYXNzLTMuNC4yMi9saWIvc2Fzcy90cmVlL3Zpc2l0b3JzL3BlcmZvcm0ucmI6MTg4OmluIGB2aXNpdF9yb290J1xuL0xpYnJhcnkvUnVieS9HZW1zLzIuMC4wL2dlbXMvc2Fzcy0zLjQuMjIvbGliL3Nhc3MvdHJlZS92aXNpdG9ycy9iYXNlLnJiOjM2OmluIGB2aXNpdCdcbi9MaWJyYXJ5L1J1YnkvR2Vtcy8yLjAuMC9nZW1zL3Nhc3MtMy40LjIyL2xpYi9zYXNzL3RyZWUvdmlzaXRvcnMvcGVyZm9ybS5yYjoxNTk6aW4gYHZpc2l0J1xuL0xpYnJhcnkvUnVieS9HZW1zLzIuMC4wL2dlbXMvc2Fzcy0zLjQuMjIvbGliL3Nhc3MvdHJlZS92aXNpdG9ycy9wZXJmb3JtLnJiOjg6aW4gYHZpc2l0J1xuL0xpYnJhcnkvUnVieS9HZW1zLzIuMC4wL2dlbXMvc2Fzcy0zLjQuMjIvbGliL3Nhc3MvdHJlZS9yb290X25vZGUucmI6MzY6aW4gYGNzc190cmVlJ1xuL0xpYnJhcnkvUnVieS9HZW1zLzIuMC4wL2dlbXMvc2Fzcy0zLjQuMjIvbGliL3Nhc3MvdHJlZS9yb290X25vZGUucmI6MjA6aW4gYHJlbmRlcidcbi9MaWJyYXJ5L1J1YnkvR2Vtcy8yLjAuMC9nZW1zL3Nhc3MtMy40LjIyL2xpYi9zYXNzL2VuZ2luZS5yYjoyODE6aW4gYHJlbmRlcidcbi9MaWJyYXJ5L1J1YnkvR2Vtcy8yLjAuMC9nZW1zL2NvbXBhc3MtaW1wb3J0LW9uY2UtMS4wLjUvbGliL2NvbXBhc3MvaW1wb3J0LW9uY2UvZW5naW5lLnJiOjE3OmluIGBibG9jayBpbiByZW5kZXInXG4vTGlicmFyeS9SdWJ5L0dlbXMvMi4wLjAvZ2Vtcy9jb21wYXNzLWltcG9ydC1vbmNlLTEuMC41L2xpYi9jb21wYXNzL2ltcG9ydC1vbmNlL2VuZ2luZS5yYjoyOTppbiBgd2l0aF9pbXBvcnRfc2NvcGUnXG4vTGlicmFyeS9SdWJ5L0dlbXMvMi4wLjAvZ2Vtcy9jb21wYXNzLWltcG9ydC1vbmNlLTEuMC41L2xpYi9jb21wYXNzL2ltcG9ydC1vbmNlL2VuZ2luZS5yYjoxNjppbiBgcmVuZGVyJ1xuL0xpYnJhcnkvUnVieS9HZW1zLzIuMC4wL2dlbXMvc2Fzcy0zLjQuMjIvbGliL3Nhc3MvcGx1Z2luL2NvbXBpbGVyLnJiOjQ5NDppbiBgdXBkYXRlX3N0eWxlc2hlZXQnXG4vTGlicmFyeS9SdWJ5L0dlbXMvMi4wLjAvZ2Vtcy9zYXNzLTMuNC4yMi9saWIvc2Fzcy9wbHVnaW4vY29tcGlsZXIucmI6MjE1OmluIGBibG9jayBpbiB1cGRhdGVfc3R5bGVzaGVldHMnXG4vTGlicmFyeS9SdWJ5L0dlbXMvMi4wLjAvZ2Vtcy9zYXNzLTMuNC4yMi9saWIvc2Fzcy9wbHVnaW4vY29tcGlsZXIucmI6MjA5OmluIGBlYWNoJ1xuL0xpYnJhcnkvUnVieS9HZW1zLzIuMC4wL2dlbXMvc2Fzcy0zLjQuMjIvbGliL3Nhc3MvcGx1Z2luL2NvbXBpbGVyLnJiOjIwOTppbiBgdXBkYXRlX3N0eWxlc2hlZXRzJ1xuL0xpYnJhcnkvUnVieS9HZW1zLzIuMC4wL2dlbXMvY29tcGFzcy0xLjAuMy9saWIvY29tcGFzcy9zYXNzX2NvbXBpbGVyLnJiOjQwOmluIGBjb21waWxlISdcbi9MaWJyYXJ5L1J1YnkvR2Vtcy8yLjAuMC9nZW1zL2NvbXBhc3MtMS4wLjMvbGliL2NvbXBhc3MvY29tbWFuZHMvdXBkYXRlX3Byb2plY3QucmI6NDk6aW4gYHBlcmZvcm0nXG4vTGlicmFyeS9SdWJ5L0dlbXMvMi4wLjAvZ2Vtcy9jb21wYXNzLTEuMC4zL2xpYi9jb21wYXNzL2NvbW1hbmRzL2Jhc2UucmI6MTg6aW4gYGV4ZWN1dGUnXG4vTGlicmFyeS9SdWJ5L0dlbXMvMi4wLjAvZ2Vtcy9jb21wYXNzLTEuMC4zL2xpYi9jb21wYXNzL2NvbW1hbmRzL3Byb2plY3RfYmFzZS5yYjoxOTppbiBgZXhlY3V0ZSdcbi9MaWJyYXJ5L1J1YnkvR2Vtcy8yLjAuMC9nZW1zL2NvbXBhc3MtMS4wLjMvbGliL2NvbXBhc3MvZXhlYy9zdWJfY29tbWFuZF91aS5yYjo0MzppbiBgcGVyZm9ybSEnXG4vTGlicmFyeS9SdWJ5L0dlbXMvMi4wLjAvZ2Vtcy9jb21wYXNzLTEuMC4zL2xpYi9jb21wYXNzL2V4ZWMvc3ViX2NvbW1hbmRfdWkucmI6MTU6aW4gYHJ1biEnXG4vTGlicmFyeS9SdWJ5L0dlbXMvMi4wLjAvZ2Vtcy9jb21wYXNzLTEuMC4zL2Jpbi9jb21wYXNzOjMwOmluIGBibG9jayBpbiA8dG9wIChyZXF1aXJlZCk+J1xuL0xpYnJhcnkvUnVieS9HZW1zLzIuMC4wL2dlbXMvY29tcGFzcy0xLjAuMy9iaW4vY29tcGFzczo0NDppbiBgY2FsbCdcbi9MaWJyYXJ5L1J1YnkvR2Vtcy8yLjAuMC9nZW1zL2NvbXBhc3MtMS4wLjMvYmluL2NvbXBhc3M6NDQ6aW4gYDx0b3AgKHJlcXVpcmVkKT4nXG4vdXNyL2xvY2FsL2Jpbi9jb21wYXNzOjIzOmluIGBsb2FkJ1xuL3Vzci9sb2NhbC9iaW4vY29tcGFzczoyMzppbiBgPG1haW4+J1xuKi9cbmJvZHk6YmVmb3JlIHtcbiAgd2hpdGUtc3BhY2U6IHByZTtcbiAgZm9udC1mYW1pbHk6IG1vbm9zcGFjZTtcbiAgY29udGVudDogXCJFcnJvcjogRmlsZSB0byBpbXBvcnQgbm90IGZvdW5kIG9yIHVucmVhZGFibGU6IGJvb3RzdHJhcC92YXJpYWJsZXMubGVzcy5cXEEgICAgICAgIExvYWQgcGF0aHM6XFxBICAgICAgICAgIENvbXBhc3M6OlNwcml0ZUltcG9ydGVyXFxBICAgICAgICAgIC9BcHBsaWNhdGlvbnMvTUFNUC9odGRvY3Mvc3RhdHRyYW5zZmVyL3dvcmRwcmVzcy93cC1jb250ZW50L3RoZW1lcy9zdGF0dHJhbnNmZXIvc2Fzc1xcQSAgICAgICAgICAvTGlicmFyeS9SdWJ5L0dlbXMvMi4wLjAvZ2Vtcy9jb21wYXNzLWNvcmUtMS4wLjMvc3R5bGVzaGVldHNcXEEgICAgICAgICAgL0xpYnJhcnkvUnVieS9HZW1zLzIuMC4wL2dlbXMvc2Fzc3ktbWFwcy0wLjQuMC9zYXNzXFxBICAgICAgICAgIC9MaWJyYXJ5L1J1YnkvR2Vtcy8yLjAuMC9nZW1zL2JyZWFrcG9pbnQtMi41LjAvc3R5bGVzaGVldHNcXEEgICAgICAgICAgL0xpYnJhcnkvUnVieS9HZW1zLzIuMC4wL2dlbXMvc2luZ3VsYXJpdHlncy0xLjYuMi9zdHlsZXNoZWV0c1xcQSAgICAgICAgIG9uIGxpbmUgOCBvZiAvQXBwbGljYXRpb25zL01BTVAvaHRkb2NzL3N0YXR0cmFuc2Zlci93b3JkcHJlc3Mvd3AtY29udGVudC90aGVtZXMvc3RhdHRyYW5zZmVyL3Nhc3MvY3VzdG9tLWJvb3RzdHJhcC5zY3NzXFxBIFxcQSAzOiAgKiBDb3B5cmlnaHQgMjAxMS0yMDE1IFR3aXR0ZXIsIEluYy5cXEEgNDogICogTGljZW5zZWQgdW5kZXIgTUlUIChodHRwczovL2dpdGh1Yi5jb20vdHdicy9ib290c3RyYXAvYmxvYi9tYXN0ZXIvTElDRU5TRSlcXEEgNTogICovXFxBIDY6IFxcQSA3OiAvLyBDb3JlIHZhcmlhYmxlcyBhbmQgbWl4aW5zXFxBIDg6IEBpbXBvcnQgXFxcImJvb3RzdHJhcC92YXJpYWJsZXMubGVzc1xcXCI7XFxBIDk6IEBpbXBvcnQgXFxcImJvb3RzdHJhcC9taXhpbnMubGVzc1xcXCI7XFxBIDEwOiBcXEEgMTE6IC8vIFJlc2V0IGFuZCBkZXBlbmRlbmNpZXNcXEEgMTI6IEBpbXBvcnQgXFxcImJvb3RzdHJhcC9ub3JtYWxpemUubGVzc1xcXCI7XFxBIDEzOiBAaW1wb3J0IFxcXCJib290c3RyYXAvcHJpbnQubGVzc1xcXCI7XCI7IH1cbiJdfQ== */
