@@ -40,13 +40,15 @@ p {
 }
 
 html {
-    background: #eee;
+    background: #fff;
     margin:0 auto;
 }
 
 
 .container {
     width:100%;
+    padding-left:0;
+    padding-right:0;
 }
 
 .all-main-containers {
@@ -54,7 +56,6 @@ html {
 }
 
 body {
-    max-width: 1200px;
     margin: 0 auto;
     font-size: 1.9em;
     color:#000;
@@ -165,8 +166,8 @@ h1,h2,h3,h4,h5,h6 {
 
 .bx-wrapper .bx-caption {
     background-color: rgba(255,255,255,.4) !important;
-    top: 50px !important;
-    left: 0 !important;
+    top: 20% !important;
+    left: 5% !important;
     bottom: 50px !important;
     width: 40% !important;
     font-size:1.5em !important;
@@ -203,7 +204,8 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .download-button {
-    float:right;
+    float: left;
+    padding-left: 20px;
     
     button.btn.btn-info.btn-block {
         height: 50px;
@@ -216,6 +218,11 @@ h1,h2,h3,h4,h5,h6 {
     clear:both;
 }
 
+.header-row {
+    width: 90%;
+    margin: 0 auto;
+}
+
 .home-row {
     width: 100%;
     margin: 0 auto;
@@ -224,10 +231,11 @@ h1,h2,h3,h4,h5,h6 {
     }
 
 .home-cta-row {
-    
+        
     @media(min-width:62em){//992px
         padding-top:20px;
         @include row-eq-height;
+            width: 80%;
 
     }
 }
@@ -498,6 +506,10 @@ h1,h2,h3,h4,h5,h6 {
     @extend  .hidden-md;
     @extend  .hidden-lg;
     
+}
+
+.navbar.navbar-default.navbar-static-top {
+    padding-left: 5%;
 }
 
 
@@ -822,6 +834,11 @@ footer {
     overflow:hidden;
     a {
         color:$body-bg;
+    }
+    
+    .footer-row {
+        padding-left: 10%;
+        padding-top: 30px;
     }
     
     ul#menu-footer-overview-menu, 

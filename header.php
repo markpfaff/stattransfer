@@ -21,7 +21,7 @@
             <header>
 
                 <div class="container">
-                    <div class="row">
+                    <div class="row header-row">
                         
                         <div class="logo-desktop"><!-- logo -->
                             <a href="<?php echo esc_url( home_url( '/' ) ); ?>">

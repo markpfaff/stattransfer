@@ -5,7 +5,7 @@
             <footer class="content-info">
                 
                 <div class="container">
-                    <div class="row">
+                    <div class="row footer-row">
                         <div class="row distribute-widgets">
                             <?php dynamic_sidebar( 'footer'); ?>
                         </div>           

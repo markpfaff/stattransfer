@@ -87,7 +87,7 @@ if (!is_admin()) {
 	// Load CSS & JS
     function stattransfer_styles() {
         wp_enqueue_style( 'stattransfer', get_stylesheet_uri() );
-
+        
         //example add custom style
         //wp_enqueue_style( 'stattransfer-customcssexample', get_template_directory_uri() . '/example/example.css');
         
@@ -95,14 +95,16 @@ if (!is_admin()) {
         // Font Awesome
         wp_enqueue_style('stattransfer-font-awesome', '//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css', array(), null, 'all');
 
+        //bri's custom styles
+        wp_enqueue_style( 'stattransfer-overwritecss', get_template_directory_uri() . '/example/overwrite.css');        
+        
         //example add font
         //wp_enqueue_style( 'stattransfer-fontexample', 'http://fonts.googleapis.com/css?family=Libre+Baskerville');
         
         // Flexslider style
         //wp_enqueue_style('stattransfer-flexslider-style', get_template_directory_uri() . '/css/flexslider.css', array(), null, 'all');
 
-        
-
+       
     }
     
     function stattransfer_scripts() {
