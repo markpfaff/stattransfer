@@ -390,6 +390,7 @@ h1,h2,h3,h4,h5,h6 {
     }
 }
 
+
 .try-button {
     margin: 0 auto;
     width: 300px;
@@ -399,6 +400,28 @@ h1,h2,h3,h4,h5,h6 {
         background-color:$brand-light-blue;
         border: $brand-dark-blue;
     }
+}
+
+.row .support-banner {
+    margin:0;
+}
+
+.support-buttons {
+    width: 80%;
+    margin: 0 auto;
+
+    .support-button {
+
+        width: 25%;
+        margin-left:20px;
+        float:left;
+
+        button.btn.btn-info.btn-block {
+            height: 50px;
+            background-color:$brand-light-blue;
+            border: $brand-dark-blue;
+        }
+   } 
 }
 
 .home-about {

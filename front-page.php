@@ -107,27 +107,7 @@
                         </div>
                     </div><!--/row-->
                 </div><!--/container--> 
-                <div class="container">
-                    <div class="home-row home-about-row"><!--about-->
 
-                        <div class="try-stat"><!--try-stat-->
-                        <h2>Try Stat/Transfer Today!</h2>
-                        <div class="try-button">
-                            <a href="<?php echo esc_url( get_permalink( get_page_by_title( 'download' ))); ?>">
-                                <button type="button" class="btn btn-info btn-block">Download A Free Demo</button>
-                            </a>
-                        </div>
-
-                        </div><!--/try-stat--> 
-                </div>
-                <div class="container">
-                    <div class="home-row home-users-row"><!--users-->
-                        <h2>STAT/TRANSFER USERS</h2>
-                        <?php echo do_shortcode('[supsystic-slider id=2 position="center"]') ?>
-                    </div><!--/users-->
-                </div>
-                
-            </div>
 <!--<small class="small-label">front-page.php</small>-->
 
 
