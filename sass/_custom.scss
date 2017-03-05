@@ -18,23 +18,6 @@
     width:device-width;
 }
 
-@font-face {
-    font-family: 'amaticbold';
-    src: url('fonts/amatic-bold-webfont.eot');
-    src: url('fonts/amatic-bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/amatic-bold-webfont.woff2') format('woff2'),
-         url('fonts/amatic-bold-webfont.woff') format('woff'),
-         url('fonts/amatic-bold-webfont.ttf') format('truetype'),
-         url('fonts/amatic-bold-webfont.svg#amaticbold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-a {
-    color:$gray-darker;
-}
-
 p {
     margin:0;
 }
@@ -77,6 +60,9 @@ img {
     border-radius:$border-radius-base;
 }
 
+.btn {
+    font-size: $font-size-larger;
+}
 
 img.attachment-medium,
 img.attachment-full {
@@ -103,15 +89,11 @@ ul#utility-menu-items li {
 }
 
 .entry {
-    background:$brand-light-blue;
     border-radius: $border-radius-base;
     padding: 15px;
     color: $gray-darker;
     overflow: hidden;
-    
-    a {
-        color: $gray-darker;
-    }
+   
     
     div.wp-caption {
     width:100% !important;
@@ -193,10 +175,7 @@ h1,h2,h3,h4,h5,h6 {
     padding:20px;
     overflow:hidden;
     border-radius: $border-radius-base;
-    
-    a {
-        color: $body-bg;
-    }
+
 }
 
 .home-banner-bottom-caption-inner {
@@ -402,28 +381,6 @@ h1,h2,h3,h4,h5,h6 {
     }
 }
 
-.row .support-banner {
-    margin:0;
-}
-
-.support-buttons {
-    width: 80%;
-    margin: 0 auto;
-
-    .support-button {
-
-        width: 25%;
-        margin-left:20px;
-        float:left;
-
-        button.btn.btn-info.btn-block {
-            height: 50px;
-            background-color:$brand-light-blue;
-            border: $brand-dark-blue;
-        }
-   } 
-}
-
 .home-about {
     @include make-xs-column(12);
     clear:both;
@@ -433,11 +390,7 @@ h1,h2,h3,h4,h5,h6 {
     overflow: hidden;
     margin-bottom: 4px;//fix for flex box
     color: $gray-darker;
-    
-    a {
-        color: $gray-darker;
-    }
-    
+
     @media(min-width:48em){//768px
         @include make-sm-column(6);
         
@@ -728,6 +681,17 @@ ul.nav.navbar-nav > li > a:hover,
     padding-left:15px;
 }
 
+.support-search .btn,
+.search-form .btn {
+    font-size: 15px;
+}
+
+.btn-primary {
+    color:$gray-darker;
+    background-color:$brand-light-blue;
+    border-color:$brand-light-blue;
+}
+         
 .utility-menu-desktop {
     display:none;
     @include make-sm-column(6);
@@ -838,9 +802,6 @@ ul.nav.navbar-nav > li > a:hover,
     background: $brand-light-blue;
     color: $gray-darker;
     padding-left:20px;
-    a {
-        color: $gray-darker;
-    }
     
     @media(min-width:48em){//768px
 
@@ -971,13 +932,12 @@ footer {
 .page-intro-p {
     color: $gray-darker;
     
-    a {
-        color: $gray-darker;
-    }
     
     @media(min-width:48em){//768px
 
-    @include make-sm-column(9);
+        width: 75%;
+        margin: 0 auto;
+        clear: both;
         
     }   
 }
@@ -1286,3 +1246,85 @@ textarea.wpcf7-form-control  {
     clear: right;
 }
     
+
+//support page
+
+
+.row.support-banner {
+    
+    padding-left: 15px;
+    
+    .support-title {
+        padding:20px;
+        
+        h1 {
+            color:#fff;
+        }
+    }
+    
+    .support-container {
+       
+       .support-banner-background {
+           background-color: $brand-light-blue;
+               margin-bottom: 20px;
+       }
+    }
+
+    .support-buttons {
+        width: 100%;
+        margin: 0 auto;
+
+        .support-button {
+
+            width: 25%;
+            margin-left:20px;
+            float:left;
+
+            button.btn.btn-info.btn-block {
+                height: 50px;
+                background-color:$brand-light-blue;
+                border: $brand-dark-blue;
+            }
+       } 
+    }
+
+    .support-search {
+        clear:both;
+        padding: 20px;
+        width:30%;
+    }
+    
+    .support-content {
+        padding-left:20px;
+    }
+    
+}
+
+//buy page
+div.wpcf7 {
+    position: relative;
+}
+
+//next button
+.wpcf7-form-control.wpcf7-submit {
+    float:right;
+}
+
+//prev button
+.wpcf7-form-control.wpcf7-previous {
+    float:left;
+    position:absolute;
+    bottom:0;
+}
+
+.title-background {
+    background-color: $brand-light-blue;
+    margin-bottom: 20px;
+    overflow: hidden;
+    padding-bottom: 20px;
+    padding-left:20px;
+    
+    h1 {
+       color: #fff;
+    }
+}

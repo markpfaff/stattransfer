@@ -45,7 +45,7 @@ $body-bg:               #fff;
 $text-color:            $gray-dark;
 
 //** Global textual link color.
-$link-color:            #000;
+$link-color:            $brand-light-blue;
 //** Link hover color set via `darken()` function.
 $link-hover-color:      darken($link-color, 15%);
 //** Link hover decoration.
@@ -56,13 +56,14 @@ $link-hover-decoration: underline;
 //
 //## Font, line-height, and color for body text, headings, and more.
 
-$font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif;
-$font-family-serif:       "amaticbold", "Times New Roman", Times, serif;
+$font-family-sans-serif:  "Ubuntu", Helvetica, Arial, sans-serif;
+$font-family-serif:       Helvetica, Arial, sans-serif;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
 $font-family-base:        $font-family-sans-serif;
 
 $font-size-base:          14px;
+$font-size-larger:        ceil(($font-size-base * 1.53)); // ~22px
 $font-size-large:         ceil(($font-size-base * 1.25)); // ~18px
 $font-size-small:         ceil(($font-size-base * 0.85)); // ~12px
 
@@ -79,7 +80,7 @@ $line-height-base:        1.428571429; // 20/14
 $line-height-computed:    floor(($font-size-base * $line-height-base)); // ~20px
 
 //** By default, this inherits from the `<body>`.
-$headings-font-family:    $font-family-serif;
+$headings-font-family:    $font-family-sans-serif;
 $headings-font-weight:    500;
 $headings-line-height:    1.1;
 $headings-color:          inherit;

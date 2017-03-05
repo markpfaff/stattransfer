@@ -96,10 +96,11 @@ if (!is_admin()) {
         wp_enqueue_style('stattransfer-font-awesome', '//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css', array(), null, 'all');
 
         //bri's custom styles
-        wp_enqueue_style( 'stattransfer-overwritecss', get_template_directory_uri() . '/example/overwrite.css');        
+        wp_enqueue_style( 'stattransfer-overwritecss', get_template_directory_uri() . '/overwrite.css');        
         
-        //example add font
-        //wp_enqueue_style( 'stattransfer-fontexample', 'http://fonts.googleapis.com/css?family=Libre+Baskerville');
+        //add ubuntu font
+        wp_enqueue_style( 'stattransfer-font-ubuntu', '//fonts.googleapis.com/css?family=Ubuntu');
+        
         
         // Flexslider style
         //wp_enqueue_style('stattransfer-flexslider-style', get_template_directory_uri() . '/css/flexslider.css', array(), null, 'all');
