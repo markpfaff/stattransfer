@@ -15,8 +15,8 @@ get_header();
                 </div><!--/.support-banner-background-->
                 <div class="support-buttons">
                     <div class="support-button">
-                        <a href="<?php echo esc_url( get_permalink( get_page_by_title( 'faq' ))); ?>">
-                            <button type="button" class="btn btn-info btn-block">FAQ</button>
+                        <a href="https://circlesys.zendesk.com">
+                            <button type="button" class="btn btn-info btn-block">Knowledge Base</button>
                         </a>
                     </div>
                     <div class="support-button">
