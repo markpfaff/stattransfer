@@ -1,0 +1,146 @@
+<!-- saved from url=(0014)about:internet -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><TITLE>Running Batch Jobs with ODBC</TITLE><meta name="generator" content="FastHelp Multi-User"><meta name="keywords" content="">
+
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+#FHNonScroll
+{padding: 6px 6px 0px 6px; border-bottom: none; background: #6699FF; vertical-align: top;z-index: 2; visibility: visible; position: absolute; left: 0; top: 0; width: 100%!important; line-height: 0; font-size: 0; overflow:hidden; }
+#FHNonScroll > table {padding: 6px;}
+#MainSection {overflow: hidden; }
+#FHScroll
+{left: 0; top: 0px; position: absolute; margin: 0; padding: 10px; z-index: 1; background-repeat: no-repeat; background-position: bottom right; background-attachment: fixed; }
+
+
+
+
+
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table /* Normal */
+{
+ font-size: 10pt;
+ font-family: 'Arial';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+ ;
+}
+span.rvts1
+{
+ font-family: 'Arial Unicode MS';
+}
+span.rvts2
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ color: #000000;
+}
+span.rvts3
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts4
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ font-style: italic;
+ color: #000000;
+}
+span.rvts5
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ font-style: italic;
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts6
+{
+ font-size: 11pt;
+ font-family: 'Courier New';
+ color: #000000;
+}
+span.rvts7
+{
+ font-family: 'Verdana';
+ color: #000000;
+}
+/* ========== Para Styles ========== */
+p,ul,ol /* Left */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1
+{
+}
+--></style>
+<script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script>
+<script src="FHSearchHighlight.js"></script>
+<script src="FHSearchHighlight2.js"></script>
+<!-- If this page is displayed outside of the Website Help Frameset, then reload in the Frame set -->
+<script>if (parent.location == self.location)
+{location.href = "index.html?"+extractFileNameWithoutKnownExtension(location.href);}
+</script>
+<script type="text/javascript" language="JavaScript" src="FHNonscroll.js"></script><script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script><script type="text/javascript" language="JavaScript" src="FHFlyoverPopups.js"></script><link rel="stylesheet" type="text/css" href="FHFlyoverPopupStyle.css" /></HEAD>
+<body bgcolor="#FFFFFF" scroll="no" id="MainSection"><div id="FHNonScroll"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td width="100%" align="left">
+<font size=2 color="#000000" face="Arial">
+<div><font size=4 color="#008080" face="Verdana"><b>Running Batch Jobs with ODBC</b></font></div>
+</font>
+</td><td width="120" align="right" nowrap><font face="Verdana" size="2"><a href="hs1050.html"><img src="Images/BrowseBlueLeft.png" border="0" alt="Previous Topic"></a>&nbsp;&nbsp;<a href="hs1080.html"><img src="Images/BrowseBlueRight.png" border="0" alt="Next Topic"></a>&nbsp;</font></td></tr></table></div><div id="FHScroll"><div id="width_height"></div>
+
+<p class=rvps1><span class=rvts2>With SQL Server and other client-server databases, you are likely to need a password and other parameters.&nbsp; Fortunately, when you connect from the command line, the ODBC driver manager will prompt you for whatever information is needed.&nbsp; However, in order to run a job in an automatic batch mode with a command file, you need to supply the necessary information automatically.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>The simplest way to do this is to take advantage of the fact that ODBC will return a connection string that contains all of the information that you entered.&nbsp; This information is in the proper form to complete the connection again without any prompting from the ODBC driver manager.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>You can obtain the connection string from an ODBC data source by connecting interactively to the source and then entering either:</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>&nbsp;&nbsp;&nbsp; </span><span class=rvts6>dbr connstr</span></p>
+<p class=rvps1><span class=rvts2>or</span></p>
+<p class=rvps1><span class=rvts2>&nbsp;&nbsp;&nbsp; </span><span class=rvts6>dbw connstr</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>You will find that the connection strings are generally long and complicated, so that typing one into a command file after retrieval is tedious and error prone.&nbsp; Furthermore, because the connection string may contain your password, you might not want it written openly to a command file.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>Stat/Transfer solves these difficulties with operators that allow you to write or retrieve the value of any parameter and by allowing encryption.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>The Write and Retrieve Operators</span></p>
+<p class=rvps1><span class=rvts2>The operator '&gt;' allows you to store the value of any parameter in a file, while the operator '&lt;' allows you to read back a stored value.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>&nbsp;&nbsp;&nbsp; DBR | DBW&nbsp; </span><span class=rvts4>parametername&nbsp;&nbsp; </span><span class=rvts2>&gt; | &lt;&nbsp;&nbsp; </span><span class=rvts4>storagefile</span></p>
+<p class=rvps1><span class=rvts4><br></span></p>
+<p class=rvps1><span class=rvts2>Thus, in order to write the connection string for an input ODBC data source to a file, </span><span class=rvts5>connect.str</span><span class=rvts2>, type:</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>&nbsp;&nbsp;&nbsp; </span><span class=rvts6>dbr connstr &gt;&nbsp; connect.str</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>To retrieve the connection string and make it available to an input ODBC data source, type:</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>&nbsp;&nbsp;&nbsp;&nbsp; </span><span class=rvts6>dbr connstr &lt;&nbsp; connect.str</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>To use a connection string in a batch job,&nbsp; you can connect interactively to the ODBC data source, use the '&gt;' operator to store the connection string in a file and then use the '&lt;' operator with a DBR or DBW command in a command file.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>Encrypting Connection Strings</span></p>
+<p class=rvps1><span class=rvts2>Because the connection string may contain your password, you may not want it written to unprotected files. You can encrypt and decrypt the stored value of any parameter by adding a pound sign to the '&gt;' or '&lt;' operators.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>For example,</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>&nbsp;&nbsp;&nbsp; </span><span class=rvts6>dbr connstr &gt;#&nbsp; connect.str</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>writes the connection string in encrypted format and</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>&nbsp;&nbsp;&nbsp; </span><span class=rvts6>dbr connstr &lt;#&nbsp; connect.str</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>retrieves and decrypts the connection stri</span><span class=rvts7>ng.</span><span class=rvts1></span></p>
+
+</div></body></html><script type="text/javascript">
+var getsearch_key=getParameterByName('key');
+$('body').highlight(getsearch_key);
+$('.highlight').css('background-color',HighlightColor);
+</script>
+

@@ -1,0 +1,258 @@
+<!-- saved from url=(0014)about:internet -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><TITLE>SAS Value Labels</TITLE><meta name="generator" content="FastHelp Multi-User"><meta name="keywords" content="">
+
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+#FHNonScroll
+{padding: 6px 6px 0px 6px; border-bottom: none; background: #6699FF; vertical-align: top;z-index: 2; visibility: visible; position: absolute; left: 0; top: 0; width: 100%!important; line-height: 0; font-size: 0; overflow:hidden; }
+#FHNonScroll > table {padding: 6px;}
+#MainSection {overflow: hidden; }
+#FHScroll
+{left: 0; top: 0px; position: absolute; margin: 0; padding: 10px; z-index: 1; background-repeat: no-repeat; background-position: bottom right; background-attachment: fixed; }
+
+
+
+
+
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table /* Normal */
+{
+ font-size: 10pt;
+ font-family: 'Arial';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+ ;
+}
+span.rvts1
+{
+ font-family: 'Arial Unicode MS';
+}
+span.rvts2
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts3
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ color: #000000;
+}
+span.rvts4
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ font-style: italic;
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts5
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ color: #000000;
+ text-decoration: underline;
+}
+span.rvts6
+{
+ font-size: 12pt;
+ font-family: 'Verdana';
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts7
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ font-style: italic;
+ color: #000000;
+}
+a.rvts8, span.rvts8
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ color: #0000ff;
+ text-decoration: underline;
+}
+a.rvts8:hover { color: #0000ff; }
+a.rvts9, span.rvts9
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ color: #0000ff;
+ text-decoration: underline;
+}
+a.rvts9:hover { color: #0000ff; }
+a.rvts10, span.rvts10
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ color: #0000ff;
+ text-decoration: underline;
+}
+a.rvts10:hover { color: #0000ff; }
+span.rvts11
+{
+ font-size: 12pt;
+ font-family: 'Calibri';
+}
+/* ========== Para Styles ========== */
+p,ul,ol /* Left */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1
+{
+}
+--></style>
+<script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script>
+<script src="FHSearchHighlight.js"></script>
+<script src="FHSearchHighlight2.js"></script>
+<!-- If this page is displayed outside of the Website Help Frameset, then reload in the Frame set -->
+<script>if (parent.location == self.location)
+{location.href = "index.html?"+extractFileNameWithoutKnownExtension(location.href);}
+</script>
+<script type="text/javascript" language="JavaScript" src="FHNonscroll.js"></script><script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script><script type="text/javascript" language="JavaScript" src="FHFlyoverPopups.js"></script><link rel="stylesheet" type="text/css" href="FHFlyoverPopupStyle.css" /></HEAD>
+<body bgcolor="#FFFFFF" scroll="no" id="MainSection"><div id="FHNonScroll"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td width="100%" align="left">
+<font size=2 color="#000000" face="Arial">
+<div><font size=4 color="#333399" face="Verdana"><b>SAS Value Labels</b></font></div>
+</font>
+</td><td width="120" align="right" nowrap><font face="Verdana" size="2"><a href="hs133.html"><img src="Images/BrowseBlueLeft.png" border="0" alt="Previous Topic"></a>&nbsp;&nbsp;<a href="hs135.html"><img src="Images/BrowseBlueRight.png" border="0" alt="Next Topic"></a>&nbsp;</font></td></tr></table></div><div id="FHScroll"><div id="width_height"></div>
+
+<p class=rvps1><span class=rvts3>Stat/Transfer supports the import and export of SAS value labels.&nbsp; </span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts6>Reading SAS Value Labels</span></p>
+<p class=rvps1><span class=rvts3>SAS, unlike other systems, stores value labels as custom "formats," in a separate "catalog" file.&nbsp;&nbsp;&nbsp; Stat/Transfer can read SAS user-defined formats (value labels) directly from </span><span class=rvts11>64 or 32 bit</span><span class=rvts3> Windows catalog files.&nbsp; This is the simplest option for those who are using Windows SAS.</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts3>In addition, Stat/Transfer can read SAS formats that are stored in several other formats.&nbsp; These may be more convenient if your data are coming from another SAS platform, or you simply have no control over the way the data are produced and delivered.</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts3>Stat/Transfer can read formats from catalogs stored in CPORT libraries</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts3>Stat/Transfer can read formats from an exported catalog produced by SAS using the 'cntrlout=' option of PROC FORMAT.&nbsp; (See "Creating a File with the PROC FORMAT Statement" below.)&nbsp; The files produced in this way can be stored in: </span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<ul style="text-indent: 0px; margin-left: 24px; list-style-position: outside;">
+<li class=rvps1><span class=rvts3>a SAS datafile in any of the data representations supported by Stat/Transfer, including Windows and all Unix platforms.</span></li>
+</ul>
+<p class=rvps1><span class=rvts3><br></span></p>
+<ul style="text-indent: 0px; margin-left: 24px; list-style-position: outside;">
+<li class=rvps1><span class=rvts3>a SAS dataset in a Windows CPORT library.</span></li>
+</ul>
+<p class=rvps1><span class=rvts3><br></span></p>
+<ul style="text-indent: 0px; margin-left: 24px; list-style-position: outside;">
+<li class=rvps1><span class=rvts3> a Transport file, which can be produced by SAS running on any platform, including those on IBM mainframes.</span></li>
+</ul>
+<p class=rvps1><span class=rvts3>· </span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts4>Setting the Appropriate Options with the User Interface</span></p>
+<p class=rvps1><span class=rvts3>You can choose whether and how formats are to be read by using the </span><a class=rvts10 href="hs58.html">Reading SAS Value Labels</a><span class=rvts3> options of the </span><span class=rvts2>Options </span><span class=rvts3>dialog box.</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts5>Do not read formats </span></p>
+<p class=rvps1><span class=rvts3>Check this option, which is the default, if no formats will be read.</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts5>Read directly from a catalog file</span></p>
+<p class=rvps1><span class=rvts3>Choose this option if you have a Windows SAS catalog file containing formats and wish to read them.</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts3>If this option is checked, the entry '%ipath%/catalog.sas7bcat' will automatically appear on the SAS catalog name line.&nbsp; This instructs Stat/Transfer to look for a file named FORMATS.SAS7BCAT, in the same directory as your data file.&nbsp; You can change the path if your file is in a different location.</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts5>Read from a catalog in CPORT library</span></p>
+<p class=rvps1><span class=rvts3>Check this option if you have your formats in a CPORT catalog.</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts3>If this option is checked, the entry '%ipath%/%iname%.stc' will automatically appear on the CPORT library name line.&nbsp; This instructs Stat/Transfer to look for a file with the name (with extension </span><span class=rvts4>.stc</span><span class=rvts3>) and directory of your input file, since you will most probably be reading your formats from the same file as the data.&nbsp; If you are reading formats and data from separate files, then you can give the name of the file on this line. You can type in a complete file specification or you can use the macros below as part of the file specification.</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts3> %</span><span class=rvts7>ipath</span><span class=rvts3>% The path, including the directory, of the input file</span></p>
+<p class=rvps1><span class=rvts3>%</span><span class=rvts7>iname</span><span class=rvts3>% The name, without the extension, of the input file</span></p>
+<p class=rvps1><span class=rvts3>%</span><span class=rvts7>iext</span><span class=rvts3>% The extension, without the dot, of the input file</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts3>If your formats are in a member with the default name </span><span class=rvts4>formats</span><span class=rvts3>, you need not specify anything more.&nbsp; If not, uncheck the </span><span class=rvts2>Use default catalog name </span><span class=rvts3>box and press the </span><span class=rvts2>Read Library </span><span class=rvts3>button.&nbsp; You will then be able to select the member that contains your formats.</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts5>Read a SAS datafile</span></p>
+<p class=rvps1><span class=rvts3>Choose this option if you wish to read formats from a SAS datafile produced by SAS using PROC FORMAT.&nbsp; When this option is checked, you must have both the SAS input file and a separate file created by SAS that contains the formats. By default, Stat/Transfer will look in the same directory as the input file for a file named </span><span class=rvts4>sas_fmts</span><span class=rvts3>.</span><span class=rvts7>ext</span><span class=rvts3>, where .</span><span class=rvts7>ext </span><span class=rvts3>is the extension of your input file.&nbsp; This is the name that the file will have if you have created it by the procedure below.</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts3>If you wish to have Stat/Transfer look for a file located somewhere else or with a different name, you can change it in the SAS dataset name box.&nbsp; You can type in a complete file specification or you can use the macros given above as part of the file specification.</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts5>Read from a dataset in a CPORT library</span></p>
+<p class=rvps1><span class=rvts3>Choose this option if you have your formats in a dataset in a CPORT library produced by PROC FORMAT.</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts3>If this option is checked, the entry '%</span><span class=rvts7>ipath</span><span class=rvts3>%/%</span><span class=rvts7>iname</span><span class=rvts3>%.stc' will automatically appear on the CPORT library name line.&nbsp; This instructs Stat/Transfer to look for a file with the name (with extension </span><span class=rvts4>.stc</span><span class=rvts3>) and directory of your input file, since you will most probably be reading your formats from the same file as the data.&nbsp; If you are reading formats and data from separate files, then you can give the name of the file on this line. You can type in a complete file specification or you can use the macros above as part of the file specification. </span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts3>If your formats are in a dataset with the default name </span><span class=rvts4>sas_fmts</span><span class=rvts3>, you need not specify anything more.&nbsp; If not, uncheck the </span><span class=rvts2>Use default catalog name </span><span class=rvts3>box and press the </span><span class=rvts2>Read Library </span><span class=rvts3>button.&nbsp; You will then be able to select the dataset that contains your formats.</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts5>Read from a SAS Transport file</span></p>
+<p class=rvps1><span class=rvts3>Choose this option if you have your formats in a dataset in a SAS Transport file produced by PROC FORMAT.</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts3>If this option is checked, the entry '%</span><span class=rvts7>ipath</span><span class=rvts3>%/%</span><span class=rvts7>iname</span><span class=rvts3>%.tpt' will automatically appear on the Transport library name line.&nbsp; This instructs Stat/Transfer to look for a file with the name (with extension </span><span class=rvts4>.tpt</span><span class=rvts3>) and directory of your input file, since you will most probably be reading your formats from the same file as the data.&nbsp; If you are reading formats and data from separate files, then you can give the name of the file on this line. You can type in a complete file specification or you can use the macros above as part of the file specification.</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts3> If your formats are in a subfile with the default name </span><span class=rvts4>sas_fmts</span><span class=rvts3>, you need not specify anything more.&nbsp; If not, uncheck the </span><span class=rvts2>Use default member name </span><span class=rvts3>box and press the </span><span class=rvts2>Read Library </span><span class=rvts3>button.&nbsp; You will then be able to select the subfile that contains your formats.</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts4>Setting the Appropriate Options with the Command Processor Interface</span></p>
+<p class=rvps1><span class=rvts3>SET commands are used to choose whether and how formats are to be read.&nbsp; See the section </span><span class=rvts2>SAS Value Labels-Reading</span><span class=rvts3> in the </span><a class=rvts8 href="hs1020.html">Available Options</a><span class=rvts3> section.</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts4>Creating a File with the PROC FORMAT Statement</span></p>
+<p class=rvps1><span class=rvts3>To create the new file for Stat/Transfer to use for reading your SAS value labels, you will need to go into SAS and run the following small program:</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts3>libname mylib 'path';</span></p>
+<p class=rvps1><span class=rvts3>proc format library = mylib</span></p>
+<p class=rvps1><span class=rvts3>cntlout = mylib.sas_fmts;</span></p>
+<p class=rvps1><span class=rvts3>run;</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts3>where 'path' is the directory that contains your input data file.</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts3>This procedure creates a SAS file in the directory 'path' that has the format information for each SAS data file.&nbsp; In this case, the file will have the name </span><span class=rvts4>sas_fmts</span><span class=rvts3>.</span><span class=rvts7>ext</span><span class=rvts3>, where .</span><span class=rvts7>ext </span><span class=rvts3>is the extension of the input SAS file, and it will be found in the same directory as the input file.</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts3>To put your formats in CPORT library, use PROC FORMAT after the above procedure.</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts3>To create a format library in a Transport file, use the same procedure as above but reference the XPORT engine in the output 'libname' statement.</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts4>Transferring Value Labels with Data</span></p>
+<p class=rvps1><span class=rvts3>When you carry out a transfer with a SAS data file as input, Stat/Transfer will check to see if you have checked the option </span><span class=rvts2>Read formats directly from a catalog file</span><span class=rvts3>.&nbsp; If so, the value labels will be transferred automatically from the catalog file named in the </span><span class=rvts2>Filename </span><span class=rvts3>box.</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts3>If you check any of the other options, Stat/Transfer will look for the file that you have specified and the formats will be transferred automatically.</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts4>Restrictions on Importing Value Labels</span></p>
+<p class=rvps1><span class=rvts3>SAS catalog files not only support conventional value labels (the one-to-one mapping of a string to a single number), but also the mapping of a range of numeric values to a single string (for example, zip code mapped to state).</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts3>Because this latter form has no analog in any of the packages supported by Stat/Transfer, only conventional one-to-one value labels are imported from SAS.</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts4>Options controlling how labels are processed</span></p>
+<p class=rvps1><span class=rvts3>You can control how Stat/Transfer will behave if all does not go smoothly.</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts5>Continue if the format file is not found</span></p>
+<p class=rvps1><span class=rvts3>By default,&nbsp; processing will stop if a file containing the formats is not found.&nbsp; Change this behavior by unchecking this option.</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts5>Continue is there is an error processing formats</span></p>
+<p class=rvps1><span class=rvts3>By default,&nbsp; processing will stop if there is an error reading the format file or if no tags in the dataset are matched to formats in the file.&nbsp; By checking this option, you tell Stat/Transfer to continue processing even if there is an error processing the formats.</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts6>Writing SAS Value Labels</span></p>
+<p class=rvps1><span class=rvts3>The separate catalog file in which SAS stores value labels, besides being undocumented, can be shared among several SAS data sets.&nbsp; This makes it problematic to update a SAS catalog file using an external program.&nbsp; When writing value labels for SAS data files, rather than update the catalog file directly, Stat/Transfer creates a SAS program that you can run in order to have SAS update its catalog file.</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts4>Setting the Appropriate Options</span></p>
+<p class=rvps1><span class=rvts3>You will first need to check the appropriate box in the </span><span class=rvts2>SAS Value Labels - Writing</span><span class=rvts3> section of the </span><span class=rvts2>Options </span><span class=rvts3>dialog box, </span><span class=rvts2>Write a Proc Format program</span><span class=rvts3>, to enable the writing of SAS labels.&nbsp; Below this option is the </span><span class=rvts2>Filename </span><span class=rvts3>line.&nbsp; If you leave the default name, the program file that you are going to create will have the name of the output SAS data file, with the extension </span><span class=rvts4>.sas</span><span class=rvts3>, </span><span class=rvts7>outfilename</span><span class=rvts3>.</span><span class=rvts4>sas</span><span class=rvts3>, and will be placed in the same directory as the output SAS data file.&nbsp; See </span><a class=rvts9 href="hs59.html">Writing SAS Value Labels</a><span class=rvts3> for details.</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts4>Transferring Value Labels with Data</span></p>
+<p class=rvps1><span class=rvts3>When you carry out a transfer with a SAS data file as output, Stat/Transfer will check to see if you have checked the option </span><span class=rvts2>Write a Proc Format program</span><span class=rvts3>.&nbsp; During the transfer, it will then write a SAS PROC program file with the name taken from the </span><span class=rvts2>Filename </span><span class=rvts3>line.&nbsp; In this case, assuming that you have used the default name and directory, it will create a program file named </span><span class=rvts7>outfilename</span><span class=rvts3>.</span><span class=rvts2>sas</span><span class=rvts3> in the same directory as the output SAS data file.</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts3>For example, if you write a SAS data file called </span><span class=rvts4>out.sas7bdat</span><span class=rvts3>, the PROC program&nbsp; will be in the same directory as the output file and will be named OUT.SAS.</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts3>The program file has the PROC FORMAT and MODIFY statements necessary to create the SAS catalog file.&nbsp; Once the program file has been created, you can run it in SAS. </span></p>
+<p class=rvps1><span class=rvts1></span></p>
+
+</div></body></html><script type="text/javascript">
+var getsearch_key=getParameterByName('key');
+$('body').highlight(getsearch_key);
+$('.highlight').css('background-color',HighlightColor);
+</script>
+

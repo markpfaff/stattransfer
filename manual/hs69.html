@@ -1,0 +1,133 @@
+<!-- saved from url=(0014)about:internet -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><TITLE>Stat/Transfer Program Generation</TITLE><meta name="generator" content="FastHelp Multi-User"><meta name="keywords" content="Stat/Transfer Program Generation">
+
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+#FHNonScroll
+{padding: 6px 6px 0px 6px; border-bottom: none; background: #6699FF; vertical-align: top;z-index: 2; visibility: visible; position: absolute; left: 0; top: 0; width: 100%!important; line-height: 0; font-size: 0; overflow:hidden; }
+#FHNonScroll > table {padding: 6px;}
+#MainSection {overflow: hidden; }
+#FHScroll
+{left: 0; top: 0px; position: absolute; margin: 0; padding: 10px; z-index: 1; background-repeat: no-repeat; background-position: bottom right; background-attachment: fixed; }
+
+
+
+
+
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table /* Normal */
+{
+ font-size: 10pt;
+ font-family: 'Arial';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+ ;
+}
+span.rvts1
+{
+ font-family: 'Arial Unicode MS';
+}
+span.rvts2
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ color: #000000;
+}
+span.rvts3
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts4
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ font-style: italic;
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts5
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ font-style: italic;
+ color: #000000;
+}
+a.rvts6, span.rvts6
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ color: #0000ff;
+ text-decoration: underline;
+}
+a.rvts6:hover { color: #0000ff; }
+/* ========== Para Styles ========== */
+p,ul,ol /* Left */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1
+{
+}
+--></style>
+<script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script>
+<script src="FHSearchHighlight.js"></script>
+<script src="FHSearchHighlight2.js"></script>
+<!-- If this page is displayed outside of the Website Help Frameset, then reload in the Frame set -->
+<script>if (parent.location == self.location)
+{location.href = "index.html?"+extractFileNameWithoutKnownExtension(location.href);}
+</script>
+<script type="text/javascript" language="JavaScript" src="FHNonscroll.js"></script><script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script><script type="text/javascript" language="JavaScript" src="FHFlyoverPopups.js"></script><link rel="stylesheet" type="text/css" href="FHFlyoverPopupStyle.css" /></HEAD>
+<body bgcolor="#FFFFFF" scroll="no" id="MainSection"><div id="FHNonScroll"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td width="100%" align="left">
+<font size=2 color="#000000" face="Arial">
+<div><font size=4 color="#008080" face="Verdana"><b>Stat/Transfer Program Generation</b></font></div>
+</font>
+</td><td width="120" align="right" nowrap><font face="Verdana" size="2"><a href="hs68.html"><img src="Images/BrowseBlueLeft.png" border="0" alt="Previous Topic"></a>&nbsp;&nbsp;<a href="hs70.html"><img src="Images/BrowseBlueRight.png" border="0" alt="Next Topic"></a>&nbsp;</font></td></tr></table></div><div id="FHScroll"><div id="width_height"></div>
+
+<p class=rvps1><span class=rvts2>These options control the generation of command processor programs by the Stat/Transfer user interface, whether automatically at the end of each transfer or manually, when the </span><span class=rvts3>Save Program</span><span class=rvts2> button is pressed by the user.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>The programs will contain all options that are necessary to completely reproduce the transfer and are useful not only to re-run your transfer in the future, but also, together with the log files, as documentation of your work. The programs can be re-run by opening them in the </span><span class=rvts3>Run Program</span><span class=rvts2> dialog box, or by running them directly from the operating system or the </span><a class=rvts6 href="hs848.html">command processor</a><span class=rvts2> itself.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>Automatically generate command processor program</span></p>
+<p class=rvps1><span class=rvts2>If this option is checked a program will be generated at the conclusion of each transfer operation.&nbsp; This program will contain all of the settings that are necessary to reproduce your transfer operation.&nbsp; If you would like a program to be generated after each transfer, check this option.&nbsp; It is unchecked by default.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>Filename</span></p>
+<p class=rvps1><span class=rvts2>When this option is selected, then by default, Stat/Transfer will write the file to the same directory as your output file and give it the same name as your output file, but with a </span><span class=rvts4>.stcmd</span><span class=rvts2> extension.&nbsp; If you would like to change the location or the name, you can do so in the </span><span class=rvts3> Filename </span><span class=rvts2>edit box.&nbsp; Because this will be used for every transfer, you should not type in a specific name, but you can, if you wish, use a specific directory. We recommend that you use the following macros to specify the file name and also to specify a directory if you do not choose a specific one.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts5>%ipath%</span><span class=rvts2> The path, including the drive (on Windows), of the input data file</span></p>
+<p class=rvps1><span class=rvts5>%iname%</span><span class=rvts2> The name, without the extension, of the input data file</span></p>
+<p class=rvps1><span class=rvts5>%opath%</span><span class=rvts2> The path, including the drive (on Windows), of the output data file</span></p>
+<p class=rvps1><span class=rvts5>%oname%</span><span class=rvts2> The name, without the extension, of the output data file</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>You should always use the </span><span class=rvts4>.stcmd</span><span class=rvts2> extension.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>The default filename is %opath%/%oname%.stcmd.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>Ask Permission before overwriting the program file</span></p>
+<p class=rvps1><span class=rvts2>This option controls automatic program generation.&nbsp; If checked (the default) you will be prompted before program files are overwritten.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>Ask Permission before overwriting the output file</span></p>
+<p class=rvps1><span class=rvts2>This option controls the "overwrite" option that will be written to a generated program, both for automatically generated programs and those generated from the </span><span class=rvts3>Save Program </span><span class=rvts2>button on the </span><span class=rvts3>Transfer </span><span class=rvts2>dialog box.</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts2>If it is checked, the default, when the program is run, you will be asked permission before an output data set is overwritten.&nbsp; If it is not checked the '-y' option will be appended to the </span><span class=rvts3>copy </span><span class=rvts2>command in the program so your output data files will be overwritten without prompting. </span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>Insert "Quit" at end of program</span></p>
+<p class=rvps1><span class=rvts2>If this option is checked, programs run from the command processor prompt or the operating system will cause the Stat/Transfer command processor to terminate at their conclusion.&nbsp; It will not affect the behavior of programs run from the </span><span class=rvts3>Run Program </span><span class=rvts2>dialog box. </span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>This option is checked by default because it allows you, for example, to click on a program in Windows Explorer to have it run and then cleanly terminate.&nbsp; However, you may wish to keep the command processor open to examine the results or run other programs, or execute a series of programs from another.&nbsp; In that case, you would not want 'quit' to be inserted at the end of your programs.</span><span class=rvts1></span></p>
+
+</div></body></html><script type="text/javascript">
+var getsearch_key=getParameterByName('key');
+$('body').highlight(getsearch_key);
+$('.highlight').css('background-color',HighlightColor);
+</script>
+

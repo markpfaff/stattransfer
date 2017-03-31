@@ -1,0 +1,116 @@
+<!-- saved from url=(0014)about:internet -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><TITLE>Encoding Options</TITLE><meta name="generator" content="FastHelp Multi-User"><meta name="keywords" content="Encoding Options;Character Encoding;Character Encoding Options">
+
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+#FHNonScroll
+{padding: 6px 6px 0px 6px; border-bottom: none; background: #6699FF; vertical-align: top;z-index: 2; visibility: visible; position: absolute; left: 0; top: 0; width: 100%!important; line-height: 0; font-size: 0; overflow:hidden; }
+#FHNonScroll > table {padding: 6px;}
+#MainSection {overflow: hidden; }
+#FHScroll
+{left: 0; top: 0px; position: absolute; margin: 0; padding: 10px; z-index: 1; background-repeat: no-repeat; background-position: bottom right; background-attachment: fixed; }
+
+
+
+
+
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table /* Normal */
+{
+ font-size: 10pt;
+ font-family: 'Arial';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+ ;
+}
+span.rvts1
+{
+ font-family: 'Arial Unicode MS';
+}
+span.rvts2
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ color: #000000;
+}
+span.rvts3
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts4
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ font-style: italic;
+ color: #000000;
+}
+/* ========== Para Styles ========== */
+p,ul,ol /* Left */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1
+{
+}
+--></style>
+<script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script>
+<script src="FHSearchHighlight.js"></script>
+<script src="FHSearchHighlight2.js"></script>
+<!-- If this page is displayed outside of the Website Help Frameset, then reload in the Frame set -->
+<script>if (parent.location == self.location)
+{location.href = "index.html?"+extractFileNameWithoutKnownExtension(location.href);}
+</script>
+<script type="text/javascript" language="JavaScript" src="FHNonscroll.js"></script><script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script><script type="text/javascript" language="JavaScript" src="FHFlyoverPopups.js"></script><link rel="stylesheet" type="text/css" href="FHFlyoverPopupStyle.css" /></HEAD>
+<body bgcolor="#FFFFFF" scroll="no" id="MainSection"><div id="FHNonScroll"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td width="100%" align="left">
+<font size=2 color="#000000" face="Arial">
+<div><font size=4 color="#008080" face="Verdana"><b>Encoding Options</b></font></div>
+</font>
+</td><td width="120" align="right" nowrap><font face="Verdana" size="2"><a href="hs53.html"><img src="Images/BrowseBlueLeft.png" border="0" alt="Previous Topic"></a>&nbsp;&nbsp;<a href="hs55.html"><img src="Images/BrowseBlueRight.png" border="0" alt="Next Topic"></a>&nbsp;</font></td></tr></table></div><div id="FHScroll"><div id="width_height"></div>
+
+<p class=rvps1><span class=rvts3>Introduction to Character Encoding</span></p>
+<p class=rvps1><span class=rvts2>In the early days of computing, characters and numbers were represented by seven (and sometimes fewer) bits.&nbsp; The most popular of these encodings, ASCII, allowed the representation of upper and lower case letters, numbers and various symbols.&nbsp; Later, different eight-bit relatives of ASCII were developed, which allowed the encoding of an additional 128 characters, such as accented letters and various other symbols. For languages such as Japanese, which required many more characters, other multi-byte character sets were developed.&nbsp; This resulted in different, incompatible character encoding systems, even for the encoding of a single language's character set.&nbsp; Fortunately, order is now being restored to this Babel with the proliferation of Unicode, a means of uniformly representing the characters of all languages. </span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>In Stat/Transfer 13, all characters are represented internally in Unicode.&nbsp; It is thus capable of handling strings in any language.&nbsp; However, many of the file formats that Stat/Transfer supports were written in the days in which ASCII was </span><span class=rvts4>the</span><span class=rvts2> way of representing strings.&nbsp; Thus, when read, they will not give Stat/Transfer information on the code-page that is in use and when they are written, they have no place for Stat/Transfer to store the code page that was used.&nbsp;&nbsp; </span></p>
+<p class=rvps1><span class=rvts2>3</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>For some file formats, the user will not need to worry about analysis of this.&nbsp; Excel '97 and above, for instance, stores characters in Unicode.&nbsp; If you are going to Access or SAS Version 9 or above, no conversion will be necessary as both of these are Unicode aware.&nbsp; </span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>Your computer's operating system maintains a setting of the current working code page.&nbsp; In most cases applications will use that information to encode characters in a consistent manner.&nbsp; However, if someone in Japan, or Greece, or Russia sends you a file, you will need to tell Stat/Transfer the encoding that was used to write their files.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>The options on this page provide a way for the user to specify, when necessary, the encoding that is present in an input file and the one that is desired in an output file.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>Input Character Set</span></p>
+<p class=rvps1><span class=rvts2>In general, unless you are sure of what you are doing, you should leave this option at the default setting, </span><span class=rvts3>Use current system default code page.&nbsp;&nbsp; </span><span class=rvts2>If that is checked, you will be able to see which code page is in use on your computer. That code page will then be used for files that that do not have known encoding information.&nbsp; If the encoding of an input file can be determined from the contents of the file (or its format), that will, of course, override this setting.&nbsp; </span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>If you choose to override the default behavior, you can choose a different encoding by first selecting the </span><span class=rvts3>Region</span><span class=rvts2> and then the </span><span class=rvts3>Character set.&nbsp; </span><span class=rvts2>Because Stat/Transfer represents characters internally in Unicode, any character set can, in principle be converted on input.&nbsp;&nbsp; However, if you select an incorrect character set, what you will get is likely to be nonsense.&nbsp; Therefore we strongly urge you to look carefully at your data in the viewer to make sure that all is well and to make sure that the font you have selected for the viewer is capable of displaying the characters you need.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>Output Character Set</span></p>
+<p class=rvps1><span class=rvts2>Unless you are sure of what you are doing, you should leave this option at the default setting, </span><span class=rvts3>Use current system default code page.&nbsp;&nbsp; </span><span class=rvts2>This is especially true for the output character set because any input character set can be converted to our internal representation, Unicode.&nbsp; However, you have to get it just right when going from Unicode to another single or multi-byte character set or you will be guaranteed to get total nonsense.&nbsp; For instance, if you have read a Japanese file and then want to convert it to a multi-byte Chinese character set, Stat/Transfer will simply stop in its tracks since this is impossible (unless the only characters consist only of&nbsp; numbers, simple punctuation, and the letters A-Z.)&nbsp; </span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>For file formats that are Unicode-aware (e.g. Excel and SAS 9+), Stat/Transfer will write Unicode, regardless of how you set this option.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>On Encoding Errors</span></p>
+<p class=rvps1><span class=rvts2>Unicode can represent any character.&nbsp; Unfortunately the same cannot be said for other character sets.&nbsp; When Stat/Transfer moves character data from its internal Unicode representation to a character set that can represent fewer characters, there is some probability that some will not fit.&nbsp; For example, Microsoft applications such as Excel store characters in the&nbsp; Unicode representation and in some cases, although it looks like the contents of the data can be represented in a Western European character set, there are some characters that cannot be encoded.&nbsp; These include the right and left apostrophes and, often, the Euro sign.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>The default behavior when this occurs is Substitute.&nbsp; With this option, Stat/Transfer will substitute characters for those that cannot&nbsp; be converted.&nbsp; For example, it will substitute a single quote for right and left apostrophes, and, if necessary, non-accented letters for those with accents.&nbsp; If no substitution is possible, underscores will be substituted.&nbsp;&nbsp;&nbsp; If you do not want any substitution performed, you can check the option Stop, which directs Stat/Transfer to stop on the first conversion error encountered.&nbsp; </span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>The error limit will limit the number of permitted substitutions.&nbsp; The default is 100.&nbsp; </span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>Note: If your Western European data have Euro and other currency signs, a good choice for your single byte output character set is ISO-8859-15, which is a more modern version of ISO-8859-1.</span><span class=rvts1></span></p>
+
+</div></body></html><script type="text/javascript">
+var getsearch_key=getParameterByName('key');
+$('body').highlight(getsearch_key);
+$('.highlight').css('background-color',HighlightColor);
+</script>
+

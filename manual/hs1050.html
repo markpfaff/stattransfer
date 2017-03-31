@@ -1,0 +1,159 @@
+<!-- saved from url=(0014)about:internet -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><TITLE>The DBR and DBW Commands</TITLE><meta name="generator" content="FastHelp Multi-User"><meta name="keywords" content="">
+
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+#FHNonScroll
+{padding: 6px 6px 0px 6px; border-bottom: none; background: #6699FF; vertical-align: top;z-index: 2; visibility: visible; position: absolute; left: 0; top: 0; width: 100%!important; line-height: 0; font-size: 0; overflow:hidden; }
+#FHNonScroll > table {padding: 6px;}
+#MainSection {overflow: hidden; }
+#FHScroll
+{left: 0; top: 0px; position: absolute; margin: 0; padding: 10px; z-index: 1; background-repeat: no-repeat; background-position: bottom right; background-attachment: fixed; }
+
+
+
+
+
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table /* Normal */
+{
+ font-size: 10pt;
+ font-family: 'Arial';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+ ;
+}
+span.rvts1
+{
+ font-family: 'Arial Unicode MS';
+}
+span.rvts2
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ color: #000000;
+}
+span.rvts3
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts4
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ font-style: italic;
+ color: #000000;
+}
+span.rvts5
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ font-style: italic;
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts6
+{
+ font-size: 11pt;
+ font-family: 'Courier New';
+ color: #000000;
+}
+/* ========== Para Styles ========== */
+p,ul,ol /* Left */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1
+{
+}
+--></style>
+<script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script>
+<script src="FHSearchHighlight.js"></script>
+<script src="FHSearchHighlight2.js"></script>
+<!-- If this page is displayed outside of the Website Help Frameset, then reload in the Frame set -->
+<script>if (parent.location == self.location)
+{location.href = "index.html?"+extractFileNameWithoutKnownExtension(location.href);}
+</script>
+<script type="text/javascript" language="JavaScript" src="FHNonscroll.js"></script><script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script><script type="text/javascript" language="JavaScript" src="FHFlyoverPopups.js"></script><link rel="stylesheet" type="text/css" href="FHFlyoverPopupStyle.css" /></HEAD>
+<body bgcolor="#FFFFFF" scroll="no" id="MainSection"><div id="FHNonScroll"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td width="100%" align="left">
+<font size=2 color="#000000" face="Arial">
+<div><font size=4 color="#008080" face="Verdana"><b>The DBR and DBW Commands</b></font></div>
+</font>
+</td><td width="120" align="right" nowrap><font face="Verdana" size="2"><a href="hs1040.html"><img src="Images/BrowseBlueLeft.png" border="0" alt="Previous Topic"></a>&nbsp;&nbsp;<a href="hs1060.html"><img src="Images/BrowseBlueRight.png" border="0" alt="Next Topic"></a>&nbsp;</font></td></tr></table></div><div id="FHScroll"><div id="width_height"></div>
+
+<p class=rvps1><span class=rvts2>Generally, the process of opening an ODBC data source for reading or writing requires information beyond a simple file name.&nbsp; Thus, you may need to give commands which define the data source name, the table name, and sometimes a password or database name.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>Stat Transfer has two commands specifically for ODBC data sources:</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>&nbsp;&nbsp;&nbsp; DBR (short for database read)</span></p>
+<p class=rvps1><span class=rvts2>&nbsp;&nbsp;&nbsp; DBW (short for database write)</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>These commands must precede the COPY command.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>Each of these commands is followed by a single parameter that gives necessary information for the ODBC data source.&nbsp; Each of these parameters consists of the parameter name followed by a value for that parameter.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>&nbsp;&nbsp;&nbsp; DBR | DBW </span><span class=rvts4>parametername&nbsp; value</span></p>
+<p class=rvps1><span class=rvts4><br></span></p>
+<p class=rvps1><span class=rvts2>The parameter names are:</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>DATASOURCE - the name of the ODBC data source</span></p>
+<p class=rvps1><span class=rvts2>DATABASE - the name of the database</span></p>
+<p class=rvps1><span class=rvts2>PASSWORD - logon password for the data source</span></p>
+<p class=rvps1><span class=rvts2>TABLE - the name of the table you want to read or write</span></p>
+<p class=rvps1><span class=rvts2>SERVER - the name of the machine the database is running on</span></p>
+<p class=rvps1><span class=rvts2>SQL - a sql statement to retrieve specific fields and/or join tables</span></p>
+<p class=rvps1><span class=rvts2>CONNSTR - an ODBC connection string (explained below).</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>The parameter CONNSTR is the most useful of these in command files.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>Which of the parameters is necessary for a particular database depends on the database and on the driver.&nbsp; You must enter as many DBR and DBW commands as necessary to supply all of the parameters.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>For example, if you want to read from the </span><span class=rvts5>employee</span><span class=rvts2> table of a SQL Server database you could specify the table with the following command.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>&nbsp;&nbsp;&nbsp; </span><span class=rvts6>dbr table employee</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>You could then submit a COPY command:</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>&nbsp;&nbsp;&nbsp; </span><span class=rvts6>copy ODBC out.sd2</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>to copy the table to a SAS file named </span><span class=rvts5>out.sd2</span><span class=rvts2>.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>To write to a table, </span><span class=rvts5>data</span><span class=rvts2>, in an ODBC data source, you could use the commands:</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>&nbsp;&nbsp;&nbsp; </span><span class=rvts6>dbw table data</span></p>
+<p class=rvps1><span class=rvts6>&nbsp; copy indata.sd2 ODBC</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>Retrieving Parameter Values</span></p>
+<p class=rvps1><span class=rvts2>During a Stat/Transfer session, you can obtain the value of any parameter by entering DBR or DBW and the parameter name without a value:</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>&nbsp;&nbsp;&nbsp; DBR | DBW </span><span class=rvts4>parametername</span></p>
+<p class=rvps1><span class=rvts4><br></span></p>
+<p class=rvps1><span class=rvts2>If no value has been entered yet, you will be told that the value is blank.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>Clearing Parameter Values</span></p>
+<p class=rvps1><span class=rvts2>The DBR and DBW values are persistent across COPY commands during a session.&nbsp; Thus, you will need to change them or clear them if you are executing multiple COPY commands using different data sources.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>You can clear the value of any parameter by entering 'clear' in place of a value.&nbsp; For example:</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>&nbsp;&nbsp;&nbsp; </span><span class=rvts6>dbr connstr clear</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>clears the value of the parameter CONNSTR.&nbsp; Note that it is necessary to 'clear' parameter values if you want to be re-prompted by the ODBC driver manager for any values that you have previously entered.</span><span class=rvts1></span></p>
+
+</div></body></html><script type="text/javascript">
+var getsearch_key=getParameterByName('key');
+$('body').highlight(getsearch_key);
+$('.highlight').css('background-color',HighlightColor);
+</script>
+

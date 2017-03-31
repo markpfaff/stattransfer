@@ -1,5 +1,8 @@
 <?php
-//page-support.php
+/*
+*Template Name: Support Page
+*/
+
 get_header(); 
 ?>
 

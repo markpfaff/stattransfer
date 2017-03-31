@@ -1,0 +1,139 @@
+<!-- saved from url=(0014)about:internet -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><TITLE>SAS Data Files</TITLE><meta name="generator" content="FastHelp Multi-User"><meta name="keywords" content="">
+
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+#FHNonScroll
+{padding: 6px 6px 0px 6px; border-bottom: none; background: #6699FF; vertical-align: top;z-index: 2; visibility: visible; position: absolute; left: 0; top: 0; width: 100%!important; line-height: 0; font-size: 0; overflow:hidden; }
+#FHNonScroll > table {padding: 6px;}
+#MainSection {overflow: hidden; }
+#FHScroll
+{left: 0; top: 0px; position: absolute; margin: 0; padding: 10px; z-index: 1; background-repeat: no-repeat; background-position: bottom right; background-attachment: fixed; }
+
+
+
+
+
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table /* Normal */
+{
+ font-size: 10pt;
+ font-family: 'Arial';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+ ;
+}
+span.rvts1
+{
+ font-family: 'Arial Unicode MS';
+}
+span.rvts2
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ color: #000000;
+}
+span.rvts3
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts4
+{
+ font-size: 8pt;
+ font-family: 'Verdana';
+ color: #000000;
+}
+span.rvts5
+{
+ font-size: 8pt;
+ font-family: 'Verdana';
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts6
+{
+ font-size: 22pt;
+ font-family: 'Verdana';
+ color: #000000;
+}
+a.rvts7, span.rvts7
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ color: #0000ff;
+ text-decoration: underline;
+}
+a.rvts7:hover { color: #ff0000; }
+span.rvts8
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ color: #800000;
+}
+span.rvts9
+{
+ font-size: 9pt;
+ font-family: 'Verdana';
+ color: #000000;
+}
+/* ========== Para Styles ========== */
+p,ul,ol /* Left */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1
+{
+}
+--></style>
+<script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script>
+<script src="FHSearchHighlight.js"></script>
+<script src="FHSearchHighlight2.js"></script>
+<!-- If this page is displayed outside of the Website Help Frameset, then reload in the Frame set -->
+<script>if (parent.location == self.location)
+{location.href = "index.html?"+extractFileNameWithoutKnownExtension(location.href);}
+</script>
+<script type="text/javascript" language="JavaScript" src="FHNonscroll.js"></script><script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script><script type="text/javascript" language="JavaScript" src="FHFlyoverPopups.js"></script><link rel="stylesheet" type="text/css" href="FHFlyoverPopupStyle.css" /></HEAD>
+<body bgcolor="#FFFFFF" scroll="no" id="MainSection"><div id="FHNonScroll"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td width="100%" align="left">
+<font size=2 color="#000000" face="Arial">
+<div><font size=4 color="#333399" face="Verdana"><b>SAS Data File Questions</b></font></div>
+</font>
+</td><td width="120" align="right" nowrap><font face="Verdana" size="2"><a href="hs1430.html"><img src="Images/BrowseBlueLeft.png" border="0" alt="Previous Topic"></a>&nbsp;&nbsp;<a href="hs1450.html"><img src="Images/BrowseBlueRight.png" border="0" alt="Next Topic"></a>&nbsp;</font></td></tr></table></div><div id="FHScroll"><div id="width_height"></div>
+
+<p class=rvps1><span class=rvts3>Q.</span><span class=rvts2>&nbsp; Will the feature that reads SAS value labels work with Unix SAS files?</span></p>
+<p class=rvps1><span class=rvts5><br></span></p>
+<p class=rvps1><span class=rvts3>A.&nbsp; </span><span class=rvts2>Stat/Transfer only reads Windows catalogs, but it will read SAS formats converted to Unix datasets using Proc Format with the 'cntrlout' option.&nbsp; See the </span><a class=rvts7 href="hs134.html">SAS Value Labels</a><span class=rvts2> section. </span></p>
+<p class=rvps1><span class=rvts6><br></span></p>
+<p class=rvps1><span class=rvts3>Q.&nbsp; </span><span class=rvts2>Stat/Transfer won't read my SAS data file.&nbsp; What's wrong?</span></p>
+<p class=rvps1><span class=rvts5><br></span></p>
+<p class=rvps1><span class=rvts3>A.&nbsp; </span><span class=rvts2>First, we don't support every platform.&nbsp; Check the sections for </span><a class=rvts7 href="hs133.html">SAS Data Files</a><span class=rvts8>, </span><a class=rvts7 href="hs135.html">SAS CPORT</a><span class=rvts2>, and </span><a class=rvts7 href="hs136.html">SAS Transport Files</a><span class=rvts2>.&nbsp; If your SAS data are not in one of these formats, we cannot read it, and you should use SAS to create a SAS Transport file.</span></p>
+<p class=rvps1><span class=rvts9><br></span></p>
+<p class=rvps1><span class=rvts2>Further, we cannot read data that have been encrypted.&nbsp; If your data have been written with encryption, you must use SAS to copy the file to an unencrypted format.</span></p>
+<p class=rvps1><span class=rvts4><br></span></p>
+<p class=rvps1><span class=rvts2>Finally, if you are moving the file from another platform, make sure that you use a binary, error-correcting, file transfer protocol.</span></p>
+<p class=rvps1><span class=rvts4><br></span></p>
+<p class=rvps1><span class=rvts2>If your file is in the proper format and you still cannot read it, please check our website to see problems that have been fixed. If your problem is not there, please report the error using the mechanism on the </span><span class=rvts3>Log</span><span class=rvts2> tab of the user interface. The SAS file format has not been publicly documented and there may be aspects of it that we are not supporting properly. Please let us know about any problems you are having so that we can fix them for you and others.</span></p>
+<p class=rvps1><a name=RichViewCheckpoint0></a>
+<span class=rvts6><br></span></p>
+<p class=rvps1><span class=rvts3>Q.&nbsp; </span><span class=rvts2>SAS refuses to read the SAS data file created by Stat/Transfer.&nbsp; What should I do?</span></p>
+<p class=rvps1><span class=rvts5><br></span></p>
+<p class=rvps1><span class=rvts3>A.&nbsp; </span><span class=rvts2>First, make sure that you are writing the proper kind of file for the flavor of SAS you are using and that you are transporting the file properly.&nbsp; Then check our website to see if there is a problem that has already been fixed.&nbsp; If you think you have discovered a new problem, please let us know about it so we can fix it.</span></p>
+<p class=rvps1><span class=rvts2>In the meantime, you can always use the Stat/Transfer output option “SAS Program + ASCII Data File” and then use the generated SAS program to read the ASCII data file into SAS.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts1></span></p>
+
+</div></body></html><script type="text/javascript">
+var getsearch_key=getParameterByName('key');
+$('body').highlight(getsearch_key);
+$('.highlight').css('background-color',HighlightColor);
+</script>
+

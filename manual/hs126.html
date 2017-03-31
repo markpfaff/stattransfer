@@ -1,0 +1,219 @@
+<!-- saved from url=(0014)about:internet -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><TITLE>ODBC Data Sources</TITLE><meta name="generator" content="FastHelp Multi-User"><meta name="keywords" content="">
+
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+#FHNonScroll
+{padding: 6px 6px 0px 6px; border-bottom: none; background: #6699FF; vertical-align: top;z-index: 2; visibility: visible; position: absolute; left: 0; top: 0; width: 100%!important; line-height: 0; font-size: 0; overflow:hidden; }
+#FHNonScroll > table {padding: 6px;}
+#MainSection {overflow: hidden; }
+#FHScroll
+{left: 0; top: 0px; position: absolute; margin: 0; padding: 10px; z-index: 1; background-repeat: no-repeat; background-position: bottom right; background-attachment: fixed; }
+
+
+
+
+
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table /* Normal */
+{
+ font-size: 10pt;
+ font-family: 'Arial';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+ ;
+}
+span.rvts1
+{
+ font-family: 'Arial Unicode MS';
+}
+span.rvts2
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts3
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ color: #000000;
+}
+span.rvts4
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ font-style: italic;
+ font-weight: bold;
+ color: #000000;
+}
+a.rvts5, span.rvts5
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ color: #0000ff;
+ text-decoration: underline;
+}
+a.rvts5:hover { color: #ff0000; }
+/* ========== Para Styles ========== */
+p,ul,ol /* Left */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1
+{
+}
+--></style>
+<script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script>
+<script src="FHSearchHighlight.js"></script>
+<script src="FHSearchHighlight2.js"></script>
+<!-- If this page is displayed outside of the Website Help Frameset, then reload in the Frame set -->
+<script>if (parent.location == self.location)
+{location.href = "index.html?"+extractFileNameWithoutKnownExtension(location.href);}
+</script>
+<script type="text/javascript" language="JavaScript" src="FHNonscroll.js"></script><script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script><script type="text/javascript" language="JavaScript" src="FHFlyoverPopups.js"></script><link rel="stylesheet" type="text/css" href="FHFlyoverPopupStyle.css" /></HEAD>
+<body bgcolor="#FFFFFF" scroll="no" id="MainSection"><div id="FHNonScroll"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td width="100%" align="left">
+<font size=2 color="#000000" face="Arial">
+<div><font size=4 color="#333399" face="Verdana"><b>ODBC Data Sources</b></font></div>
+</font>
+</td><td width="120" align="right" nowrap><font face="Verdana" size="2"><a href="hs125.html"><img src="Images/BrowseBlueLeft.png" border="0" alt="Previous Topic"></a>&nbsp;&nbsp;<a href="hs127.html"><img src="Images/BrowseBlueRight.png" border="0" alt="Next Topic"></a>&nbsp;</font></td></tr></table></div><div id="FHScroll"><div id="width_height"></div>
+
+<p class=rvps1><span class=rvts3>Stat/Transfer can read or write data for any file type for which you have, or can obtain, an ODBC driver.&nbsp; These include such relational databases as Oracle, Sybase, DB2, or Informix, or flat file databases such as Btrieve.</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts4>Standard extension</span><span class=rvts2>: </span><span class=rvts3> </span><span class=rvts2>[none] </span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>Reading and Writing ODBC Data Sources</span></p>
+<p class=rvps1><span class=rvts3>Depending on the driver, you may need to configure your data source from the Windows control panel.</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts3>When connecting to an ODBC data source, you may need to supply a password or other information.&nbsp; If a particular data source requires such information, you will be prompted automatically.</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts3>Note that for client server databases in particular, some configuration and installation of database-specific components may well be required.&nbsp; If you have difficulty connecting to a data source with Stat/Transfer, please try to connect with another tool such as Excel, or one supplied by your database vendor.&nbsp; If you have difficulty with another tool, you should first talk to a local database administrator or the database vendor's support organization before contacting Circle Systems for support.</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts2>Reading</span></p>
+<p class=rvps1><span class=rvts3>For ODBC, the Stat/Transfer user interface will present a list of installed data sources, instead of the </span><span class=rvts2>Open </span><span class=rvts3>or </span><span class=rvts2>Save </span><span class=rvts3>dialog boxes.&nbsp; For details on using ODBC data sources with the command processor, see The </span><a class=rvts5 href="hs1050.html">DBR and DBW Commands</a><span class=rvts3> and </span><a class=rvts5 href="hs1060.html">Running Batch Jobs with ODBC</a><span class=rvts3>.</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts3>Stat/Transfer can either read single tables or multiple tables that are joined in a "view".</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts2>Writing</span></p>
+<p class=rvps1><span class=rvts3>On output, tables can be created in a new file, new tables can be created in an existing file, or existing tables can be overwritten with a new table.</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts3>In addition, new data can be now appended to an existing database table.&nbsp; This option is off by default and must be turned on by using the </span><span class=rvts2>Append to Access and ODBC Tables </span><span class=rvts3>option in the </span><span class=rvts2>ODBC/Access Options</span><span class=rvts3> section of the </span><span class=rvts2>Options </span><span class=rvts3>dialog box or the SET command DB-TABLE-APPEND in the command processor.</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts3>Stat/Transfer will match as many variables as possible to those already in the table and add your data to the matching columns.&nbsp; Obviously at least one column must match exactly and, in addition, the table must be free of constraints, such as those requiring unique keys, that would prohibit a simple "append' operation.</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts2>Missing Values</span></p>
+<p class=rvps1><span class=rvts3>Support for missing values depends on the ODBC driver you are using.&nbsp; However, in most cases, missing values are supported.</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts2>Output Variable Types</span></p>
+<p class=rvps1><span class=rvts3>The output variable type that results from each target variable type is given in the following table:</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<div class=rvps1><table border=1 cellpadding=5 cellspacing=0 style="border-width: 0px;">
+<tr valign=top>
+<td width=27 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=136 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts2>Target Type</span></p>
+</td>
+<td width=254 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts2>Output Type</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=27 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=136 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts3>byte</span></p>
+<p class=rvps1><span class=rvts3>int</span></p>
+</td>
+<td width=254 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts3>Smallint</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=27 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=136 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts3>long&nbsp; </span></p>
+</td>
+<td width=254 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts3>Integer</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=27 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=136 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts3>float</span></p>
+</td>
+<td width=254 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts3>Real</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=27 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=136 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts3>double</span></p>
+</td>
+<td width=254 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts3>Double</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=27 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=136 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts3>date</span></p>
+</td>
+<td width=254 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts3>Date</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=27 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=136 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts3>time</span></p>
+</td>
+<td width=254 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts3>Time</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=27 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=136 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts3>date/time</span></p>
+</td>
+<td width=254 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts3>Timestamp</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=27 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=136 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none;">
+<p class=rvps1><span class=rvts3>string</span></p>
+</td>
+<td width=254 valign=top style="border-width : 1px; border-color: #000000; border-style: solid;">
+<p class=rvps1><span class=rvts3>Character</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class=rvps1><span class=rvts1></span></p>
+
+</div></body></html><script type="text/javascript">
+var getsearch_key=getParameterByName('key');
+$('body').highlight(getsearch_key);
+$('.highlight').css('background-color',HighlightColor);
+</script>
+

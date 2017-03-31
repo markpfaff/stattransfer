@@ -1,0 +1,257 @@
+<!-- saved from url=(0014)about:internet -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><TITLE>SAS Transport Files</TITLE><meta name="generator" content="FastHelp Multi-User"><meta name="keywords" content="">
+
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+#FHNonScroll
+{padding: 6px 6px 0px 6px; border-bottom: none; background: #6699FF; vertical-align: top;z-index: 2; visibility: visible; position: absolute; left: 0; top: 0; width: 100%!important; line-height: 0; font-size: 0; overflow:hidden; }
+#FHNonScroll > table {padding: 6px;}
+#MainSection {overflow: hidden; }
+#FHScroll
+{left: 0; top: 0px; position: absolute; margin: 0; padding: 10px; z-index: 1; background-repeat: no-repeat; background-position: bottom right; background-attachment: fixed; }
+
+
+
+
+
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table /* Normal */
+{
+ font-size: 10pt;
+ font-family: 'Arial';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+ ;
+}
+span.rvts1
+{
+ font-family: 'Arial Unicode MS';
+}
+span.rvts2
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts3
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ color: #000000;
+}
+span.rvts4
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ font-style: italic;
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts5
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ font-style: italic;
+ color: #000000;
+ text-decoration: underline;
+}
+span.rvts6
+{
+ font-size: 11pt;
+ font-family: 'Courier New';
+ color: #000000;
+}
+span.rvts7
+{
+ font-size: 11pt;
+ font-family: 'Courier New';
+ font-style: italic;
+ color: #000000;
+}
+/* ========== Para Styles ========== */
+p,ul,ol /* Left */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1
+{
+}
+--></style>
+<script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script>
+<script src="FHSearchHighlight.js"></script>
+<script src="FHSearchHighlight2.js"></script>
+<!-- If this page is displayed outside of the Website Help Frameset, then reload in the Frame set -->
+<script>if (parent.location == self.location)
+{location.href = "index.html?"+extractFileNameWithoutKnownExtension(location.href);}
+</script>
+<script type="text/javascript" language="JavaScript" src="FHNonscroll.js"></script><script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script><script type="text/javascript" language="JavaScript" src="FHFlyoverPopups.js"></script><link rel="stylesheet" type="text/css" href="FHFlyoverPopupStyle.css" /></HEAD>
+<body bgcolor="#FFFFFF" scroll="no" id="MainSection"><div id="FHNonScroll"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td width="100%" align="left">
+<font size=2 color="#000000" face="Arial">
+<div><font size=4 color="#333399" face="Verdana"><b>SAS Transport Files</b></font></div>
+</font>
+</td><td width="120" align="right" nowrap><font face="Verdana" size="2"><a href="hs135.html"><img src="Images/BrowseBlueLeft.png" border="0" alt="Previous Topic"></a>&nbsp;&nbsp;<a href="hs137.html"><img src="Images/BrowseBlueRight.png" border="0" alt="Next Topic"></a>&nbsp;</font></td></tr></table></div><div id="FHScroll"><div id="width_height"></div>
+
+<p class=rvps1><span class=rvts3>Stat/Transfer will read and write data sets in the SAS Transport Format.&nbsp; This is, according to the SAS Institute, the "best overall format" for interfacing with other systems because it is consistent across all host environments.</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts3>If you are downloading or uploading SAS data between computers, be sure to use an error-correcting file transfer protocol that is suitable for binary files.</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts4>Standard extension</span><span class=rvts2>:&nbsp; xpt</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>Working with Transport Files within SAS</span></p>
+<p class=rvps1><span class=rvts3>The method for writing (and reading) transport files within SAS unfortunately varies across versions of SAS.</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts3>For users of release 6.x and higher, the file can be written by any DATA or PROC step that creates SAS data sets and, similarly, it can be read by any DATA or PROC step.&nbsp; Most commonly, PROC COPY is used to write (or to read) transport data sets.&nbsp; If you are using Version 6.06 or higher, you can read or write transport files by using the XPORT engine.&nbsp; To do so, you must name the XPORT engine in the LIBNAME statement.</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts3>For example, in Version 6.06 and higher the following code will write a transport file:</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts6>/*&nbsp;&nbsp; read system file 'old' - write transport file 'trans' */</span></p>
+<p class=rvps1><span class=rvts6>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; libname old </span><span class=rvts7>file-specification</span><span class=rvts6>;</span></p>
+<p class=rvps1><span class=rvts6>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; libname trans xport </span><span class=rvts7>file-specification</span><span class=rvts6>;</span></p>
+<p class=rvps1><span class=rvts6>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; proc copy in=old out=trans;</span></p>
+<p class=rvps1><span class=rvts6>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; run;</span></p>
+<p class=rvps1><span class=rvts6><br></span></p>
+<p class=rvps1><span class=rvts3>The resulting transport file can then be used for a Stat/Transfer data transfer.</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts3>If a transport file has been produced by Stat/Transfer, it can be read in SAS with the following:</span></p>
+<p class=rvps1><span class=rvts6><br></span></p>
+<p class=rvps1><span class=rvts6>/*&nbsp;&nbsp; read transport file 'trans' - write system file 'new' */</span></p>
+<p class=rvps1><span class=rvts6>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; libname trans xport </span><span class=rvts7>file-specification</span><span class=rvts6>;</span></p>
+<p class=rvps1><span class=rvts6>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; libname new </span><span class=rvts7>file-specification</span><span class=rvts6>;</span></p>
+<p class=rvps1><span class=rvts6>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; proc copy in=trans out=new ;</span></p>
+<p class=rvps1><span class=rvts6>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; run;</span></p>
+<p class=rvps1><span class=rvts6><br></span></p>
+<p class=rvps1><span class=rvts3>Note that you should </span><span class=rvts4>not </span><span class=rvts3>use PROC CPORT to write files that are to be read by Stat/Transfer.&nbsp; This procedure creates files in an entirely different and incompatible format.</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts2>Reading SAS Transport Files</span></p>
+<p class=rvps1><span class=rvts3>More than one data set may be stored in a single transport file. If Stat/Transfer finds more than one data set in a file, it will allow you to select the one you want.</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts2>Writing SAS Transport Files</span></p>
+<p class=rvps1><span class=rvts3>When Stat/Transfer writes a SAS transport file, it uses the file name of the input file, without the extension, as the internal name for the data set in the output file.&nbsp; Stat/Transfer will write only one data set to each output file.</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts2>Missing Data</span></p>
+<p class=rvps1><span class=rvts3>SAS supports the missing values 'A' - 'Z', '.' and '._'.</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts5>Input</span></p>
+<p class=rvps1><span class=rvts3>On input, when a SAS file is transferred to a Stata file or an ASCII file with extended missing values specified, the SAS input missing values will be transferred to the equivalent ones in the output file, with the exception that any missing values '._' in the input SAS file will be written out as '.' in the output.&nbsp; For all other output formats, all of SAS's missing values are converted to a single internal missing value in Stat/Transfer.</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts5>Output</span></p>
+<p class=rvps1><span class=rvts3>When either an ASCII file or a Stata file with extended missing values is transferred to a SAS file, the input missing values will transfer to the equivalent SAS ones.</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts3>For input files that support user missing values (SPSS and OSIRIS), the options </span><span class=rvts2>User Missing Value </span><span class=rvts3>and </span><span class=rvts2>Map to extended (a-z) missing </span><span class=rvts3>in the </span><span class=rvts2>Options </span><span class=rvts3>dialog box can be used to map selected user missing values to extended missing values in the SAS output file. </span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts3>For all other file formats, on output to SAS missing values are set to '.', the SAS standard missing value.</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts2>Output Variable Types</span></p>
+<p class=rvps1><span class=rvts3>The output variable type that results from each target variable type is given in the following table:</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<div class=rvps1><table border=1 cellpadding=5 cellspacing=0 style="border-width: 0px;">
+<tr valign=top>
+<td width=27 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=136 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts2>Target Type</span></p>
+</td>
+<td width=254 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts2>Output Type</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=27 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=136 style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts3>byte</span></p>
+</td>
+<td width=254 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts3>SAS Number - width three bytes</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=27 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=136 style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts3>int</span></p>
+</td>
+<td width=254 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts3>SAS Number - width four bytes </span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=27 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=136 style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts3>long&nbsp; </span></p>
+</td>
+<td width=254 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts3>SAS Number - width six bytes </span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=27 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=136 style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts3>float</span></p>
+<p class=rvps1><span class=rvts3>double</span></p>
+</td>
+<td width=254 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts3>SAS Number - width eight bytes</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=27 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=136 style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts3>string</span></p>
+</td>
+<td width=254 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts3>SAS Character variable (maximum length of 200 bytes</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=27 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=136 style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts3>date</span></p>
+</td>
+<td width=254 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts3>SAS Serial Date Number</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=27 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=136 style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts3>time</span></p>
+</td>
+<td width=254 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts3>SAS Time (number of seconds since midnight) </span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=27 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=136 style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none;">
+<p class=rvps1><span class=rvts3>date/time</span></p>
+</td>
+<td width=254 valign=top style="border-width : 1px; border-color: #000000; border-style: solid;">
+<p class=rvps1><span class=rvts3>SAS Datetime (in seconds</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class=rvps1><span class=rvts1></span></p>
+
+</div></body></html><script type="text/javascript">
+var getsearch_key=getParameterByName('key');
+$('body').highlight(getsearch_key);
+$('.highlight').css('background-color',HighlightColor);
+</script>
+

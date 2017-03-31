@@ -1,0 +1,202 @@
+<!-- saved from url=(0014)about:internet -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><TITLE>Target Output Variable Types</TITLE><meta name="generator" content="FastHelp Multi-User"><meta name="keywords" content="">
+
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+#FHNonScroll
+{padding: 6px 6px 0px 6px; border-bottom: none; background: #6699FF; vertical-align: top;z-index: 2; visibility: visible; position: absolute; left: 0; top: 0; width: 100%!important; line-height: 0; font-size: 0; overflow:hidden; }
+#FHNonScroll > table {padding: 6px;}
+#MainSection {overflow: hidden; }
+#FHScroll
+{left: 0; top: 0px; position: absolute; margin: 0; padding: 10px; z-index: 1; background-repeat: no-repeat; background-position: bottom right; background-attachment: fixed; }
+
+
+
+
+
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table /* Normal */
+{
+ font-size: 10pt;
+ font-family: 'Arial';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+ ;
+}
+span.rvts1
+{
+ font-family: 'Arial Unicode MS';
+}
+span.rvts2
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ color: #000000;
+}
+span.rvts3
+{
+ font-size: 8pt;
+ font-family: 'Verdana';
+ color: #000000;
+}
+span.rvts4
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ font-weight: bold;
+ color: #000000;
+}
+a.rvts5, span.rvts5
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ color: #0000ff;
+ text-decoration: underline;
+}
+a.rvts5:hover { color: #ff0000; }
+/* ========== Para Styles ========== */
+p,ul,ol /* Left */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1
+{
+}
+--></style>
+<script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script>
+<script src="FHSearchHighlight.js"></script>
+<script src="FHSearchHighlight2.js"></script>
+<!-- If this page is displayed outside of the Website Help Frameset, then reload in the Frame set -->
+<script>if (parent.location == self.location)
+{location.href = "index.html?"+extractFileNameWithoutKnownExtension(location.href);}
+</script>
+<script type="text/javascript" language="JavaScript" src="FHNonscroll.js"></script><script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script><script type="text/javascript" language="JavaScript" src="FHFlyoverPopups.js"></script><link rel="stylesheet" type="text/css" href="FHFlyoverPopupStyle.css" /></HEAD>
+<body bgcolor="#FFFFFF" scroll="no" id="MainSection"><div id="FHNonScroll"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td width="100%" align="left">
+<font size=2 color="#000000" face="Arial">
+<div><font size=4 color="#3366ff" face="Verdana"><b>Target Output Variable Types</b></font></div>
+</font>
+</td><td width="120" align="right" nowrap><font face="Verdana" size="2"><a href="ValueLabelBrowser.html"><img src="Images/BrowseBlueLeft.png" border="0" alt="Previous Topic"></a>&nbsp;&nbsp;<a href="hs470.html"><img src="Images/BrowseBlueRight.png" border="0" alt="Next Topic"></a>&nbsp;</font></td></tr></table></div><div id="FHScroll"><div id="width_height"></div>
+
+<p class=rvps1><span class=rvts4>Output Variable Types</span></p>
+<p class=rvps1><span class=rvts2>Systems differ widely in the number and variety of variable types they support.&nbsp; When data are transferred from one file type to another, a variable type in the output format must be assigned to each of the variables being transferred.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>Note that with Stat/Transfer, numerical precision is never lost in the transfer process, since all numerical variables are stored internally as double precision floating point numbers and are then written out according to the assigned variable type.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>Stat/Transfer automatically reads your dataset an extra time in order to determine the optimum output types for each variable and the maximum length of string variables. In almost all cases it is appropriate to accept the output types that Stat/Transfer chooses.&nbsp; However, there are times that you may wish to override these defaults and set the output types </span><a class=rvts5 href="hs510.html">manually</a><span class=rvts2>.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts4>Target Types Assigned by Stat/Transfer</span></p>
+<p class=rvps1><span class=rvts2>When assigning default output variable types, Stat/Transfer attempts to use all of the information at its disposal about the input data variables in order to preserve numeric precision and, at the same time, minimize the size of the output data set.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>When reading numerical variables, Stat/Transfer selects a target output variable type based on the information available to it.&nbsp; This target variable type is not used for internal storage during the transfer, but is simply the preferred output type.&nbsp; If this type is not supported in the chosen output file type, the best approximation will be chosen.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>The various target output variable types used by Stat/Transfer are:</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<div class=rvps1><table border=1 cellpadding=1 cellspacing=2 style="border-width: 0px;">
+<tr valign=top>
+<td width=18 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=95 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts2>byte</span></p>
+</td>
+<td width=557 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts2>One byte signed integer (-128 to 100) </span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=18 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=95 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts2>int</span></p>
+</td>
+<td width=557 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts2>Two byte signed integer (-32768 to 32740) </span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=18 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=95 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts2>long</span></p>
+</td>
+<td width=557 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts2>Four byte signed integer</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=18 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=95 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts2>float</span></p>
+</td>
+<td width=557 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts2>Four byte IEEE single precision floating point number</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=18 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=95 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts2>double</span></p>
+</td>
+<td width=557 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts2>Eight byte IEEE double precision floating point number</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=18 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=95 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts2>date</span></p>
+</td>
+<td width=557 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts2>Date stored as serial day number (days since December 30, 1899)</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=18 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=95 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts2>time </span></p>
+</td>
+<td width=557 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts2>Fraction of a day (12:00 noon = .5) </span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=18 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=95 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts2>date/time</span></p>
+</td>
+<td width=557 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts2>Floating point number (integer&nbsp; - serial day number; fractional part - time)</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=18 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=95 style="border-width : 1px; border-color: #000000; border-style: solid;">
+<p class=rvps1><span class=rvts2>string</span></p>
+</td>
+<td width=557 style="border-width : 1px; border-color: #000000; border-style: solid; border-left: none;">
+<p class=rvps1><span class=rvts2>Character string&nbsp; (stored internally in Unicode UTF-8 representation.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>Remember that the target type will not necessarily be the actual output type.&nbsp; If the target type assigned to a variable by Stat/Transfer is available as one of the variable types of the output file format, then that type will be used for the output.&nbsp; If the assigned target type is not one of the available output types, then a format of the next larger size will be used. </span><span class=rvts1></span></p>
+
+</div></body></html><script type="text/javascript">
+var getsearch_key=getParameterByName('key');
+$('body').highlight(getsearch_key);
+$('.highlight').css('background-color',HighlightColor);
+</script>
+

@@ -1,0 +1,180 @@
+<!-- saved from url=(0014)about:internet -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><TITLE>Matlab Files</TITLE><meta name="generator" content="FastHelp Multi-User"><meta name="keywords" content="">
+
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+#FHNonScroll
+{padding: 6px 6px 0px 6px; border-bottom: none; background: #6699FF; vertical-align: top;z-index: 2; visibility: visible; position: absolute; left: 0; top: 0; width: 100%!important; line-height: 0; font-size: 0; overflow:hidden; }
+#FHNonScroll > table {padding: 6px;}
+#MainSection {overflow: hidden; }
+#FHScroll
+{left: 0; top: 0px; position: absolute; margin: 0; padding: 10px; z-index: 1; background-repeat: no-repeat; background-position: bottom right; background-attachment: fixed; }
+
+
+
+
+
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table /* Normal */
+{
+ font-size: 10pt;
+ font-family: 'Arial';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+ ;
+}
+span.rvts1
+{
+ font-family: 'Arial Unicode MS';
+}
+span.rvts2
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts3
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ color: #000000;
+}
+/* ========== Para Styles ========== */
+p,ul,ol /* Left */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1
+{
+}
+--></style>
+<script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script>
+<script src="FHSearchHighlight.js"></script>
+<script src="FHSearchHighlight2.js"></script>
+<!-- If this page is displayed outside of the Website Help Frameset, then reload in the Frame set -->
+<script>if (parent.location == self.location)
+{location.href = "index.html?"+extractFileNameWithoutKnownExtension(location.href);}
+</script>
+<script type="text/javascript" language="JavaScript" src="FHNonscroll.js"></script><script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script><script type="text/javascript" language="JavaScript" src="FHFlyoverPopups.js"></script><link rel="stylesheet" type="text/css" href="FHFlyoverPopupStyle.css" /></HEAD>
+<body bgcolor="#FFFFFF" scroll="no" id="MainSection"><div id="FHNonScroll"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td width="100%" align="left">
+<font size=2 color="#000000" face="Arial">
+<div><font size=4 color="#333399" face="Verdana"><b>Matlab Files</b></font></div>
+</font>
+</td><td width="120" align="right" nowrap><font face="Verdana" size="2"><a href="hs120.html"><img src="Images/BrowseBlueLeft.png" border="0" alt="Previous Topic"></a>&nbsp;&nbsp;<a href="hs122.html"><img src="Images/BrowseBlueRight.png" border="0" alt="Next Topic"></a>&nbsp;</font></td></tr></table></div><div id="FHScroll"><div id="width_height"></div>
+
+<p class=rvps1><span class=rvts3>Matlab matrices through Version 5 are supported on the following platforms:</span></p>
+<p class=rvps1><span class=rvts3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Macintosh</span></p>
+<p class=rvps1><span class=rvts3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Windows &amp; OS/2 </span></p>
+<p class=rvps1><span class=rvts3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Unix&nbsp; HP/Sun/IBM</span></p>
+<p class=rvps1><span class=rvts3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></p>
+<p class=rvps1><span class=rvts3>Matlab datasets for version 7+ are also supported.</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts2>Standard extension:</span><span class=rvts3>&nbsp; </span><span class=rvts2>mat</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts2>Reading Matlab Files</span></p>
+<p class=rvps1><span class=rvts3>Stat/Transfer will automatically recognize an input file's platform of origin on input.</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts3>Matlab does not write variable names into the file.&nbsp; Therefore Stat/Transfer makes up a variable name for each column, 'coln', which consists of the string 'col' plus the number of the column.</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts3>All values in a given matrix are of a single type, usually double precision, although particularly large matrices may be written out by Matlab in integer format, when this is possible.</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts3>Strings are not supported in Matlab files.</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts3>Stat/Transfer does not read complex matrices.</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts2>Writing Matlab Files</span></p>
+<p class=rvps1><span class=rvts3>On output, Stat/Transfer writes matrices that can be read by any version of Matlab. Datasets can be read on any version higher than seven.</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts3>Stat/Transfer always writes Matlab files in double precision.</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts3>Stat/Transfer does not write complex matrices.</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts2>Missing Data</span></p>
+<p class=rvps1><span class=rvts3>Matlab supports missing values.</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts2>Output Variable Types</span></p>
+<p class=rvps1><span class=rvts3>The output variable type that results from each target variable type is given in the following table:</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<div class=rvps1><table border=1 cellpadding=5 cellspacing=0 style="border-width: 0px;">
+<tr valign=top>
+<td width=31 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=134 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts2>Target Type</span></p>
+</td>
+<td width=259 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts2>Output Type</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=31 valign=middle style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=134 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts3>byte </span></p>
+<p class=rvps1><span class=rvts3>int</span></p>
+<p class=rvps1><span class=rvts3>long</span></p>
+<p class=rvps1><span class=rvts3>float</span></p>
+<p class=rvps1><span class=rvts3>double</span></p>
+</td>
+<td width=259 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts3>Double</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=31 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=134 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts3>date</span></p>
+</td>
+<td width=259 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts3>Date (written as serial day number</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=31 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=134 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts3>time</span></p>
+</td>
+<td width=259 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts3>Time (written as fraction of day)</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=31 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=134 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts3>date/time</span></p>
+</td>
+<td width=259 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts3>Date/time (integer gives serial day number, fractional part gives time) </span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=31 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=134 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none;">
+<p class=rvps1><span class=rvts3>string</span></p>
+</td>
+<td width=259 valign=top style="border-width : 1px; border-color: #000000; border-style: solid;">
+<p class=rvps1><span class=rvts3>Not written for matrices, written for datasets</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class=rvps1><span class=rvts1></span></p>
+
+</div></body></html><script type="text/javascript">
+var getsearch_key=getParameterByName('key');
+$('body').highlight(getsearch_key);
+$('.highlight').css('background-color',HighlightColor);
+</script>
+

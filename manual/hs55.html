@@ -1,0 +1,114 @@
+<!-- saved from url=(0014)about:internet -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><TITLE>ODBC Options</TITLE><meta name="generator" content="FastHelp Multi-User"><meta name="keywords" content="ODBC Options">
+
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+#FHNonScroll
+{padding: 6px 6px 0px 6px; border-bottom: none; background: #6699FF; vertical-align: top;z-index: 2; visibility: visible; position: absolute; left: 0; top: 0; width: 100%!important; line-height: 0; font-size: 0; overflow:hidden; }
+#FHNonScroll > table {padding: 6px;}
+#MainSection {overflow: hidden; }
+#FHScroll
+{left: 0; top: 0px; position: absolute; margin: 0; padding: 10px; z-index: 1; background-repeat: no-repeat; background-position: bottom right; background-attachment: fixed; }
+
+
+
+
+
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table /* Normal */
+{
+ font-size: 10pt;
+ font-family: 'Arial';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+ ;
+}
+span.rvts1
+{
+ font-family: 'Arial Unicode MS';
+}
+span.rvts2
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ color: #000000;
+}
+span.rvts3
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts4
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+}
+/* ========== Para Styles ========== */
+p,ul,ol /* Left */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1
+{
+}
+.rvps2
+{
+ margin: 7px 0px 7px 0px;
+}
+--></style>
+<script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script>
+<script src="FHSearchHighlight.js"></script>
+<script src="FHSearchHighlight2.js"></script>
+<!-- If this page is displayed outside of the Website Help Frameset, then reload in the Frame set -->
+<script>if (parent.location == self.location)
+{location.href = "index.html?"+extractFileNameWithoutKnownExtension(location.href);}
+</script>
+<script type="text/javascript" language="JavaScript" src="FHNonscroll.js"></script><script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script><script type="text/javascript" language="JavaScript" src="FHFlyoverPopups.js"></script><link rel="stylesheet" type="text/css" href="FHFlyoverPopupStyle.css" /></HEAD>
+<body bgcolor="#FFFFFF" scroll="no" id="MainSection"><div id="FHNonScroll"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td width="100%" align="left">
+<font size=2 color="#000000" face="Arial">
+<div><font size=4 color="#008080" face="Verdana"><b>ODBC Options </b></font></div>
+</font>
+</td><td width="120" align="right" nowrap><font face="Verdana" size="2"><a href="hs54.html"><img src="Images/BrowseBlueLeft.png" border="0" alt="Previous Topic"></a>&nbsp;&nbsp;<a href="hs56.html"><img src="Images/BrowseBlueRight.png" border="0" alt="Next Topic"></a>&nbsp;</font></td></tr></table></div><div id="FHScroll"><div id="width_height"></div>
+
+<p class=rvps1><span class=rvts2>The following options allow you to fine-tune your ODBC transfers.&nbsp; They are generally for advanced users.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>Use NULL instead of empty strings</span></p>
+<p class=rvps1><span class=rvts2>A null string is a string for which a value has never been entered while an empty string has zero length.&nbsp; Most databases support both NULL and empty strings (Oracle is the exception which converts empty strings to NULL strings).&nbsp; If you check this box, Stat/Transfer will write NULLS instead of empty strings into your database. </span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>Prefer datetime over smalldatetime for MS SQL Server</span></p>
+<p class=rvps1><span class=rvts2>The 'smalldatetime' type in MS SQL Server represents the dates between Jan 1,1900&nbsp; to June 6, 2079 with accuracy to a minute.&nbsp; If this is sufficient for your needs and you want to save space, uncheck this option.&nbsp; The 'DateTime' type, in contrast, represents time values to an accuracy of close to 3 milliseconds and dates back to 1753.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>Rows to read when scanning datetime variables</span></p>
+<p class=rvps1><span class=rvts2>In some databases (including Access) there is only one date type, which can hold dates, times, and date/time values.&nbsp; Stat/Transfer will, by default, read ten rows of data to determine the type of such variables.&nbsp; If ten rows are not enough for your data, you can set a higher number here.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>Prefer (w)varchar over (w)char</span></p>
+<p class=rvps1><span class=rvts2>On output, if your data are stored in 'char' or its Unicode variant 'wchar', the length of the field will be equal to the length of its widest member.&nbsp; On the other hand, 'varchar' is stored in variable length fields that save storage when the length of the string data varies between cases.&nbsp; In general, you will want to leave this option at its default and write variable length string types when these are permitted.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>Show the name of the table/view owner</span></p>
+<p class=rvps1><span class=rvts2>A table or view in a database is identified by its owner and its name.&nbsp; If you are in an environment in which tables with different owners have the same name, you will need to check this option to make sure that you can select the proper table.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>Append to Access and ODBC tables</span></p>
+<p class=rvps2><span class=rvts4>This option (which is off by default), allows you to append your data to an existing database table.</span>
+<br><span class=rvts4></span>
+<br><span class=rvts4>Stat/Transfer will match as many variables as is possible to those already in the table and add your data to the matching columns. Obviously at least one column must match exactly and, in addition, the table must be free of constraints that would prohibit a simple 'append' operation, such as those requiring unique keys.</span><span class=rvts1></span></p>
+
+</div></body></html><script type="text/javascript">
+var getsearch_key=getParameterByName('key');
+$('body').highlight(getsearch_key);
+$('.highlight').css('background-color',HighlightColor);
+</script>
+

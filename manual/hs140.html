@@ -1,0 +1,272 @@
+<!-- saved from url=(0014)about:internet -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><TITLE>Stata Files</TITLE><meta name="generator" content="FastHelp Multi-User"><meta name="keywords" content="">
+
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+#FHNonScroll
+{padding: 6px 6px 0px 6px; border-bottom: none; background: #6699FF; vertical-align: top;z-index: 2; visibility: visible; position: absolute; left: 0; top: 0; width: 100%!important; line-height: 0; font-size: 0; overflow:hidden; }
+#FHNonScroll > table {padding: 6px;}
+#MainSection {overflow: hidden; }
+#FHScroll
+{left: 0; top: 0px; position: absolute; margin: 0; padding: 10px; z-index: 1; background-repeat: no-repeat; background-position: bottom right; background-attachment: fixed; }
+
+
+
+
+
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table /* Normal */
+{
+ font-size: 10pt;
+ font-family: 'Arial';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+ ;
+}
+span.rvts1
+{
+ font-family: 'Arial Unicode MS';
+}
+span.rvts2
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts3
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ color: #000000;
+}
+span.rvts4
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ font-style: italic;
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts5
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ color: #000000;
+}
+span.rvts6
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+}
+span.rvts7
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ color: #000000;
+ background-color: #ffff00;
+}
+span.rvts8
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+}
+span.rvts9
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+}
+span.rvts10
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ font-style: italic;
+}
+/* ========== Para Styles ========== */
+p,ul,ol /* Left */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1
+{
+}
+--></style>
+<script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script>
+<script src="FHSearchHighlight.js"></script>
+<script src="FHSearchHighlight2.js"></script>
+<!-- If this page is displayed outside of the Website Help Frameset, then reload in the Frame set -->
+<script>if (parent.location == self.location)
+{location.href = "index.html?"+extractFileNameWithoutKnownExtension(location.href);}
+</script>
+<script type="text/javascript" language="JavaScript" src="FHNonscroll.js"></script><script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script><script type="text/javascript" language="JavaScript" src="FHFlyoverPopups.js"></script><link rel="stylesheet" type="text/css" href="FHFlyoverPopupStyle.css" /></HEAD>
+<body bgcolor="#FFFFFF" scroll="no" id="MainSection"><div id="FHNonScroll"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td width="100%" align="left">
+<font size=2 color="#000000" face="Arial">
+<div><font size=4 color="#333399" face="Verdana"><b>Stata Files</b></font></div>
+</font>
+</td><td width="120" align="right" nowrap><font face="Verdana" size="2"><a href="hs139.html"><img src="Images/BrowseBlueLeft.png" border="0" alt="Previous Topic"></a>&nbsp;&nbsp;<a href="hs141.html"><img src="Images/BrowseBlueRight.png" border="0" alt="Next Topic"></a>&nbsp;</font></td></tr></table></div><div id="FHScroll"><div id="width_height"></div>
+
+<p class=rvps1><span class=rvts3>Stat/Transfer will read and write data for any version of Stata including versions running on Unix and Macintosh.</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts4>Standard extension</span><span class=rvts2>:&nbsp; dta</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>Reading Stata Files</span></p>
+<p class=rvps1><span class=rvts3>Stat/Transfer can read data from any version of Stata.&nbsp; Character variables and dates are fully supported.&nbsp; Variable and value labels are transferred in and out of Stata.</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts8>Stata Version 13 includes a&nbsp; new </span><span class=rvts10>strl</span><span class=rvts8> data type.&nbsp; These are potentially very long, variable length strings.&nbsp; Stat/Transfer will read these variables.&nbsp; However, strings longer than the Stat/Transfer limit of&nbsp; 32,000 characters will be truncated and binary strL</span><span class=rvts9>&#8217;</span><span class=rvts8>s will be skipped.</span></p>
+<p class=rvps1><span class=rvts8><br></span></p>
+<p class=rvps1><span class=rvts8>Stata Version 14 supports Unicode and the input encoding will be automatically set to utf-8.</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts2>Writing Stata Files</span></p>
+<p class=rvps1><span class=rvts3>Versions of Stata higher than Version 7 come in two flavors (Standard or "intercooled" Stata and Stata SE or Special Edition). These differ in their limits for the number of output variables.</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts3>You can choose the "flavor" of the Stata output file from the list given in the </span><span class=rvts2>Output File Type </span><span class=rvts3>box in the </span><span class=rvts2>Transfer </span><span class=rvts3>dialog box. </span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts3>You use the option </span><span class=rvts2>Stata Version </span><span class=rvts3>in the </span><span class=rvts2>Output Options (1)</span><span class=rvts3> section of the </span><span class=rvts2>Options </span><span class=rvts3>dialog box to choose the version of the Stata files written by Stat/Transfer.&nbsp; The default is Stata Version </span><span class=rvts6>13</span><span class=rvts3>.&nbsp; Change this option if a different version will be used to read the file.</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts3>Any variable and value labels present in the input data set will be written to Stata files.&nbsp; </span><span class=rvts5>Variable labels longer than Stata's eighty character maximum are now written to Stata both as truncated variable labels and, in full, as Stata notes.</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts8>Stata Version 13 includes a&nbsp; new strL data type.&nbsp; These are potentially very long, variable length strings.&nbsp;&nbsp; Stat/Transfer will write strings longer than a threshold value to Stata strL's rather than strings.&nbsp; The threshold, by default, is 32 characters, but you can change this on the Options (1) screen.&nbsp; Strings longer than&nbsp; Stata’s width limit&nbsp; of 2045 characters will always be written to strls.&nbsp;&nbsp; Dates are written to Stata's internal date format.</span></p>
+<p class=rvps1><span class=rvts8><br></span></p>
+<p class=rvps1><span class=rvts8>The output encoding for Stata version 14 will be automatically set to utf-8 and all data and metadata such as variable names and labels will be properly transcoded.</span></p>
+<p class=rvps1><span class=rvts7><br></span></p>
+<p class=rvps1><span class=rvts2>Missing Data </span></p>
+<p class=rvps1><span class=rvts3>Stata supports missing values.</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts3>Versions 8 and above of Stata support SAS-style extended missing values.&nbsp; The missing values '.A'&nbsp; - '.Z' and '.' are supported. The missing value '._ ' found in SAS is not used in Stata.&nbsp; Stat/Transfer supports these extended missing values.</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts3>When an Stata file with extended missing values is transferred to a SAS or ASCII file, the input missing values will transfer to the equivalent SAS or ASCII ones.&nbsp; When a SAS file or ASCII file is transferred to an Stata file with extended missing values specified, missing values will transfer to equivalent ones, except that '._' in input SAS files is written out as&nbsp; '.' in the output.</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts3>For input files that support user missing values (SPSS and OSIRIS), the options </span><span class=rvts2>User Missing Values </span><span class=rvts3>and </span><span class=rvts2>Map to extended (a-z) missing </span><span class=rvts3>in the </span><span class=rvts2>Options </span><span class=rvts3>dialog box can be used to map selected user missing values to extended missing values in the Stata output file. </span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts2>Output Variable Types</span></p>
+<p class=rvps1><span class=rvts3>The output variable type that results from each target variable type is given in the following table:</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<div class=rvps1><table border=1 cellpadding=5 cellspacing=0 style="border-width: 0px;">
+<tr valign=top>
+<td width=27 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=136 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts2>Target Type</span></p>
+</td>
+<td width=254 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts2>Output Type</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=27 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=136 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts3>byte</span></p>
+</td>
+<td width=254 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts3>Byte</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=27 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=136 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts3>int</span></p>
+</td>
+<td width=254 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts3>Int</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=27 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=136 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts3>long&nbsp; </span></p>
+</td>
+<td width=254 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts3>Long</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=27 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=136 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts3>float</span></p>
+</td>
+<td width=254 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts3>Float</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=27 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=136 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts3>double</span></p>
+</td>
+<td width=254 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts3>Double</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=27 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=136 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts3>date</span></p>
+</td>
+<td width=254 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts3>Stata Date</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=27 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=136 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts3>time</span></p>
+</td>
+<td width=254 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts3>Float (fractional part of a day) </span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=27 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=136 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts3>date/time</span></p>
+</td>
+<td width=254 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts3>Double (Stata date and fractional part of a day) </span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=27 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=136 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none;">
+<p class=rvps1><span class=rvts3>string</span></p>
+</td>
+<td width=254 valign=top style="border-width : 1px; border-color: #000000; border-style: solid;">
+<p class=rvps1><span class=rvts3>Character</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=27 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=136 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none;">
+<p class=rvps1><span class=rvts8>strl</span></p>
+</td>
+<td width=254 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none;">
+<p class=rvps1><span class=rvts8>Character or strL</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class=rvps1><span class=rvts1></span></p>
+
+</div></body></html><script type="text/javascript">
+var getsearch_key=getParameterByName('key');
+$('body').highlight(getsearch_key);
+$('.highlight').css('background-color',HighlightColor);
+</script>
+

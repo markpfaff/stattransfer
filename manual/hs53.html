@@ -1,0 +1,283 @@
+<!-- saved from url=(0014)about:internet -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><TITLE>Date/Time Formats - Writing</TITLE><meta name="generator" content="FastHelp Multi-User"><meta name="keywords" content="Date Time Formats - Writing">
+
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+#FHNonScroll
+{padding: 6px 6px 0px 6px; border-bottom: none; background: #6699FF; vertical-align: top;z-index: 2; visibility: visible; position: absolute; left: 0; top: 0; width: 100%!important; line-height: 0; font-size: 0; overflow:hidden; }
+#FHNonScroll > table {padding: 6px;}
+#MainSection {overflow: hidden; }
+#FHScroll
+{left: 0; top: 0px; position: absolute; margin: 0; padding: 10px; z-index: 1; background-repeat: no-repeat; background-position: bottom right; background-attachment: fixed; }
+
+
+
+
+
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table /* Normal */
+{
+ font-size: 10pt;
+ font-family: 'Arial';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+ ;
+}
+span.rvts1
+{
+ font-family: 'Arial Unicode MS';
+}
+span.rvts2
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ color: #000000;
+}
+span.rvts3
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts4
+{
+ font-family: 'Verdana';
+ font-weight: bold;
+ color: #000000;
+}
+/* ========== Para Styles ========== */
+p,ul,ol /* Left */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1
+{
+}
+--></style>
+<script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script>
+<script src="FHSearchHighlight.js"></script>
+<script src="FHSearchHighlight2.js"></script>
+<!-- If this page is displayed outside of the Website Help Frameset, then reload in the Frame set -->
+<script>if (parent.location == self.location)
+{location.href = "index.html?"+extractFileNameWithoutKnownExtension(location.href);}
+</script>
+<script type="text/javascript" language="JavaScript" src="FHNonscroll.js"></script><script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script><script type="text/javascript" language="JavaScript" src="FHFlyoverPopups.js"></script><link rel="stylesheet" type="text/css" href="FHFlyoverPopupStyle.css" /></HEAD>
+<body bgcolor="#FFFFFF" scroll="no" id="MainSection"><div id="FHNonScroll"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td width="100%" align="left">
+<font size=2 color="#000000" face="Arial">
+<div><font size=4 color="#008080" face="Verdana"><b>Date/Time Formats - Writing</b></font></div>
+</font>
+</td><td width="120" align="right" nowrap><font face="Verdana" size="2"><a href="hs52.html"><img src="Images/BrowseBlueLeft.png" border="0" alt="Previous Topic"></a>&nbsp;&nbsp;<a href="hs54.html"><img src="Images/BrowseBlueRight.png" border="0" alt="Next Topic"></a>&nbsp;</font></td></tr></table></div><div id="FHScroll"><div id="width_height"></div>
+
+<p class=rvps1><span class=rvts2>Stat/Transfer gives you considerable control over how dates and times written to output ASCII files. You can control the formatting for date values, time values and combined date/time values in the </span><span class=rvts4>Date</span><span class=rvts2>, </span><span class=rvts4>Time </span><span class=rvts2>and </span><span class=rvts4>Date/Time </span><span class=rvts2>edit boxes.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>Output formats that you supply are used to convert date and time values to character strings.&nbsp; Each date or time part of the output format has the form '%char'.&nbsp; Leading zeros cause the value to printed with leading zeros.&nbsp; For example '%0d' will print the day of the month with a leading zero.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>The characters below are used to create the output formats.&nbsp; Anything to be printed in the output character string that is not in the list below, such as commas, spaces or other delimiters, must be given explicitly in the output format.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<div class=rvps1><table border=1 cellpadding=5 cellspacing=0 style="border-width: 0px;">
+<tr valign=top>
+<td width=10 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts3><br></span></p>
+</td>
+<td width=92 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts2>%a </span></p>
+</td>
+<td width=398 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts2>abbreviated weekday</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=10 valign=middle style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=92 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts2>%A</span></p>
+</td>
+<td width=398 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts2>full name of weekday</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=10 valign=middle style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=92 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts2>%b</span></p>
+</td>
+<td width=398 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts2>abbreviated name of month</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=10 valign=middle style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=92 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts2>%B</span></p>
+</td>
+<td width=398 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts2>full name of month</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=10 valign=middle style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=92 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts2>%d</span></p>
+</td>
+<td width=398 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts2>day of the month (1 - 31) </span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=10 valign=middle style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=92 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts2>%D</span></p>
+</td>
+<td width=398 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts2>day of the year (1 - 366)</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=10 valign=middle style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=92 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts2>%H</span></p>
+</td>
+<td width=398 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts2>hour (24 hour clock) (0 - 23)</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=10 valign=middle style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=92 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts2>%I</span></p>
+</td>
+<td width=398 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts2>hour (12 hour clock) (1 - 12) </span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=10 valign=middle style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=92 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts2>%m</span></p>
+</td>
+<td width=398 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts2>month as number (1 - 12)</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=10 valign=middle style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=92 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts2>%M</span></p>
+</td>
+<td width=398 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts2>minutes (0 - 59)</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=10 valign=middle style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=92 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts2>%N</span></p>
+</td>
+<td width=398 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts2>milliseconds (0 - 999)</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=10 valign=middle style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=92 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts2>%1N</span></p>
+</td>
+<td width=398 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts2>tenths of seconds (0 - 10)</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=10 valign=middle style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=92 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts2>%2N</span></p>
+</td>
+<td width=398 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts2>hundredths of seconds (0 - 99)</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=10 valign=middle style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=92 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts2>%p</span></p>
+</td>
+<td width=398 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts2>'am' or 'pm'</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=10 valign=middle style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=92 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts2>%S</span></p>
+</td>
+<td width=398 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts2>seconds (0 - 59)&nbsp; </span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=10 valign=middle style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=92 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts2>%y</span></p>
+</td>
+<td width=398 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts2>year as two digits</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=10 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=92 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts2>%Y</span></p>
+</td>
+<td width=398 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts2>year as four digits</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=10 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=92 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts2>%% </span></p>
+</td>
+<td width=398 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts2>% character</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>&nbsp; </span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>The default formats for converting dates and times to strings are:</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts4>Date:&nbsp;&nbsp;&nbsp; </span><span class=rvts2>%m/%d/%Y&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (5/18/1945)</span></p>
+<p class=rvps1><span class=rvts4>Time:&nbsp;&nbsp;&nbsp; </span><span class=rvts2>%0H:%0M:%0S&nbsp;&nbsp;&nbsp;&nbsp; (14:05:48)</span></p>
+<p class=rvps1><span class=rvts4>Date/Time:&nbsp;&nbsp; </span><span class=rvts2>%m/%d/%Y %0H:%0M:%0S&nbsp;&nbsp;&nbsp;&nbsp; (10/1/1990&nbsp; 02:20:09)</span><span class=rvts1></span></p>
+
+</div></body></html><script type="text/javascript">
+var getsearch_key=getParameterByName('key');
+$('body').highlight(getsearch_key);
+$('.highlight').css('background-color',HighlightColor);
+</script>
+

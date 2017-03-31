@@ -1,0 +1,162 @@
+<!-- saved from url=(0014)about:internet -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><TITLE>Transfers from the Command Processor</TITLE><meta name="generator" content="FastHelp Multi-User"><meta name="keywords" content="">
+
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+#FHNonScroll
+{padding: 6px 6px 0px 6px; border-bottom: none; background: #6699FF; vertical-align: top;z-index: 2; visibility: visible; position: absolute; left: 0; top: 0; width: 100%!important; line-height: 0; font-size: 0; overflow:hidden; }
+#FHNonScroll > table {padding: 6px;}
+#MainSection {overflow: hidden; }
+#FHScroll
+{left: 0; top: 0px; position: absolute; margin: 0; padding: 10px; z-index: 1; background-repeat: no-repeat; background-position: bottom right; background-attachment: fixed; }
+
+
+
+
+
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table /* Normal */
+{
+ font-size: 10pt;
+ font-family: 'Arial';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+ ;
+}
+span.rvts1
+{
+ font-family: 'Arial Unicode MS';
+}
+span.rvts2
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ color: #000000;
+}
+span.rvts3
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts4
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ font-style: italic;
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts5
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ color: #800000;
+}
+span.rvts6
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ font-style: italic;
+ color: #000000;
+}
+a.rvts7, span.rvts7
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ color: #0000ff;
+ text-decoration: underline;
+}
+a.rvts7:hover { color: #0000ff; }
+a.rvts8, span.rvts8
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ color: #0000ff;
+ text-decoration: underline;
+}
+a.rvts8:hover { color: #0000ff; }
+span.rvts9
+{
+ font-size: 11pt;
+ font-family: 'Courier New';
+ color: #000000;
+}
+span.rvts10
+{
+ font-size: 11pt;
+ font-family: 'Courier New';
+ font-style: italic;
+ color: #000000;
+}
+/* ========== Para Styles ========== */
+p,ul,ol /* Left */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1
+{
+}
+--></style>
+<script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script>
+<script src="FHSearchHighlight.js"></script>
+<script src="FHSearchHighlight2.js"></script>
+<!-- If this page is displayed outside of the Website Help Frameset, then reload in the Frame set -->
+<script>if (parent.location == self.location)
+{location.href = "index.html?"+extractFileNameWithoutKnownExtension(location.href);}
+</script>
+<script type="text/javascript" language="JavaScript" src="FHNonscroll.js"></script><script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script><script type="text/javascript" language="JavaScript" src="FHFlyoverPopups.js"></script><link rel="stylesheet" type="text/css" href="FHFlyoverPopupStyle.css" /></HEAD>
+<body bgcolor="#FFFFFF" scroll="no" id="MainSection"><div id="FHNonScroll"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td width="100%" align="left">
+<font size=2 color="#000000" face="Arial">
+<div><font size=4 color="#333399" face="Verdana"><b>Transfers from the Command Processor</b></font></div>
+</font>
+</td><td width="120" align="right" nowrap><font face="Verdana" size="2"><a href="hs850.html"><img src="Images/BrowseBlueLeft.png" border="0" alt="Previous Topic"></a>&nbsp;&nbsp;<a href="hs870.html"><img src="Images/BrowseBlueRight.png" border="0" alt="Next Topic"></a>&nbsp;</font></td></tr></table></div><div id="FHScroll"><div id="width_height"></div>
+
+<p class=rvps1><span class=rvts2>The basic command used when running the Stat/Transfer command processor is COPY, which has&nbsp; the following form:</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class=rvts9>&nbsp; COPY&nbsp;&nbsp; </span><span class=rvts10>infilename.ex1&nbsp;&nbsp; outfilename.ex2&nbsp;&nbsp;&nbsp; -x1&nbsp; -x2&nbsp;&nbsp;&nbsp; ...</span></p>
+<p class=rvps1><span class=rvts6><br></span></p>
+<p class=rvps1><span class=rvts2>where </span><span class=rvts6>infilename.ex1 </span><span class=rvts2>and </span><span class=rvts6>outfilename.ex2 </span><span class=rvts2>are the input and output files, respectively and </span><span class=rvts6>.ex1 a</span><span class=rvts2>nd </span><span class=rvts6>.ex2</span><span class=rvts2>, are </span><a class=rvts7 href="hs880.html">standard extensions</a><span class=rvts2> used to determine the type of file that is read and written.&nbsp; The file names can be complete file specifications.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>An alternative for specifying the file type is to use a </span><a class=rvts8 href="hs880.html">file-type tag</a><span class=rvts2> instead of a standard extension.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>Parameters -</span><span class=rvts6>xi&nbsp; </span><span class=rvts2>following the file names allow some options to be selected, such as selecting tables and pages, optimization of variables or controlling messages from Stat/Transfer.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>You can give additional commands before you give the COPY command.&nbsp; These allow you to select cases and variables, to manually change output variable types, to set a number of options</span><span class=rvts5> and</span><span class=rvts2> to use other commands.&nbsp; (Note that these commands can be given only at the Stat/Transfer prompt or in a command file or in a startup file</span><span class=rvts5>.&nbsp; </span><span class=rvts2>They cannot be used when running interactively from the operating system prompt.)</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>If no commands for selecting cases or variables are given, then by default, all of the variables and cases will be transferred.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>For example, to copy all of the variables and all of the cases from an Excel file, </span><span class=rvts4>indata.xls</span><span class=rvts2>, to a SAS file, </span><span class=rvts4>outdata.sas7bdat</span><span class=rvts2>, type:</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>&nbsp;&nbsp; </span><span class=rvts9>copy&nbsp; indata.xls&nbsp; outdata.sas7bdat</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>where the file type is given by using standard extensions. </span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>Instead of entering commands directly, you can store them in a command file and execute that file at the Stat/Transfer prompt.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>Wildcard Transfers</span></p>
+<p class=rvps1><span class=rvts2>Wildcards can be used to copy multiple files in one transfer. For example:</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>&nbsp;&nbsp; </span><span class=rvts9>copy&nbsp;&nbsp;&nbsp; in/*.dta&nbsp;&nbsp;&nbsp; out/*.sas7bdat</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>will convert all of the Stata files in the directory </span><span class=rvts4>/in</span><span class=rvts2> to SAS files in the directory </span><span class=rvts4>/out</span><span class=rvts2>.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>Standard wildcards work in the input file ('?' and '*' ).&nbsp; The output filename should always be specified with an asterisk and will be consist of the input filename, with the new extension.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>We recommend that you use wildcard specifications with an input directory that contains just the files you wish to transfer.&nbsp; To avoid the possibility of overwriting existing files or of being prompted about this possibility, the directory should be empty on the output side.&nbsp; You may also specify the '-y' parameter, to suppress prompting, but you should do so with extreme caution. </span><span class=rvts1></span></p>
+
+</div></body></html><script type="text/javascript">
+var getsearch_key=getParameterByName('key');
+$('body').highlight(getsearch_key);
+$('.highlight').css('background-color',HighlightColor);
+</script>
+

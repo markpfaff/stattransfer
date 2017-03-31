@@ -1,0 +1,98 @@
+<!-- saved from url=(0014)about:internet -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><TITLE>Automatic Optimization of Target Types</TITLE><meta name="generator" content="FastHelp Multi-User"><meta name="keywords" content="">
+
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+#FHNonScroll
+{padding: 6px 6px 0px 6px; border-bottom: none; background: #6699FF; vertical-align: top;z-index: 2; visibility: visible; position: absolute; left: 0; top: 0; width: 100%!important; line-height: 0; font-size: 0; overflow:hidden; }
+#FHNonScroll > table {padding: 6px;}
+#MainSection {overflow: hidden; }
+#FHScroll
+{left: 0; top: 0px; position: absolute; margin: 0; padding: 10px; z-index: 1; background-repeat: no-repeat; background-position: bottom right; background-attachment: fixed; }
+
+
+
+
+
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table /* Normal */
+{
+ font-size: 10pt;
+ font-family: 'Arial';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+ ;
+}
+span.rvts1
+{
+ font-family: 'Arial Unicode MS';
+}
+span.rvts2
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ color: #000000;
+}
+span.rvts3
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ font-weight: bold;
+ color: #000000;
+}
+a.rvts4, span.rvts4
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ color: #0000ff;
+ text-decoration: underline;
+}
+a.rvts4:hover { color: #0000ff; }
+/* ========== Para Styles ========== */
+p,ul,ol /* Left */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1
+{
+}
+--></style>
+<script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script>
+<script src="FHSearchHighlight.js"></script>
+<script src="FHSearchHighlight2.js"></script>
+<!-- If this page is displayed outside of the Website Help Frameset, then reload in the Frame set -->
+<script>if (parent.location == self.location)
+{location.href = "index.html?"+extractFileNameWithoutKnownExtension(location.href);}
+</script>
+<script type="text/javascript" language="JavaScript" src="FHNonscroll.js"></script><script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script><script type="text/javascript" language="JavaScript" src="FHFlyoverPopups.js"></script><link rel="stylesheet" type="text/css" href="FHFlyoverPopupStyle.css" /></HEAD>
+<body bgcolor="#FFFFFF" scroll="no" id="MainSection"><div id="FHNonScroll"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td width="100%" align="left">
+<font size=2 color="#000000" face="Arial">
+<div><font size=4 color="#3366ff" face="Verdana"><b>Automatic Optimization of Target Types</b></font></div>
+</font>
+</td><td width="120" align="right" nowrap><font face="Verdana" size="2"><a href="hs450.html"><img src="Images/BrowseBlueLeft.png" border="0" alt="Previous Topic"></a>&nbsp;&nbsp;<a href="hs510.html"><img src="Images/BrowseBlueRight.png" border="0" alt="Next Topic"></a>&nbsp;</font></td></tr></table></div><div id="FHScroll"><div id="width_height"></div>
+
+<p class=rvps1><span class=rvts2>Stat/Transfer attempts to produce the smallest possible output data set. After reading your data, Stat/Transfer will make an optimization pass during the transfer, to determine more information about each variable and then will assign target output types.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>First, before the transfer, information from the data file dictionary is read.&nbsp; Unfortunately, for some input data types, this information is not sufficient to do anything other than set all of the output variable types to 'float'.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>Stat/Transfer will then make an additional optimization pass through your data.&nbsp; By default this will occur during the transfer.&nbsp; This pass will only be performed if the file contains any string variables or if the selected output file type is such that the output file could be made smaller by optimization.&nbsp; Some output file types, such as Stata, have a rich assortment of storage types and benefit from optimization.&nbsp; Others, such as worksheets or files that have only one numeric type (SPSS for example), do not benefit.&nbsp; Optimization must be performed for any file with string variables, because the length of output strings can potentially change as they are transcoded to different output encodings.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>Stat/Transfer can determine whether any variables can be represented as integers, and, for those cases, it can determine the smallest possible integral type that can be used to represent the data.&nbsp; Further, if a variable cannot be represented by an integral type, Stat/Transfer can automatically determine whether it can be represented by a float instead of a double without a loss of information.&nbsp; Information on the maximum length of string variables is also accumulated, so that these can be stored in variables of the smallest possible length.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>In almost all cases it is appropriate to accept the output types that Stat/Transfer chooses.&nbsp; However, there are times that you may wish to override these defaults and set the output types yourself. </span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>Optimization, by default, takes place during a transfer. The </span><span class=rvts3>Optimize</span><span class=rvts2> button is used to optimize manually before the transfer.&nbsp; This allows you to see the target types that Stat/Transfer has chosen for your variables before they are transferred, and to change any output types that you wish.&nbsp; This is discussed in the section </span><a class=rvts4 href="hs510.html">Changing the Types of Output Variables</a><span class=rvts2>.</span><span class=rvts1></span></p>
+
+</div></body></html><script type="text/javascript">
+var getsearch_key=getParameterByName('key');
+$('body').highlight(getsearch_key);
+$('.highlight').css('background-color',HighlightColor);
+</script>
+

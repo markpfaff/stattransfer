@@ -1,0 +1,304 @@
+<!-- saved from url=(0014)about:internet -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><TITLE>Date/Time Formats - Reading</TITLE><meta name="generator" content="FastHelp Multi-User"><meta name="keywords" content="">
+
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+#FHNonScroll
+{padding: 6px 6px 0px 6px; border-bottom: none; background: #6699FF; vertical-align: top;z-index: 2; visibility: visible; position: absolute; left: 0; top: 0; width: 100%!important; line-height: 0; font-size: 0; overflow:hidden; }
+#FHNonScroll > table {padding: 6px;}
+#MainSection {overflow: hidden; }
+#FHScroll
+{left: 0; top: 0px; position: absolute; margin: 0; padding: 10px; z-index: 1; background-repeat: no-repeat; background-position: bottom right; background-attachment: fixed; }
+
+
+
+
+
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table /* Normal */
+{
+ font-size: 10pt;
+ font-family: 'Arial';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+ ;
+}
+span.rvts1
+{
+ font-family: 'Arial Unicode MS';
+}
+span.rvts2
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ color: #000000;
+}
+span.rvts3
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts4
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ font-style: italic;
+ color: #000000;
+}
+span.rvts5
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ font-style: italic;
+ font-weight: bold;
+ color: #000000;
+}
+/* ========== Para Styles ========== */
+p,ul,ol /* Left */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1
+{
+}
+--></style>
+<script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script>
+<script src="FHSearchHighlight.js"></script>
+<script src="FHSearchHighlight2.js"></script>
+<!-- If this page is displayed outside of the Website Help Frameset, then reload in the Frame set -->
+<script>if (parent.location == self.location)
+{location.href = "index.html?"+extractFileNameWithoutKnownExtension(location.href);}
+</script>
+<script type="text/javascript" language="JavaScript" src="FHNonscroll.js"></script><script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script><script type="text/javascript" language="JavaScript" src="FHFlyoverPopups.js"></script><link rel="stylesheet" type="text/css" href="FHFlyoverPopupStyle.css" /></HEAD>
+<body bgcolor="#FFFFFF" scroll="no" id="MainSection"><div id="FHNonScroll"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td width="100%" align="left">
+<font size=2 color="#000000" face="Arial">
+<div><font size=4 color="#008080" face="Verdana"><b>Date/Time Formats - Reading</b></font></div>
+</font>
+</td><td width="120" align="right" nowrap><font face="Verdana" size="2"><a href="hs51.html"><img src="Images/BrowseBlueLeft.png" border="0" alt="Previous Topic"></a>&nbsp;&nbsp;<a href="hs53.html"><img src="Images/BrowseBlueRight.png" border="0" alt="Next Topic"></a>&nbsp;</font></td></tr></table></div><div id="FHScroll"><div id="width_height"></div>
+
+<p class=rvps1><span class=rvts2>You can control how Stat/Transfer reads dates and time.&nbsp; In most cases, users will not need to change the default settings in order to read date and time variables.&nbsp; However, if you do need to do so, you provide a general "scanning" input format in the </span><span class=rvts3>Scan </span><span class=rvts2>edit box, which is used when an ASCII file is opened for reading.&nbsp; The input format given in </span><span class=rvts3>Scan </span><span class=rvts2>is used in the initial look at the file, which will determine variable types and also specific formats for dates, times, and date/time variables.&nbsp; The default input format is constructed so that it will decipher a number of different date and time possibilities.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>Note that if you are using a Schema file to describe your data, the date and time formats given there will override the formats set here.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>The separate input formats for date, time and date/time variables are given in the </span><span class=rvts3>Date:</span><span class=rvts2>, </span><span class=rvts3>Time:</span><span class=rvts2>, and </span><span class=rvts3>Date/Time: </span><span class=rvts2>edit boxes.&nbsp; These formats must match those given in the general scanning input format.&nbsp; (The entries in these edit boxes are used when the data file is being used in a transfer and allow for much more efficient reading of the file.)</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>The input format strings given in the </span><span class=rvts3>Scan:</span><span class=rvts2>, </span><span class=rvts3>Date:</span><span class=rvts2>, </span><span class=rvts3>Time:</span><span class=rvts2>, and </span><span class=rvts3>Date/Time: </span><span class=rvts2>edit boxes are used to convert character strings to date/time variables.&nbsp; The format strings are read from left to right. If a width is given explicitly for a particular variable, that will be used when reading the character string.&nbsp; Otherwise, the width will be determined by the presence of delimiter characters.&nbsp; Characters in the list below allow characters in a string to be skipped, if necessary.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>If the entire input string is not matched by the format string or if the resulting time or date is not valid, the variable will be set to missing. </span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>Each date and time part of the input format, as well as some special characters, have the form '%</span><span class=rvts4>char' </span><span class=rvts2>or&nbsp; '%</span><span class=rvts4>Xchar</span><span class=rvts2>', where the modifier </span><span class=rvts4>X </span><span class=rvts2>is used to determine field widths.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>The two different cases of '%</span><span class=rvts4>Xchar</span><span class=rvts2>' are:</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>%</span><span class=rvts5>numberchar</span><span class=rvts4>&nbsp;&nbsp; </span><span class=rvts2>When a number precedes the specification character, </span><span class=rvts4>char</span><span class=rvts2>, it specifies the field width to be used. The next </span><span class=rvts4>number </span><span class=rvts2>characters in the input string are scanned for the specified date or time. </span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>%</span><span class=rvts5>:delimchar</span><span class=rvts4>&nbsp;&nbsp; </span><span class=rvts2>If there is a colon and any single character, </span><span class=rvts4>delim</span><span class=rvts2>, preceding the specification character, </span><span class=rvts4>char</span><span class=rvts2>, then the field to be read is taken to be all the characters up to but not including the given delimiter character, </span><span class=rvts4>delim</span><span class=rvts2>. The delimiter itself is not scanned or skipped by the format, and therefore must be entered explicitly in the input format or explicitly skipped. (Note that the modifier </span><span class=rvts4>:delim </span><span class=rvts2>need not be used routinely, since numeric and alpha formats will automatically stop reading when they reach a delimiter.)</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>The characters used to create the input formats are listed below.&nbsp; Anything to be read from the input character string that is not in the list below, such as commas or other delimiters, must be given explicitly in the input format.&nbsp; White space (spaces, tabs, carriage returns, and so on) is ignored in the input format string. </span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<div class=rvps1><table border=1 cellpadding=5 cellspacing=0 style="border-width: 0px;">
+<tr valign=top>
+<td width=10 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts3><br></span></p>
+</td>
+<td width=92 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts2>%c&nbsp; </span></p>
+</td>
+<td width=398 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts2>skip a single character (see also %w)</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=10 valign=middle style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=92 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts2>%Nc</span></p>
+</td>
+<td width=398 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts2>skip </span><span class=rvts4>N </span><span class=rvts2>characters</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=10 valign=middle style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=92 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts2>%$c</span></p>
+</td>
+<td width=398 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts2>skip the rest of the input string</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=10 valign=middle style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=92 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts2>%d</span></p>
+</td>
+<td width=398 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts2>input day of the month</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=10 valign=middle style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=92 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts2>%H</span></p>
+</td>
+<td width=398 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts2>input hour</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=10 valign=middle style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=92 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts2>%m</span></p>
+</td>
+<td width=398 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts2>input month, as integer or as alpha string</span></p>
+<p class=rvps1><span class=rvts2>(If it is an alpha string, case does not matter; any substring of a month that distinguishes it from the other months will be accepted.) </span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=10 valign=middle style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=92 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts2>%M</span></p>
+</td>
+<td width=398 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts2>input minute</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=10 valign=middle style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=92 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts2>%n</span></p>
+</td>
+<td width=398 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts2>input milliseconds</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=10 valign=middle style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=92 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts2>%N</span></p>
+</td>
+<td width=398 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts2>input milliseconds or tenths or hundredths of seconds</span></p>
+<p class=rvps1><span class=rvts2>(If no field width is given and the input string has a field width of three, then input will be milliseconds. A field width of 1, either given explicitly or inferred from the input string, will cause input of 10ths of a second; a width of 2 will cause input of 100ths of a second.)</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=10 valign=middle style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=92 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts2>%p</span></p>
+</td>
+<td width=398 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts2>input strings defining 'am' and 'pm'</span></p>
+<p class=rvps1><span class=rvts2>(Matching is the same as for months.)</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=10 valign=middle style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=92 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts2>%S</span></p>
+</td>
+<td width=398 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts2>input seconds</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=10 valign=middle style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=92 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts2>%w</span></p>
+</td>
+<td width=398 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts2>skip a white space delimited word (see also %c)</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=10 valign=middle style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=92 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts2>%y</span></p>
+</td>
+<td width=398 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts2>input year</span></p>
+<p class=rvps1><span class=rvts2>(If less than 100, the century changeover year is used to determine the actual year.) </span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=10 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=92 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts2>%Y</span></p>
+</td>
+<td width=398 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts2>input year as found in the input string</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=10 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=92 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts2>%%,%[,%] </span></p>
+</td>
+<td width=398 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts2>input the '%', '[', and ']' characters from the input string.</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=10 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=92 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none;">
+<p class=rvps1><span class=rvts2>[...]</span></p>
+</td>
+<td width=398 valign=top style="border-width : 1px; border-color: #000000; border-style: solid;">
+<p class=rvps1><span class=rvts2>optional specification</span></p>
+<p class=rvps1><span class=rvts2>(Text and specifications within the brackets will be read if&nbsp; present in the input string, but need not be there.)</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>&nbsp;&nbsp;&nbsp; </span></p>
+<p class=rvps1><span class=rvts2>The default format for scanning times in text files is:</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>[%m[/]%d[/][,]%y] [%H:%M[:%S[.%N]][%p][[(]%3c[)]]]</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>which will recognize such diverse strings as:</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>&nbsp;&nbsp; May 18 1945</span></p>
+<p class=rvps1><span class=rvts2>&nbsp;&nbsp; May 18, 1945</span></p>
+<p class=rvps1><span class=rvts2>&nbsp;&nbsp; 5/18/45</span></p>
+<p class=rvps1><span class=rvts2>&nbsp;&nbsp; 05/18/45 2:16 PM</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>Century Changeover Year</span></p>
+<p class=rvps1><span class=rvts2>When you are reading two-digit years, some may fall in the twenty-first century and some in the twentieth.&nbsp; You can use this option to control how two digit years are read.&nbsp; Any two-digit year less than the changeover year will have the first two digits of the complete four digit year set to 20.&nbsp; Any year greater than or equal to the changeover year will have the first two digits set to 19. </span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>The default for the option is '20', so that the changeover year from one century to another is 1920.&nbsp; Thus the date 1/1/01 will be interpreted as January 1, 2001, while the date 1/1/31 will be interpreted as January 1, 1931.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>If your data refer to dates earlier than 1920, such as birth dates, you will need to override the default behavior and specify a different changeover year.&nbsp; If, for example, you specify '00', this would cause all two digit dates to be interpreted as years in the twentieth century.</span></p>
+<p class=rvps1><span class=rvts1></span></p>
+
+</div></body></html><script type="text/javascript">
+var getsearch_key=getParameterByName('key');
+$('body').highlight(getsearch_key);
+$('.highlight').css('background-color',HighlightColor);
+</script>
+

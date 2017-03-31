@@ -1,0 +1,191 @@
+<!-- saved from url=(0014)about:internet -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><TITLE>Changing Output Variable Types </TITLE><meta name="generator" content="FastHelp Multi-User"><meta name="keywords" content="">
+
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+#FHNonScroll
+{padding: 6px 6px 0px 6px; border-bottom: none; background: #6699FF; vertical-align: top;z-index: 2; visibility: visible; position: absolute; left: 0; top: 0; width: 100%!important; line-height: 0; font-size: 0; overflow:hidden; }
+#FHNonScroll > table {padding: 6px;}
+#MainSection {overflow: hidden; }
+#FHScroll
+{left: 0; top: 0px; position: absolute; margin: 0; padding: 10px; z-index: 1; background-repeat: no-repeat; background-position: bottom right; background-attachment: fixed; }
+
+
+
+
+
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table /* Normal */
+{
+ font-size: 10pt;
+ font-family: 'Arial';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+ ;
+}
+span.rvts1
+{
+ font-family: 'Arial Unicode MS';
+}
+span.rvts2
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ color: #000000;
+}
+span.rvts3
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ font-style: italic;
+ color: #000000;
+}
+span.rvts4
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ font-style: italic;
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts5
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ font-weight: bold;
+ color: #000000;
+}
+a.rvts6, span.rvts6
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ color: #0000ff;
+ text-decoration: underline;
+}
+a.rvts6:hover { color: #0000ff; }
+span.rvts7
+{
+ font-size: 11pt;
+ font-family: 'Courier New';
+ color: #000000;
+}
+span.rvts8
+{
+ font-size: 11pt;
+ font-family: 'Courier New';
+ font-style: italic;
+ color: #000000;
+}
+span.rvts9
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ color: #ff6600;
+}
+span.rvts10
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ font-weight: bold;
+ color: #ff6600;
+}
+span.rvts11
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ font-weight: bold;
+}
+span.rvts12
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+}
+/* ========== Para Styles ========== */
+p,ul,ol /* Left */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1
+{
+}
+--></style>
+<script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script>
+<script src="FHSearchHighlight.js"></script>
+<script src="FHSearchHighlight2.js"></script>
+<!-- If this page is displayed outside of the Website Help Frameset, then reload in the Frame set -->
+<script>if (parent.location == self.location)
+{location.href = "index.html?"+extractFileNameWithoutKnownExtension(location.href);}
+</script>
+<script type="text/javascript" language="JavaScript" src="FHNonscroll.js"></script><script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script><script type="text/javascript" language="JavaScript" src="FHFlyoverPopups.js"></script><link rel="stylesheet" type="text/css" href="FHFlyoverPopupStyle.css" /></HEAD>
+<body bgcolor="#FFFFFF" scroll="no" id="MainSection"><div id="FHNonScroll"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td width="100%" align="left">
+<font size=2 color="#000000" face="Arial">
+<div><font size=4 color="#333399" face="Verdana"><b>Changing Output Variable Types </b></font></div>
+</font>
+</td><td width="120" align="right" nowrap><font face="Verdana" size="2"><a href="hs960.html"><img src="Images/BrowseBlueLeft.png" border="0" alt="Previous Topic"></a>&nbsp;&nbsp;<a href="hs1010.html"><img src="Images/BrowseBlueRight.png" border="0" alt="Next Topic"></a>&nbsp;</font></td></tr></table></div><div id="FHScroll"><div id="width_height"></div>
+
+<p class=rvps1><span class=rvts5>The TYPES Command</span></p>
+<p class=rvps1><span class=rvts2>If you wish to change the output variable target type manually, then instead of using a KEEP or DROP command, you use the TYPES command and a file, </span><span class=rvts3>vartypelist</span><span class=rvts2>, containing the selected input variables and their target output types. </span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class=rvts7>TYPES&nbsp; </span><span class=rvts8>vartypelist</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts2>Note that a @ symbol does not precede the file name.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>For example, </span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>&nbsp;&nbsp;&nbsp; </span><span class=rvts7>&nbsp; types type.lst</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>will read the file </span><span class=rvts4>type.lst</span><span class=rvts2> for a list of variables to be used, along with the target output type chosen.&nbsp; Each variable along with the target output type must be on a separate line.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>When you use the TYPES command, you should not give any of the optimization parameters '-o'. '-of ', '-oc', or '-ofc' with the COPY command.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>The VARS command, which is used to create the file, </span><span class=rvts3>vartypelist</span><span class=rvts2>, is discussed below.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts5>TYPES CLEAR Command</span></p>
+<p class=rvps1><span class=rvts2>When a TYPES command has been given it will be used with all succeeding COPY commands, until a new TYPES command has been given or until the following command is given.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class=rvts7>TYPES&nbsp; CLEAR</span></p>
+<p class=rvps1><span class=rvts7><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts5>The VARS Command</span></p>
+<p class=rvps1><span class=rvts2>The VARS command, given at the Stat/Transfer prompt with appropriate options, can be used to write a file giving the output variable types assigned by Stat/Transfer, as well as variable names and labels:</span></p>
+<p class=rvps1><span class=rvts7><br></span></p>
+<p class=rvps1><span class=rvts7>&nbsp;&nbsp;&nbsp; VARS </span><span class=rvts8>filename vartypelist </span><span class=rvts7>[-t] [-o[f][c]]</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>where </span><span class=rvts3>filenam</span><span class=rvts2>e is the name of the input file and </span><span class=rvts3>vartypelist </span><span class=rvts2>is the name of the file that is to contain the variable list with variable types.&nbsp; All of the input variables will be written, unless the parameter '-oc' has been given.&nbsp; They will be written one per line, and if variable labels are available, these will also be written as comments in the file.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>The parameters '-t' and '-o' must be given. The parameter '-t' will write out the target output type for each input variable, while the parameter '-o' optimizes the output variable types.&nbsp; The '-of', '-oc', and '-ofc' parameters will select optimized types with the </span><span class=rvts6>float</span><span class=rvts2> and </span><span class=rvts5>drop-constants</span><span class=rvts2> options before writing the variable list.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>Once the file has been created, you can use any editor to delete the variables that are not to be transferred and to change any output types you wish. The resulting file should still have one line for each variable that you wish to transfer.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>Note that the only checking that is done at the time the TYPES command is given after a COPY command is for the existence of the file, so that editing needs to be done with care.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts5>Changing Target Output Types</span></p>
+<p class=rvps1><span class=rvts2>Valid types are string, byte, int, long, float, double, date, time, and date/time (see </span><a class=rvts6 href="hs450.html">Target Output Variable Types</a><span class=rvts2>).&nbsp; You should be careful not to choose a smaller type than that chosen by Stat/Transfer unless you are sure you know more about your data than Stat/Transfer does.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>Output variable types can be changed freely for ASCII files and worksheet files.&nbsp; For all other file formats, you can change freely among the numeric types of 'byte', 'integer', 'long', 'float' and 'double' and you can change among the time types.&nbsp; However, do not make changes such as string to number, or number or string to date.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>Remember that you are selecting a "target" type.&nbsp; If the output data format does not support the specific type you have selected, then Stat/Transfer will use the best match to the type you have selected</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>You can determine the output variable types supported by a given output file type by consulting the table given in the section describing that file format.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts11>Using Editable Stat/Transfer Schemas</span></p>
+<p class=rvps1><span class=rvts10><br></span></p>
+<p class=rvps1><span class=rvts12>If you want to make numerous changes to your data, consider writing your data to delimited ASCII with a </span><a class=rvts6 href="hs110.html#edit_schemas">Stat/Transfer schema</a><span class=rvts12>. This allows you to do many changes, such as changing variable types, renaming and rearranging variables, and so on.&nbsp; </span></p>
+<p class=rvps1><span class=rvts9><br></span></p>
+<p class=rvps1><span class=rvts2>See also:&nbsp; </span><a class=rvts6 href="hs960.html">Selecting Variables</a><span class=rvts1></span></p>
+
+</div></body></html><script type="text/javascript">
+var getsearch_key=getParameterByName('key');
+$('body').highlight(getsearch_key);
+$('.highlight').css('background-color',HighlightColor);
+</script>
+

@@ -1,0 +1,308 @@
+<!-- saved from url=(0014)about:internet -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><TITLE>ASCII Files - Fixed Format</TITLE><meta name="generator" content="FastHelp Multi-User"><meta name="keywords" content="">
+
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+#FHNonScroll
+{padding: 6px 6px 0px 6px; border-bottom: none; background: #6699FF; vertical-align: top;z-index: 2; visibility: visible; position: absolute; left: 0; top: 0; width: 100%!important; line-height: 0; font-size: 0; overflow:hidden; }
+#FHNonScroll > table {padding: 6px;}
+#MainSection {overflow: hidden; }
+#FHScroll
+{left: 0; top: 0px; position: absolute; margin: 0; padding: 10px; z-index: 1; background-repeat: no-repeat; background-position: bottom right; background-attachment: fixed; }
+
+
+
+
+
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table /* Normal */
+{
+ font-size: 10pt;
+ font-family: 'Arial';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+ ;
+}
+span.rvts1
+{
+ font-family: 'Arial Unicode MS';
+}
+span.rvts2
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ color: #000000;
+}
+span.rvts3
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts4
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ font-style: italic;
+ font-weight: bold;
+ color: #000000;
+}
+a.rvts5, span.rvts5
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ color: #0000ff;
+ text-decoration: underline;
+}
+a.rvts5:hover { color: #0000ff; }
+span.rvts6
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ color: #000000;
+ text-decoration: underline;
+}
+a.rvts7, span.rvts7
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ color: #0000ff;
+ text-decoration: underline;
+}
+a.rvts7:hover { color: #0000ff; }
+a.rvts8, span.rvts8
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ color: #0000ff;
+ text-decoration: underline;
+}
+a.rvts8:hover { color: #0000ff; }
+a.rvts9, span.rvts9
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ color: #0000ff;
+ text-decoration: underline;
+}
+a.rvts9:hover { color: #0000ff; }
+/* ========== Para Styles ========== */
+p,ul,ol /* Left */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1
+{
+}
+--></style>
+<script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script>
+<script src="FHSearchHighlight.js"></script>
+<script src="FHSearchHighlight2.js"></script>
+<!-- If this page is displayed outside of the Website Help Frameset, then reload in the Frame set -->
+<script>if (parent.location == self.location)
+{location.href = "index.html?"+extractFileNameWithoutKnownExtension(location.href);}
+</script>
+<script type="text/javascript" language="JavaScript" src="FHNonscroll.js"></script><script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script><script type="text/javascript" language="JavaScript" src="FHFlyoverPopups.js"></script><link rel="stylesheet" type="text/css" href="FHFlyoverPopupStyle.css" /></HEAD>
+<body bgcolor="#FFFFFF" scroll="no" id="MainSection"><div id="FHNonScroll"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td width="100%" align="left">
+<font size=2 color="#000000" face="Arial">
+<div><font size=4 color="#333399" face="Verdana"><b>ASCII Files - Fixed Format</b></font></div>
+</font>
+</td><td width="120" align="right" nowrap><font face="Verdana" size="2"><a href="hs108.html"><img src="Images/BrowseBlueLeft.png" border="0" alt="Previous Topic"></a>&nbsp;&nbsp;<a href="hs110.html"><img src="Images/BrowseBlueRight.png" border="0" alt="Next Topic"></a>&nbsp;</font></td></tr></table></div><div id="FHScroll"><div id="width_height"></div>
+
+<p class=rvps1><span class=rvts2>Stat/Transfer will read and write fixed format ASCII.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts4>Standard extension</span><span class=rvts3>: </span><span class=rvts2> </span><span class=rvts3>txt. csv</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts3>Reading Fixed Format ASCII Files</span></p>
+<p class=rvps1><span class=rvts2>Stat/Transfer can read fixed format ASCII files.&nbsp; These are data files where each field has a fixed column location and width, rather than having the start and end of the field marked by a delimiter character, as in delimited ASCII files.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>Unlike the delimited ASCII format, where it is possible for Stat/Transfer to read the data based on the information contained in the data file, fixed format files require a separate description of each field's location in the record.&nbsp; You will need to provide this information in a separate Stat/Transfer Schema file.&nbsp; In the Schema file you can also define missing values, value and variable labels, and other characteristics of your data, as well as the path to the data file or the data file itself.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts6>Using the User Interface</span></p>
+<p class=rvps1><span class=rvts2>To use fixed format ASCII files as input into Stat/Transfer using the Stat/Transfer user interface, select "ASCII - Fixed Format (S/T Schema)" from the list of supported file types at the </span><span class=rvts3>Input File Type </span><span class=rvts2>line of the </span><span class=rvts3>Transfer </span><span class=rvts2>dialog box.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>In the </span><span class=rvts3>File Specification </span><span class=rvts2>line of the </span><span class=rvts3>Transfer </span><span class=rvts2>dialog box, rather than entering the name of the fixed format ASCII file itself, enter the name of the Schema file that describes it.&nbsp; Schema files will generally have the name of the input fixed format data file and the extension </span><span class=rvts4>.sts</span><span class=rvts2>.&nbsp; The Schema file then points to the data file.&nbsp; Thus, the location of the data file must be accurately given in the Schema file. If Stat/Transfer wrote the Schema file originally, then the exact path that Stat/Transfer used to write the ASCII file on your machine was entered as the file location in the Schema file.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>The file location can be changed by opening up the Schema in any text editor, such as notepad, and giving the file location with the FILE command.&nbsp; Comments in the first lines of the Schema or program file will guide you in changing the specified file location.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts6>Using the Command Processor</span></p>
+<p class=rvps1><span class=rvts2>To specify a fixed format ASCII file as input to Stat/Transfer when using the command processor, give the name of the Schema file as the input file in the COPY command. The file should have the extension </span><span class=rvts4>.sts</span><span class=rvts2>.&nbsp; If for some reason your file does not have the extension </span><span class=rvts4>.sts</span><span class=rvts2>, then you can use the file-type tag </span><span class=rvts4>stfixed</span><span class=rvts2>.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>The Schema file then points to the data file as described above.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>Writing Fixed Format ASCII Data Files</span></p>
+<p class=rvps1><span class=rvts2>On output, Stat/Transfer can write fixed format data files, and will, if directed, create a Stat/Transfer Schema file at the same time. Alternatively, you can choose to have Stat/Transfer write programs to accompany output fixed format ASCII files that will allow these files to be read into SAS, SPSS, or Stata.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>Fixed format ASCII data files, along with the associated program files, are useful for passing your data to colleagues.&nbsp; In addition, they are a prudent way to archive your data for future use, as they are not dependent on changes in computer architecture or the fate of a particular software package.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>You have various options for writing out the program files.&nbsp; If you are using the user interface, see  </span><a class=rvts5 href="hs57.html">ASCII/Text File Write</a><span class=rvts2> and </span><a class=rvts9 href="hs53.html">Date/Time Formats-Writing</a><span class=rvts2> in the </span><span class=rvts3>Options</span><span class=rvts2> dialog box.  For the command processor, see </span><a class=rvts7 href="hs1020.html">Available Options with the SET command</a><span class=rvts2>.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts6>Using the User Interface</span></p>
+<p class=rvps1><span class=rvts2>When you click on the </span><span class=rvts3>Output File Type </span><span class=rvts2>control in the </span><span class=rvts3>Transfer </span><span class=rvts2>dialog box,&nbsp; you will see the following entries in the list of supported output file types:</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ASCII/text - Fixed Format (S/T Schema)</span></p>
+<p class=rvps1><span class=rvts2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; …</span></p>
+<p class=rvps1><span class=rvts2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SAS Program + ASCII Data File</span></p>
+<p class=rvps1><span class=rvts2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; …</span></p>
+<p class=rvps1><span class=rvts2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SPSS Program + ASCII Data File</span></p>
+<p class=rvps1><span class=rvts2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; …</span></p>
+<p class=rvps1><span class=rvts2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Stata Program + ASCII Data File</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts4>ASCII/text - Fixed Format (S/T Schema)</span></p>
+<p class=rvps1><span class=rvts2>This selection will write an ASCII data file plus a Stat/Transfer Schema file.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>The Schema file name will appear in the output </span><span class=rvts3>File Specification </span><span class=rvts2>line of the </span><span class=rvts3>Transfer </span><span class=rvts2>dialog box.&nbsp; Stat/Transfer constructs the output file specification by using the same drive (Windows), directory and name as the input file and appending the file extension </span><span class=rvts4>.sts</span><span class=rvts2>.&nbsp; The output file itself will have the same name as the input and Schema files, but with the extension </span><span class=rvts4>.dat</span><span class=rvts2>.&nbsp; The complete name and path of the output ASCII data file will be encoded in the Schema file.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>The data file and Schema file can be read back by Stat/Transfer.&nbsp; This is useful, for instance, if you want to add variable labels, value labels, and/or missing values to data stored in a file format that does not support these features.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>For instance you could write the contents of an Excel spreadsheet to a fixed format ASCII file and then edit the contents of the Schema to add missing values or value labels that could then be transferred to SPSS, SAS or Stata.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts4>XXX Program + ASCII Data File</span></p>
+<p class=rvps1><span class=rvts2>The last three selections above</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>&nbsp;&nbsp;&nbsp; SAS Program + ASCII Data File</span></p>
+<p class=rvps1><span class=rvts2>&nbsp;&nbsp;&nbsp; SPSS Program + ASCII Data File</span></p>
+<p class=rvps1><span class=rvts2>&nbsp;&nbsp;&nbsp; Stata Program + ASCII Data File</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>will each write a fixed format ASCII file along with a single program that will allow the file to be read into SAS, SPSS or Stata.&nbsp; In addition, for the selection "Stata Program + ASCII Data File," a dictionary file will be written for Stata.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>The program file name will appear in the output </span><span class=rvts3>File Specification </span><span class=rvts2>line of the </span><span class=rvts3>Transfer </span><span class=rvts2>dialog box.&nbsp; Stat/Transfer constructs the output file specification by using the same drive (Windows), directory and name as the input file and appending the file extensions </span><span class=rvts4>.sas</span><span class=rvts2>, </span><span class=rvts4>.sps</span><span class=rvts2>, or </span><span class=rvts4>.do</span><span class=rvts2>. The output file itself will have the same name as the input and program files, but with the extension </span><span class=rvts4>.dat</span><span class=rvts2>.&nbsp; If a Stata program file has been selected, the dictionary file will have the same name as the input and program files, but with the extension </span><span class=rvts4>.dct</span><span class=rvts2>.&nbsp; The complete name and path of the output ASCII data file will be encoded in the program file.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>You can then load the program file (that with the </span><span class=rvts4>.sas</span><span class=rvts2>, </span><span class=rvts4>.sps</span><span class=rvts2>, or </span><span class=rvts4>.do</span><span class=rvts2> extension) directly in SAS, SPSS or Stata to produce a data set with same name as the program file.&nbsp; If necessary, the ASCII file specification encoded in the program files can be changed using any text editor that handles plain text (see below).</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts6>Using the Command Processor</span></p>
+<p class=rvps1><span class=rvts2>You can write fixed format ASCII files using the command processor.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>The only change from the description given above for using the user interface is that the type of output is specified by using an appropriate extension for the output file name in the COPY command, rather than making a selection from the dialog box.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>The file extensions used to specify each type of output are:</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<div class=rvps1><table border=1 cellpadding=5 cellspacing=0 style="border-width: 0px;">
+<tr valign=top>
+<td width=12 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts3><br></span></p>
+</td>
+<td width=313 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts2>Fixed format ASCII with a Schema file</span></p>
+</td>
+<td width=65 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts2>.sts</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=12 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=313 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts2>Fixed format ASCII with a SAS program</span></p>
+</td>
+<td width=65 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts2>.sas</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=12 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=313 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts2>Fixed format ASCII with an SPSS program</span></p>
+</td>
+<td width=65 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts2>.sps</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=12 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=313 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none;">
+<p class=rvps1><span class=rvts2>Fixed format ASCII with a Stata program</span></p>
+</td>
+<td width=65 valign=top style="border-width : 1px; border-color: #000000; border-style: solid;">
+<p class=rvps1><span class=rvts2>.do</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class=rvps1><span class=rvts2>&nbsp;&nbsp;&nbsp; </span></p>
+<p class=rvps1><span class=rvts3>Changing File Specifications in the Schema or Program File</span></p>
+<p class=rvps1><span class=rvts2>When a fixed format ASCII file is used as input, either to Stat/Transfer with a Schema file or to SAS, SPSS or Stata with a program file, the first file that is read is either the Schema file or a program file.&nbsp; This file then points to the actual data file.&nbsp; Thus the location of the data file must be accurately given in the Schema or program file.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>When the ASCII file with its accompanying Schema or program file is written on output, by default, the exact path that Stat/Transfer uses to write the output ASCII file on your machine will be entered as the file location in the Schema or program file.&nbsp; If you change this behavior with the options for </span><span class=rvts3>Generated Programs and Schemas</span><span class=rvts2> in the </span><span class=rvts3>ASCII/Text Write</span><span class=rvts2> section of the </span><span class=rvts3>Options</span><span class=rvts2> dialog box, the output ASCII data file specification will be written to all of the program files using the directory "./" as the path.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>The file location can be changed by opening up the Schema or program file in any text editor, such as notepad and giving the file location with the FILE command.&nbsp; Comments in the first lines of the Schema or program file will guide you in changing the specified file location.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>Missing Values</span></p>
+<p class=rvps1><span class=rvts2>By default, missing values are indicated on input and output by a blank.&nbsp; This behavior can be changed by setting the </span><span class=rvts3>Numeric Missing Value </span><span class=rvts2>option to "extended" in the </span><span class=rvts3>ASCII Read</span><span class=rvts2> or </span><span class=rvts3>ASCII Write</span><span class=rvts2> sections of the </span><span class=rvts3>Options </span><span class=rvts2>dialog box.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>When an ASCII file with extended missing values is transferred to a SAS or a Stata file, the input missing values will transfer to the equivalent SAS ones.&nbsp; When a SAS file is transferred to an ASCII file with extended missing values specified, any missing values '._' in the input SAS file are written out as&nbsp; '.' in the output. </span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>Output Variable Types</span></p>
+<p class=rvps1><span class=rvts2>The output variable type that results from each target variable type is given in the following table:</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<div class=rvps1><table border=1 cellpadding=5 cellspacing=0 style="border-width: 0px;">
+<tr valign=top>
+<td width=31 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts3><br></span></p>
+</td>
+<td width=134 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts3>Target Type</span></p>
+</td>
+<td width=259 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts3>Output Type</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=31 valign=middle style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=134 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts2>byte </span></p>
+<p class=rvps1><span class=rvts2>int</span></p>
+<p class=rvps1><span class=rvts2>long</span></p>
+<p class=rvps1><span class=rvts2>float</span></p>
+<p class=rvps1><span class=rvts2>double</span></p>
+</td>
+<td width=259 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts2>Number (with a precision of up to 15 decimal places)</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=31 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=134 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts2>string</span></p>
+</td>
+<td width=259 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts2>Character</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=31 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=134 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none;">
+<p class=rvps1><span class=rvts2>date</span></p>
+<p class=rvps1><span class=rvts2>time</span></p>
+<p class=rvps1><span class=rvts2>date/time</span></p>
+</td>
+<td width=259 valign=top style="border-width : 1px; border-color: #000000; border-style: solid;">
+<p class=rvps1><span class=rvts2>Character</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>See also:</span></p>
+<p class=rvps1><a class=rvts8 href="hs110.html">Schema Files for ASCII Input</a><span class=rvts1></span></p>
+
+</div></body></html><script type="text/javascript">
+var getsearch_key=getParameterByName('key');
+$('body').highlight(getsearch_key);
+$('.highlight').css('background-color',HighlightColor);
+</script>
+

@@ -1,0 +1,204 @@
+<!-- saved from url=(0014)about:internet -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><TITLE>Command Files</TITLE><meta name="generator" content="FastHelp Multi-User"><meta name="keywords" content="">
+
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+#FHNonScroll
+{padding: 6px 6px 0px 6px; border-bottom: none; background: #6699FF; vertical-align: top;z-index: 2; visibility: visible; position: absolute; left: 0; top: 0; width: 100%!important; line-height: 0; font-size: 0; overflow:hidden; }
+#FHNonScroll > table {padding: 6px;}
+#MainSection {overflow: hidden; }
+#FHScroll
+{left: 0; top: 0px; position: absolute; margin: 0; padding: 10px; z-index: 1; background-repeat: no-repeat; background-position: bottom right; background-attachment: fixed; }
+
+
+
+
+
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table /* Normal */
+{
+ font-size: 10pt;
+ font-family: 'Arial';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+ ;
+}
+span.rvts1
+{
+ font-family: 'Arial Unicode MS';
+}
+span.rvts2
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ color: #000000;
+}
+span.rvts3
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts4
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ font-style: italic;
+ color: #000000;
+}
+span.rvts5
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ color: #000000;
+ text-decoration: underline;
+}
+span.rvts6
+{
+ font-size: 11pt;
+ font-family: 'Courier New';
+ color: #000000;
+}
+span.rvts7
+{
+ font-size: 11pt;
+ font-family: 'Courier New';
+ font-style: italic;
+ color: #000000;
+}
+span.rvts8
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ font-style: italic;
+ font-weight: bold;
+ color: #000000;
+}
+a.rvts9, span.rvts9
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ color: #0000ff;
+ text-decoration: underline;
+}
+a.rvts9:hover { color: #ff0000; }
+/* ========== Para Styles ========== */
+p,ul,ol /* Left */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1
+{
+}
+--></style>
+<script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script>
+<script src="FHSearchHighlight.js"></script>
+<script src="FHSearchHighlight2.js"></script>
+<!-- If this page is displayed outside of the Website Help Frameset, then reload in the Frame set -->
+<script>if (parent.location == self.location)
+{location.href = "index.html?"+extractFileNameWithoutKnownExtension(location.href);}
+</script>
+<script type="text/javascript" language="JavaScript" src="FHNonscroll.js"></script><script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script><script type="text/javascript" language="JavaScript" src="FHFlyoverPopups.js"></script><link rel="stylesheet" type="text/css" href="FHFlyoverPopupStyle.css" /></HEAD>
+<body bgcolor="#FFFFFF" scroll="no" id="MainSection"><div id="FHNonScroll"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td width="100%" align="left">
+<font size=2 color="#000000" face="Arial">
+<div><font size=4 color="#333399" face="Verdana"><b>Command Files</b></font></div>
+</font>
+</td><td width="120" align="right" nowrap><font face="Verdana" size="2"><a href="hs1030.html"><img src="Images/BrowseBlueLeft.png" border="0" alt="Previous Topic"></a>&nbsp;&nbsp;<a href="hs1050.html"><img src="Images/BrowseBlueRight.png" border="0" alt="Next Topic"></a>&nbsp;</font></td></tr></table></div><div id="FHScroll"><div id="width_height"></div>
+
+<p class=rvps1><span class=rvts2>You can enter Stat/Transfer commands in a command file, as well as interactively at the Stat/Transfer prompt or the operating system prompt.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>When you enter commands at the prompt, the command is executed immediately. When you store commands in a file, the commands are executed when you execute the file.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>You can execute command files from the Stat/Transfer prompt or from the operating system prompt.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>When you wish to run batch jobs, you must use command files.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>Constructing Command Files</span></p>
+<p class=rvps1><span class=rvts2>You can create Stat/Transfer command files as ASCII documents.&nbsp; Type commands in the document just as you would type them at the Stat/Transfer prompt.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>You can put comments in command files by preceding the comments with a double slash, '//'.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>Command File Name Extensions</span></p>
+<p class=rvps1><span class=rvts2>Stat/Transfer assumes that command files have the extension </span><span class=rvts8>.stcmd</span><span class=rvts2> (Stat/Transfer Command).</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>The old extension </span><span class=rvts8>.stc</span><span class=rvts2>, which conflicts with the extension used by SAS for CPORT libraries, is still supported, but is now deprecated.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>If you are executing a command file from the Stat/Transfer command line, you need not give an extension unless the file does not have the extension </span><span class=rvts8>.stcmd</span><span class=rvts2>.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>If you wish to run a command file from the operating system command line, it must have the extension </span><span class=rvts8>.stcmd</span><span class=rvts2> and the extension must be given.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>Executing Command Files</span></p>
+<p class=rvps1><span class=rvts5>Executing Command Files from the Stat/Transfer Prompt</span></p>
+<p class=rvps1><span class=rvts2>You can execute a command file at the Stat/Transfer prompt by typing:</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class=rvts6> EX </span><span class=rvts7>commandfilename</span></p>
+<p class=rvps1><span class=rvts4><br></span></p>
+<p class=rvps1><span class=rvts2>If you enter </span><span class=rvts4>commandfilename </span><span class=rvts2>without an extension, an extension of </span><span class=rvts8>.stcmd</span><span class=rvts2> is assumed by Stat/Transfer.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>A command file named </span><span class=rvts8>weekly.stcmd</span><span class=rvts2> could be executed by typing</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>&nbsp;&nbsp;&nbsp;&nbsp; </span><span class=rvts6>ex weekly</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts5>Executing Command Files from the Operating System Prompt</span></p>
+<p class=rvps1><span class=rvts2>You can execute a command file at the operating system prompt by typing</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class=rvts6>ST&nbsp;&nbsp;&nbsp; </span><span class=rvts7>commandfilename.stcmd</span></p>
+<p class=rvps1><span class=rvts4><br></span></p>
+<p class=rvps1><span class=rvts2>In order to use command files from the operating system prompt, you will need to be in the directory in which you installed Stat/Transfer, or have a path defined to it or give the path explicitly.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>For example, a command file, </span><span class=rvts8>repeat.stcmd</span><span class=rvts2>, will be executed if, at the operating system prompt, you type:</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>&nbsp;&nbsp;&nbsp;&nbsp; </span><span class=rvts6>st&nbsp;&nbsp; repeat.stcmd</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>Note that the extension, which is explicitly given, must be </span><span class=rvts8>.stcmd</span><span class=rvts2>.&nbsp; If the file is not in the Stat/Transfer program directory, the complete path to it must be given.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>If you do the same transfers all of the time, the ability to execute command files in this way allows you to set up a shortcut that will perform your transfers with a single click on a desktop icon.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>Running and Editing Command Files from the Windows Explorer</span></p>
+<p class=rvps1><span class=rvts2>When you double click on a Stat/Transfer command file in the </span><span class=rvts3>Windows Explorer</span><span class=rvts2>, the command processor will be launched and the command file executed.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>If the last command in the file is 'quit', you will be taken directly back to the </span><span class=rvts3>Explorer</span><span class=rvts2>.&nbsp; Otherwise, the command 'quit' at the command line will return you to the </span><span class=rvts3>Explorer</span><span class=rvts2>.&nbsp; </span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>You can edit a command file by right-clicking then selecting 'edit'.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>Running Programs and Commands in Command Files</span></p>
+<p class=rvps1><span class=rvts2>Command files can contain commands to </span><a class=rvts9 href="hs1030.html">execute programs</a><span class=rvts2>, as well as Stat/Transfer commands.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>These options will, for example, allow you to zip or unzip files with commands given to the Stat/Transfer command processor.&nbsp; For example, a command file might contain the following set of commands.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts6>// unzip a SAS file</span></p>
+<p class=rvps1><span class=rvts6>!pkunzip&nbsp; sasdata.zip&nbsp; mysas1.sd2</span></p>
+<p class=rvps1><span class=rvts6><br></span></p>
+<p class=rvps1><span class=rvts6>// copy it to an SPSS file</span></p>
+<p class=rvps1><span class=rvts6>copy&nbsp; mysas1.sd2&nbsp; myspss1.sav</span></p>
+<p class=rvps1><span class=rvts6><br></span></p>
+<p class=rvps1><span class=rvts6>// zip your new SPSS file</span></p>
+<p class=rvps1><span class=rvts6>!pkzip&nbsp; myspss1.zip&nbsp; myspss1.sav</span></p>
+<p class=rvps1><span class=rvts6><br></span></p>
+<p class=rvps1><span class=rvts6>// delete the SPSS file</span></p>
+<p class=rvps1><span class=rvts6>!del myspss1.sav</span></p>
+<p class=rvps1><span class=rvts6><br></span></p>
+<p class=rvps1><span class=rvts6>// delete the SAS file</span></p>
+<p class=rvps1><span class=rvts6>!del mysas1.sd2</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>where '//' indicates to the command processor that what follows is a comment and '!' has been used instead of 'dos'.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>A sequence of command such as these can be entered directly at the Stat/Transfer command prompt or stored in a command file for batch execution.</span><span class=rvts1></span></p>
+
+</div></body></html><script type="text/javascript">
+var getsearch_key=getParameterByName('key');
+$('body').highlight(getsearch_key);
+$('.highlight').css('background-color',HighlightColor);
+</script>
+

@@ -1,0 +1,160 @@
+<!-- saved from url=(0014)about:internet -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><TITLE>ASCII/Text Files - Read Options</TITLE><meta name="generator" content="FastHelp Multi-User"><meta name="keywords" content="">
+
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+#FHNonScroll
+{padding: 6px 6px 0px 6px; border-bottom: none; background: #6699FF; vertical-align: top;z-index: 2; visibility: visible; position: absolute; left: 0; top: 0; width: 100%!important; line-height: 0; font-size: 0; overflow:hidden; }
+#FHNonScroll > table {padding: 6px;}
+#MainSection {overflow: hidden; }
+#FHScroll
+{left: 0; top: 0px; position: absolute; margin: 0; padding: 10px; z-index: 1; background-repeat: no-repeat; background-position: bottom right; background-attachment: fixed; }
+
+
+
+
+
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table /* Normal */
+{
+ font-size: 10pt;
+ font-family: 'Arial';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+ ;
+}
+span.rvts1
+{
+ font-family: 'Arial Unicode MS';
+}
+span.rvts2
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ color: #000000;
+}
+span.rvts3
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts4
+{
+ font-family: 'Verdana';
+ color: #000000;
+}
+span.rvts5
+{
+ font-family: 'Verdana';
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts6
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ color: #000000;
+ text-decoration: underline;
+}
+span.rvts7
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ color: #ff0000;
+}
+span.rvts8
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+}
+span.rvts9
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ font-weight: bold;
+}
+/* ========== Para Styles ========== */
+p,ul,ol /* Left */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1
+{
+}
+--></style>
+<script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script>
+<script src="FHSearchHighlight.js"></script>
+<script src="FHSearchHighlight2.js"></script>
+<!-- If this page is displayed outside of the Website Help Frameset, then reload in the Frame set -->
+<script>if (parent.location == self.location)
+{location.href = "index.html?"+extractFileNameWithoutKnownExtension(location.href);}
+</script>
+<script type="text/javascript" language="JavaScript" src="FHNonscroll.js"></script><script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script><script type="text/javascript" language="JavaScript" src="FHFlyoverPopups.js"></script><link rel="stylesheet" type="text/css" href="FHFlyoverPopupStyle.css" /></HEAD>
+<body bgcolor="#FFFFFF" scroll="no" id="MainSection"><div id="FHNonScroll"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td width="100%" align="left">
+<font size=2 color="#000000" face="Arial">
+<div><font size=4 color="#008080" face="Verdana"><b>ASCII/Text Files - Read Options</b></font></div>
+</font>
+</td><td width="120" align="right" nowrap><font face="Verdana" size="2"><a href="hs55.html"><img src="Images/BrowseBlueLeft.png" border="0" alt="Previous Topic"></a>&nbsp;&nbsp;<a href="hs57.html"><img src="Images/BrowseBlueRight.png" border="0" alt="Next Topic"></a>&nbsp;</font></td></tr></table></div><div id="FHScroll"><div id="width_height"></div>
+
+<p class=rvps1><span class=rvts3>Delimiter</span></p>
+<p class=rvps1><span class=rvts2>This option will give you a list of possible delimiters for input ASCII files.&nbsp; You can choose to have Stat/Transfer automatically sense which delimiter to use or you can choose from the list: commas, tabs, spaces or semicolons. If you have a delimiter that is not on the list, click on 'Other' and enter the delimiter you wish to use.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>Combine adjacent blanks</span></p>
+<p class=rvps1><span class=rvts2>This option is available for space delimited files only.&nbsp; It is useful if data values are delimited by one or more blanks or tabs.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>The default for </span><span class=rvts3>Combine adjacent blanks </span><span class=rvts2>is 'off'.&nbsp;&nbsp; If you turn this option on, you can select 'Spaces' in which case multiple blanks are treated as one blank, or you can select 'Spaces and tabs', in which case multiple instances of tabs and blanks are converted to a single space.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>Variable Names</span></p>
+<p class=rvps1><span class=rvts2>By default, Stat/Transfer will sense whether the first line of your input data set contains field names or data.&nbsp; You may, if you wish, explicitly override this default.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts6>AutoSense</span><span class=rvts2>: If this option is set to 'AutoSense', Stat/Transfer will look at the first and second rows of data.&nbsp; If there is a change from a string to a number for one or more variables between these rows, Stat/Transfer will use the first row as the field names.&nbsp; This will fail if your first row contains the field names, and all of your variables are of the string type.&nbsp; In that case you should choose one of the following two options:</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts6>First Row</span><span class=rvts2>: When this option is set to 'First Row', Stat/Transfer uses the data found in your first row as the field names.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts6>Make Up</span><span class=rvts2>:&nbsp; When this option is set to 'Make Up', Stat/Transfer treats the first row in your file as data and assigns the field names 'col1' … 'coln'.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>Numeric Missing Value</span></p>
+<p class=rvps1><span class=rvts2>It is possible to specify a string that will be interpreted as a missing value when Stat/Transfer reads ASCII files.&nbsp; For example, your input data set may use the string 'NA' to represent missing values or it may use a period.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>Enter the string that represents missing values in the input data in the </span><span class=rvts3>Numeric Missing Value </span><span class=rvts2>field.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>If you wish to read extended missing values for either delimited or fixed ASCII files, use the option below or enter the work "extended".</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts9>Read Variable Labels from Second Row</span></p>
+<p class=rvps1><span class=rvts8>If this option is checked, variable labels will be read from the row that follows the variable names (ordinarily the second row).</span></p>
+<p class=rvps1><span class=rvts8><br></span></p>
+<p class=rvps1><span class=rvts9>Rows to Skip</span></p>
+<p class=rvps1><span class=rvts8>Enter the number of rows you want to skip at the top of the file.&nbsp; This option is useful for skipping headings and titles. </span></p>
+<p class=rvps1><span class=rvts7><br></span></p>
+<p class=rvps1><span class=rvts3>Convert extended (a-z) missing values</span></p>
+<p class=rvps1><span class=rvts2>If this option is checked, the keyword 'extended' will be entered into the </span><span class=rvts3>Numeric Missing Value </span><span class=rvts2>field.&nbsp; When 'extended' is entered, extended missing values ('.a' - '.z', '.', and '._')&nbsp; in either delimited or fixed ASCII files will be read from the file.&nbsp; Note that reading missing values is case-insensitive (that is, '.a' and '.A', for example, are equivalent).</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>These extended missing values will be automatically written to the output file for output formats that support them (SAS and Stata).</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>String Quote Character</span></p>
+<p class=rvps1><span class=rvts2>This is the character that is used to enclose string fields in the input data set.&nbsp; The default character is set as double quotes.&nbsp; You can choose the appropriate character for the input data.&nbsp; However, if string variables are not enclosed by any character, you can leave this option set at the default double quote.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>Maximum Number of Lines to Examine</span></p>
+<p class=rvps1><span class=rvts2>Stat/Transfer first reads your ASCII data to determine what type of variable is present in each delimited position.&nbsp; By default it will read the first 1000 lines of your data set.&nbsp; If you data are consistent, so that the first few lines suffice to show each variable type, and your data have enough rows that it actually takes more than a few seconds to examine 1000 lines, you might want to set this option to a smaller limit, such as 50.&nbsp; On the other hand, if you don't want to worry about this issue and you do not generally read truly large datasets (gigabytes of data), you might want to just set this to "all".</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>Decimal Point</span></p>
+<p class=rvps1><span class=rvts2>If your data set uses a symbol other than the default period to indicate the decimal point in a number (a comma, for example), enter the character on the </span><span class=rvts3>Decimal Point </span><span class=rvts2>line.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>Thousands Separator</span></p>
+<p class=rvps1><span class=rvts2>If your data set uses a symbol other than the default comma&nbsp; to mark thousands in a number (a period, for example), enter the character on the </span><span class=rvts3>Thousands Separator</span><span class=rvts5> </span><span class=rvts4>line. </span><span class=rvts1></span></p>
+
+</div></body></html><script type="text/javascript">
+var getsearch_key=getParameterByName('key');
+$('body').highlight(getsearch_key);
+$('.highlight').css('background-color',HighlightColor);
+</script>
+

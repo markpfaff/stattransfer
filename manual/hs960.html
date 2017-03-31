@@ -1,0 +1,180 @@
+<!-- saved from url=(0014)about:internet -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><TITLE>Selecting Variables</TITLE><meta name="generator" content="FastHelp Multi-User"><meta name="keywords" content="">
+
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+#FHNonScroll
+{padding: 6px 6px 0px 6px; border-bottom: none; background: #6699FF; vertical-align: top;z-index: 2; visibility: visible; position: absolute; left: 0; top: 0; width: 100%!important; line-height: 0; font-size: 0; overflow:hidden; }
+#FHNonScroll > table {padding: 6px;}
+#MainSection {overflow: hidden; }
+#FHScroll
+{left: 0; top: 0px; position: absolute; margin: 0; padding: 10px; z-index: 1; background-repeat: no-repeat; background-position: bottom right; background-attachment: fixed; }
+
+
+
+
+
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table /* Normal */
+{
+ font-size: 10pt;
+ font-family: 'Arial';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+ ;
+}
+span.rvts1
+{
+ font-family: 'Arial Unicode MS';
+}
+span.rvts2
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ color: #000000;
+}
+span.rvts3
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ font-style: italic;
+ color: #000000;
+}
+span.rvts4
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ color: #000000;
+ text-decoration: underline;
+}
+span.rvts5
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ font-style: italic;
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts6
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ font-weight: bold;
+ color: #000000;
+}
+a.rvts7, span.rvts7
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ color: #0000ff;
+ text-decoration: underline;
+}
+a.rvts7:hover { color: #0000ff; }
+a.rvts8, span.rvts8
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ color: #0000ff;
+ text-decoration: underline;
+}
+a.rvts8:hover { color: #0000ff; }
+span.rvts9
+{
+ font-size: 11pt;
+ font-family: 'Courier New';
+ color: #000000;
+}
+span.rvts10
+{
+ font-size: 11pt;
+ font-family: 'Courier New';
+ font-style: italic;
+ color: #000000;
+}
+/* ========== Para Styles ========== */
+p,ul,ol /* Left */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1
+{
+}
+--></style>
+<script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script>
+<script src="FHSearchHighlight.js"></script>
+<script src="FHSearchHighlight2.js"></script>
+<!-- If this page is displayed outside of the Website Help Frameset, then reload in the Frame set -->
+<script>if (parent.location == self.location)
+{location.href = "index.html?"+extractFileNameWithoutKnownExtension(location.href);}
+</script>
+<script type="text/javascript" language="JavaScript" src="FHNonscroll.js"></script><script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script><script type="text/javascript" language="JavaScript" src="FHFlyoverPopups.js"></script><link rel="stylesheet" type="text/css" href="FHFlyoverPopupStyle.css" /></HEAD>
+<body bgcolor="#FFFFFF" scroll="no" id="MainSection"><div id="FHNonScroll"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td width="100%" align="left">
+<font size=2 color="#000000" face="Arial">
+<div><font size=4 color="#333399" face="Verdana"><b>Selecting Variables</b></font></div>
+</font>
+</td><td width="120" align="right" nowrap><font face="Verdana" size="2"><a href="hs950.html"><img src="Images/BrowseBlueLeft.png" border="0" alt="Previous Topic"></a>&nbsp;&nbsp;<a href="hs965.html"><img src="Images/BrowseBlueRight.png" border="0" alt="Next Topic"></a>&nbsp;</font></td></tr></table></div><div id="FHScroll"><div id="width_height"></div>
+
+<p class=rvps1><span class=rvts2>Variables to be transferred can be selected when you are using the COPY command from the Stat/Transfer command processor or when you are using a command file.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>When you are using a command file at the operating system command line, you can enter operators for variable selection.&nbsp; However, transfers that are typed in at the&nbsp; operating system command line will transfer all of the input variables.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>Variables can be selected with one of the commands KEEP, DROP, or TYPES.&nbsp; Only one of these commands can be given and it must be given prior to the COPY command.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts6>KEEP and DROP Commands</span></p>
+<p class=rvps1><span class=rvts2>The commands KEEP or DROP are used when you wish to select variables but do not wish to change the output variable types assigned by Stat/Transfer.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>You can use the SET command </span><a class=rvts8 href="hs1020.html">DROP-KEEP</a><span class=rvts2> to reuse the same variable list for more than one transfer.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>You can give the variables that you wish to transfer or to omit either as a list or in a file.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts4>Specifying a List of Variables</span></p>
+<p class=rvps1><span class=rvts2>KEEP or DROP can be followed by a list of variables to be used or omitted, respectively.&nbsp; The variables should be separated by spaces or commas.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class=rvts9>KEEP|DROP </span><span class=rvts10>variablelist</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts2>Ranges can be given and wildcards are allowed.&nbsp; For example:</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class=rvts9>drop age,sat1-sat10,inc*</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>will drop the variables 'age', 'sat1' through 'sat10' and all fields beginning with 'inc'.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts4>Using a File to Specify Variables with KEEP or DROP</span></p>
+<p class=rvps1><span class=rvts2>If you have a file containing a list of variables to be kept or dropped, then instead of a variable list after the KEEP or DROP commands, you can specify the name of the file, preceded with an @ symbol.&nbsp; For example:</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class=rvts9>keep @varkeep.lst</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>will read the file </span><span class=rvts5>varkeep.lst</span><span class=rvts2> for a list of variables to be kept.&nbsp; These can be delimited with spaces or new lines.&nbsp; The VARS command, discussed below, can be used to create the file.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>Note that files used with KEEP or DROP cannot contain the target output types for input variables.&nbsp; Such files must be read with the TYPES command.</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts6>The VARS Command</span></p>
+<p class=rvps1><span class=rvts2>To facilitate the creation of a file containing selected input variables, a command is available that will write a list of variables to a file:</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class=rvts9>VARS </span><span class=rvts10>filename variablelist </span><span class=rvts9>[-oc]</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>where </span><span class=rvts3>filenam</span><span class=rvts2>e is the name (with a standard extension) of the input file containing the variables to be transferred and </span><span class=rvts3>variablelist </span><span class=rvts2>is the name of the file that is to contain the data list.&nbsp; All of the input variables will be written, one per line, unless the parameter '-oc' has been given&nbsp; If variable labels are available, these will also be written as comments in the file. </span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>The parameter '-oc', the drop-constants option, is used if you wish to drop constant or missing variables from the variable list you are creating.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>Once the file has been created, you can use your favorite editor to delete the variables that are not to be used with the DROP or KEEP command.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts6>Writing to the Screen</span></p>
+<p class=rvps1><span class=rvts2>If, for some reason, you wish to have the input variables listed on the screen, use the VARS command without specifying an output file</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>&nbsp;&nbsp;&nbsp; </span><span class=rvts9>VARS </span><span class=rvts10>filename</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts2>See also: </span><a class=rvts7 href="hs965.html">Changing Output Variable Types</a><span class=rvts1></span></p>
+
+</div></body></html><script type="text/javascript">
+var getsearch_key=getParameterByName('key');
+$('body').highlight(getsearch_key);
+$('.highlight').css('background-color',HighlightColor);
+</script>
+

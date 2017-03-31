@@ -1,0 +1,149 @@
+<!-- saved from url=(0014)about:internet -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><TITLE>Setting Options with the SET Command</TITLE><meta name="generator" content="FastHelp Multi-User"><meta name="keywords" content="">
+
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+#FHNonScroll
+{padding: 6px 6px 0px 6px; border-bottom: none; background: #6699FF; vertical-align: top;z-index: 2; visibility: visible; position: absolute; left: 0; top: 0; width: 100%!important; line-height: 0; font-size: 0; overflow:hidden; }
+#FHNonScroll > table {padding: 6px;}
+#MainSection {overflow: hidden; }
+#FHScroll
+{left: 0; top: 0px; position: absolute; margin: 0; padding: 10px; z-index: 1; background-repeat: no-repeat; background-position: bottom right; background-attachment: fixed; }
+
+
+
+
+
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table /* Normal */
+{
+ font-size: 10pt;
+ font-family: 'Arial';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+ ;
+}
+span.rvts1
+{
+ font-family: 'Arial Unicode MS';
+}
+span.rvts2
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ color: #000000;
+}
+span.rvts3
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ font-style: italic;
+ color: #000000;
+}
+span.rvts4
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ font-weight: bold;
+ color: #000000;
+}
+a.rvts5, span.rvts5
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ color: #0000ff;
+ text-decoration: underline;
+}
+a.rvts5:hover { color: #0000ff; }
+span.rvts6
+{
+ font-size: 11pt;
+ font-family: 'Courier New';
+ color: #000000;
+}
+span.rvts7
+{
+ font-size: 11pt;
+ font-family: 'Courier New';
+ font-style: italic;
+ color: #000000;
+}
+span.rvts8
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+}
+span.rvts9
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ color: #800000;
+}
+/* ========== Para Styles ========== */
+p,ul,ol /* Left */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1
+{
+}
+.rvps2
+{
+ background: #ffffff;
+}
+--></style>
+<script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script>
+<script src="FHSearchHighlight.js"></script>
+<script src="FHSearchHighlight2.js"></script>
+<!-- If this page is displayed outside of the Website Help Frameset, then reload in the Frame set -->
+<script>if (parent.location == self.location)
+{location.href = "index.html?"+extractFileNameWithoutKnownExtension(location.href);}
+</script>
+<script type="text/javascript" language="JavaScript" src="FHNonscroll.js"></script><script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script><script type="text/javascript" language="JavaScript" src="FHFlyoverPopups.js"></script><link rel="stylesheet" type="text/css" href="FHFlyoverPopupStyle.css" /></HEAD>
+<body bgcolor="#FFFFFF" scroll="no" id="MainSection"><div id="FHNonScroll"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td width="100%" align="left">
+<font size=2 color="#000000" face="Arial">
+<div><font size=4 color="#333399" face="Verdana"><b>Setting Options with the SET Command</b></font></div>
+</font>
+</td><td width="120" align="right" nowrap><font face="Verdana" size="2"></font></td></tr></table></div><div id="FHScroll"><div id="width_height"></div>
+
+<p class=rvps1><span class=rvts4><br></span></p>
+<p class=rvps1><span class=rvts2>When using the command processor, most of the options of the user interface system are available.&nbsp; Some of these options are set by </span><a class=rvts5 href="hs895.html">parameters</a><span class=rvts2> following the COPY command.&nbsp; All others are selected with a SET command.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>The general form of this command is:</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class=rvts6>SET </span><span class=rvts7>optionname value</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts2>These SET commands should be given before the COPY command.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>A list of available options set with the SET command can be obtained on the screen by typing either of the following:</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>&nbsp;&nbsp;&nbsp;&nbsp; </span><span class=rvts6>help set</span></p>
+<p class=rvps1><span class=rvts6>&nbsp;&nbsp; help set all</span></p>
+<p class=rvps1><span class=rvts6><br></span></p>
+<p class=rvps1><span class=rvts2> Note that these options are not available for transfers run by typing them in on the operating system command line, unless you use the </span><a class=rvts5 href="hs1010.html">startup options file</a><span class=rvts2>.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts4>Setting Options</span></p>
+<p class=rvps1><span class=rvts2>If you wish, you can type each SET command in at the Stat/Transfer prompt before you give the COPY command.&nbsp; However, if several options are to be set, this can be tedious and error-prone.&nbsp; Instead, a list of all of the available options and their default settings can be written out to a file, </span><span class=rvts3>filename</span><span class=rvts2>, by typing:</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>&nbsp;&nbsp;&nbsp;&nbsp; </span><span class=rvts6>SET LIST </span><span class=rvts7>filename</span></p>
+<p class=rvps1><span class=rvts7><br></span></p>
+<p class=rvps1><span class=rvts2>Using the resulting file, settings can be conveniently edited and then used in a command file or in a startup options file</span><span class=rvts9>.</span></p>
+<p class=rvps1><span class=rvts9><br></span></p>
+<p class=rvps1><span class=rvts8>Alternatively, </span><a class=rvts5 href="SaveProgram.html">automatically generated command files</a><span class=rvts8> created with the user interface contain all of the options that are relevant to the transfer you are performing.&nbsp; These can be easily edited and re-run.</span></p>
+<p class=rvps1><span class=rvts9><br></span></p>
+<p class=rvps2><span class=rvts2>See:</span><a class=rvts5 href="hs1020.html"> Available Options with the SET Command</a><span class=rvts1></span></p>
+
+</div></body></html><script type="text/javascript">
+var getsearch_key=getParameterByName('key');
+$('body').highlight(getsearch_key);
+$('.highlight').css('background-color',HighlightColor);
+</script>
+

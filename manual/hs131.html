@@ -1,0 +1,238 @@
+<!-- saved from url=(0014)about:internet -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><TITLE>R</TITLE><meta name="generator" content="FastHelp Multi-User"><meta name="keywords" content="">
+
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+#FHNonScroll
+{padding: 6px 6px 0px 6px; border-bottom: none; background: #6699FF; vertical-align: top;z-index: 2; visibility: visible; position: absolute; left: 0; top: 0; width: 100%!important; line-height: 0; font-size: 0; overflow:hidden; }
+#FHNonScroll > table {padding: 6px;}
+#MainSection {overflow: hidden; }
+#FHScroll
+{left: 0; top: 0px; position: absolute; margin: 0; padding: 10px; z-index: 1; background-repeat: no-repeat; background-position: bottom right; background-attachment: fixed; }
+
+
+
+
+
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table /* Normal */
+{
+ font-size: 10pt;
+ font-family: 'Arial';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+ ;
+}
+span.rvts1
+{
+ font-family: 'Arial Unicode MS';
+}
+span.rvts2
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts3
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ color: #000000;
+}
+span.rvts4
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ font-style: italic;
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts5
+{
+ font-family: 'Courier New';
+ color: #993366;
+ text-decoration: underline;
+}
+a.rvts6, span.rvts6
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ color: #0000ff;
+ text-decoration: underline;
+}
+a.rvts6:hover { color: #0000ff; }
+span.rvts7
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+}
+span.rvts8
+{
+ font-size: 8pt;
+ font-family: 'Verdana';
+ color: #000000;
+}
+span.rvts9
+{
+ font-size: 12pt;
+ font-family: 'Calibri';
+}
+span.rvts10
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman';
+}
+/* ========== Para Styles ========== */
+p,ul,ol /* Left */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1
+{
+}
+--></style>
+<script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script>
+<script src="FHSearchHighlight.js"></script>
+<script src="FHSearchHighlight2.js"></script>
+<!-- If this page is displayed outside of the Website Help Frameset, then reload in the Frame set -->
+<script>if (parent.location == self.location)
+{location.href = "index.html?"+extractFileNameWithoutKnownExtension(location.href);}
+</script>
+<script type="text/javascript" language="JavaScript" src="FHNonscroll.js"></script><script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script><script type="text/javascript" language="JavaScript" src="FHFlyoverPopups.js"></script><link rel="stylesheet" type="text/css" href="FHFlyoverPopupStyle.css" /></HEAD>
+<body bgcolor="#FFFFFF" scroll="no" id="MainSection"><div id="FHNonScroll"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td width="100%" align="left">
+<font size=2 color="#000000" face="Arial">
+<div><font size=4 color="#333399" face="Verdana"><b>R</b></font></div>
+</font>
+</td><td width="120" align="right" nowrap><font face="Verdana" size="2"><a href="hs130.html"><img src="Images/BrowseBlueLeft.png" border="0" alt="Previous Topic"></a>&nbsp;&nbsp;<a href="hs132.html"><img src="Images/BrowseBlueRight.png" border="0" alt="Next Topic"></a>&nbsp;</font></td></tr></table></div><div id="FHScroll"><div id="width_height"></div>
+
+<p class=rvps1><span class=rvts9>R is a free, open-source environment for statistical computing and graphics.&nbsp; Stat/Transfer will read and write workspace files for R versions 2 and 3</span><span class=rvts10>.</span></p>
+<p class=rvps1><span class=rvts10><br></span></p>
+<p class=rvps1><span class=rvts4>Standard extension</span><span class=rvts2>:</span><span class=rvts3>&nbsp; </span><span class=rvts2>rdata</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>Reading R files </span></p>
+<p class=rvps1><span class=rvts3>The R file format is very unstructured and allows the user to write almost anything&nbsp; into it. Therefore Stat/Transfer imposes a few restrictions on input files.&nbsp; Specifically, your data file should contain at least one of the following kinds of objects.</span></p>
+<p class=rvps1><span class=rvts8><br></span></p>
+<p class=rvps1><span class=rvts3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; two dimensional matrices</span></p>
+<p class=rvps1><span class=rvts3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; vectors</span></p>
+<p class=rvps1><span class=rvts3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; factors</span></p>
+<p class=rvps1><span class=rvts3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; dataframes</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts3>Stat/Transfer can read R files in either binary or the more common ASCII format.&nbsp; Compressed files are recognized, but not supported.&nbsp; You should decompress these first with another program such as gzip or Winzip.</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts2>Writing R files</span></p>
+<p class=rvps1><span class=rvts3>On output, Stat/Transfer writes an R dataframe.&nbsp; If your input data set does not have a variable named 'rownames', Stat/Transfer will create an extra variable containing the case number, stored as an integer variable and named 'rownames'. </span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts3>Factors in R consist of a vector of zero-based numeric values and a vector of string labels that are mapped onto the values.&nbsp; You can choose to have these written to an output file as the numeric values and their value labels or you can write them as strings.&nbsp; This option is controlled in the </span><a class=rvts6 href="hs62.html">R and S-Plus Options</a><span class=rvts3> section of the </span><span class=rvts2>Options </span><span class=rvts3>dialog box.&nbsp;&nbsp; If you are going to a package such a Stata or SPSS, that supports value labels, the first option is more appropriate.</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts3>Stat/Transfer writes R data in ASCII format, which is compatible across platforms.</span>
+<br><span class=rvts3></span>
+<br><span class=rvts2>Time Values in R</span>
+<br><span class=rvts3>R stores dates in POSIX format, which includes information on the time zone.&nbsp; Because of this, Stat/Transfer cannot detect the time zone. Therefore, we indicate to R that the dates are in GMT. Unfortunately R defaults to displaying dates using the local time zone. You can work around this with the following R command:</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts5>Sys.setenv(TZ='GMT')</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts3>This will cause R will display the dates exactly as they were displayed in your original file.</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts2>Missing Data</span></p>
+<p class=rvps1><span class=rvts3>R supports missing values.&nbsp; On input, missing values are converted to the internal missing value in Stat/Transfer.&nbsp; On output, missing values are converted to the value appropriate for each variable type.</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts3>If you are using V</span><span class=rvts7>ersion One of R, check the </span><span class=rvts2>Write version one string missing</span><span class=rvts7> option in </span><span class=rvts3>the </span><a class=rvts6 href="hs62.html">R and S-Plus Options</a><span class=rvts3> section of the </span><span class=rvts2>Options </span><span class=rvts3>dialog box </span><span class=rvts7>and the appropriate value will be written for null or missing strings. If you are using a later version of R, leave this unchecked.</span></p>
+<p class=rvps1><span class=rvts7><br></span></p>
+<p class=rvps1><span class=rvts7><br></span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts2>Output Variable Types</span></p>
+<p class=rvps1><span class=rvts3>The output variable type that results from each target variable type is given in the following table:</span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<p class=rvps1><span class=rvts3><br></span></p>
+<div class=rvps1><table border=1 cellpadding=5 cellspacing=0 style="border-width: 0px;">
+<tr valign=top>
+<td width=27 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=136 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts2>Target Type</span></p>
+</td>
+<td width=254 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts2>Output Type</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=27 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=136 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts3>byte</span></p>
+<p class=rvps1><span class=rvts3>int</span></p>
+<p class=rvps1><span class=rvts3>long</span></p>
+</td>
+<td width=254 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts3>Integer</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=27 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=136 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts3>float</span></p>
+</td>
+<td width=254 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts3>Real</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=27 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=136 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts3>double</span></p>
+</td>
+<td width=254 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts3>Double</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=27 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=136 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts3>string</span></p>
+</td>
+<td width=254 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts3>String</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=27 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=136 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts3>date</span></p>
+</td>
+<td width=254 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts3>Date</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=27 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=136 valign=top style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none;">
+<p class=rvps1><span class=rvts3>time</span></p>
+<p class=rvps1><span class=rvts3>date/time</span></p>
+</td>
+<td width=254 valign=top style="border-width : 1px; border-color: #000000; border-style: solid;">
+<p class=rvps1><span class=rvts3>POSIX timestamp (note the time zone is not set, so the time will be in GMT)</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class=rvps1><span class=rvts1></span></p>
+
+</div></body></html><script type="text/javascript">
+var getsearch_key=getParameterByName('key');
+$('body').highlight(getsearch_key);
+$('.highlight').css('background-color',HighlightColor);
+</script>
+

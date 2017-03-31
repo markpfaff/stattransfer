@@ -1,0 +1,117 @@
+<!-- saved from url=(0014)about:internet -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><TITLE>Worksheet Files</TITLE><meta name="generator" content="FastHelp Multi-User"><meta name="keywords" content="">
+
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+#FHNonScroll
+{padding: 6px 6px 0px 6px; border-bottom: none; background: #6699FF; vertical-align: top;z-index: 2; visibility: visible; position: absolute; left: 0; top: 0; width: 100%!important; line-height: 0; font-size: 0; overflow:hidden; }
+#FHNonScroll > table {padding: 6px;}
+#MainSection {overflow: hidden; }
+#FHScroll
+{left: 0; top: 0px; position: absolute; margin: 0; padding: 10px; z-index: 1; background-repeat: no-repeat; background-position: bottom right; background-attachment: fixed; }
+
+
+
+
+
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table /* Normal */
+{
+ font-size: 10pt;
+ font-family: 'Arial';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+ ;
+}
+span.rvts1
+{
+ font-family: 'Arial Unicode MS';
+}
+span.rvts2
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ color: #000000;
+}
+span.rvts3
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts4
+{
+ font-size: 8pt;
+ font-family: 'Verdana';
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts5
+{
+ font-size: 22pt;
+ font-family: 'Verdana';
+ color: #000000;
+}
+span.rvts6
+{
+ font-size: 8pt;
+ font-family: 'Verdana';
+ color: #000000;
+}
+/* ========== Para Styles ========== */
+p,ul,ol /* Left */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1
+{
+}
+--></style>
+<script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script>
+<script src="FHSearchHighlight.js"></script>
+<script src="FHSearchHighlight2.js"></script>
+<!-- If this page is displayed outside of the Website Help Frameset, then reload in the Frame set -->
+<script>if (parent.location == self.location)
+{location.href = "index.html?"+extractFileNameWithoutKnownExtension(location.href);}
+</script>
+<script type="text/javascript" language="JavaScript" src="FHNonscroll.js"></script><script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script><script type="text/javascript" language="JavaScript" src="FHFlyoverPopups.js"></script><link rel="stylesheet" type="text/css" href="FHFlyoverPopupStyle.css" /></HEAD>
+<body bgcolor="#FFFFFF" scroll="no" id="MainSection"><div id="FHNonScroll"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td width="100%" align="left">
+<font size=2 color="#000000" face="Arial">
+<div><font size=4 color="#333399" face="Verdana"><b>Worksheet File Questions</b></font></div>
+</font>
+</td><td width="120" align="right" nowrap><font face="Verdana" size="2"><a href="hs1470.html"><img src="Images/BrowseBlueLeft.png" border="0" alt="Previous Topic"></a>&nbsp;&nbsp;</font></td></tr></table></div><div id="FHScroll"><div id="width_height"></div>
+
+<p class=rvps1><span class=rvts3>Q.</span><span class=rvts2>&nbsp; I have some blank rows in my worksheet.&nbsp; Stat/Transfer stops reading the data as soon as it encounters a blank row.&nbsp; Is there any way to work around this?</span></p>
+<p class=rvps1><span class=rvts4><br></span></p>
+<p class=rvps1><span class=rvts3>A.&nbsp; </span><span class=rvts2>The reason Stat/Transfer behaves that way is that sometimes users like to put comments or notes at the bottom of their data block.&nbsp; If they put at least one blank line between the data and the comments, then by default, Stat/Transfer will read their data and skip the comments with no special actions on their part.</span></p>
+<p class=rvps1><span class=rvts6><br></span></p>
+<p class=rvps1><span class=rvts2>However if you can change the behavior in one of two ways.&nbsp; In the </span><span class=rvts3>Options </span><span class=rvts2>dialog box, go to </span><span class=rvts3>Worksheets</span><span class=rvts2> and you can either set the </span><span class=rvts3>Blank Rows </span><span class=rvts2>option to control reading of blank lines, or you can explicitly set a data range by using the </span><span class=rvts3>Data Range </span><span class=rvts2>option&nbsp; In the latter case, Stat/Transfer will return all of the rows in the range you specify.&nbsp; In other words, it assumes that you know what you are doing and will return blank rows if that is what you want.</span></p>
+<p class=rvps1><span class=rvts5><br></span></p>
+<p class=rvps1><span class=rvts3>Q.&nbsp; </span><span class=rvts2>When I read my Excel spreadsheet, sometimes a whole column of numbers gets transferred as a string variable, even though it contains lots of numbers.</span></p>
+<p class=rvps1><span class=rvts4><br></span></p>
+<p class=rvps1><span class=rvts3>A.&nbsp; </span><span class=rvts2>Stat/Transfer examines all of the cells in a column to determine the type. If there are any strings, the column will be transferred into a string variable and the numbers and dates that are in the column will be converted to their string representation. This scheme is, in general, what people expect, particularly for columns of mixed numeric and string identifiers, where the alternative strategy would make the strings into missing values.</span></p>
+<p class=rvps1><span class=rvts6><br></span></p>
+<p class=rvps1><span class=rvts2>If you have a column that you want to force to numeric, you can check it to make sure that there are not any strings or numbers formatted with a "text" format. Alternatively, you can force a type conversion by using the controls on the </span><span class=rvts3>Variables&nbsp; </span><span class=rvts2>dialog box.</span></p>
+<p class=rvps1><span class=rvts5><br></span></p>
+<p class=rvps1><span class=rvts3>Q.&nbsp; </span><span class=rvts2>How should I represent missing values in my worksheet?</span></p>
+<p class=rvps1><span class=rvts4><br></span></p>
+<p class=rvps1><span class=rvts3>A.&nbsp; </span><span class=rvts2>In general, you should just leave missing cells blank.&nbsp; You can&nbsp; also&nbsp; represent numeric missing data with a period.&nbsp; Missing data for strings can be represented by an empty string (entered with a single quote).&nbsp; However, blanks work just as well as any of these alternatives.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>If your worksheets already use a specific string to represent missing, you can tell Stat/Transfer to use that string as a missing value by setting the Numeric Missing Value string in Worksheet options.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts1></span></p>
+
+</div></body></html><script type="text/javascript">
+var getsearch_key=getParameterByName('key');
+$('body').highlight(getsearch_key);
+$('.highlight').css('background-color',HighlightColor);
+</script>
+

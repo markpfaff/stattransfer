@@ -1,0 +1,132 @@
+<!-- saved from url=(0014)about:internet -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><TITLE>ODBC Data Sources</TITLE><meta name="generator" content="FastHelp Multi-User"><meta name="keywords" content="64 bit Windows - FAQ">
+
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+#FHNonScroll
+{padding: 6px 6px 0px 6px; border-bottom: none; background: #6699FF; vertical-align: top;z-index: 2; visibility: visible; position: absolute; left: 0; top: 0; width: 100%!important; line-height: 0; font-size: 0; overflow:hidden; }
+#FHNonScroll > table {padding: 6px;}
+#MainSection {overflow: hidden; }
+#FHScroll
+{left: 0; top: 0px; position: absolute; margin: 0; padding: 10px; z-index: 1; background-repeat: no-repeat; background-position: bottom right; background-attachment: fixed; }
+
+
+
+
+
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table /* Normal */
+{
+ font-size: 10pt;
+ font-family: 'Arial';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+ ;
+}
+span.rvts1
+{
+ font-family: 'Arial Unicode MS';
+}
+span.rvts2
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ color: #000000;
+}
+span.rvts3
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts4
+{
+ font-size: 8pt;
+ font-family: 'Verdana';
+ color: #000000;
+}
+span.rvts5
+{
+ font-size: 8pt;
+ font-family: 'Verdana';
+ font-weight: bold;
+ color: #000000;
+}
+a.rvts6, span.rvts6
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ color: #0000ff;
+ text-decoration: underline;
+}
+a.rvts6:hover { color: #0000ff; }
+span.rvts7
+{
+ font-size: 22pt;
+ font-family: 'Verdana';
+ color: #000000;
+}
+/* ========== Para Styles ========== */
+p,ul,ol /* Left */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1
+{
+}
+--></style>
+<script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script>
+<script src="FHSearchHighlight.js"></script>
+<script src="FHSearchHighlight2.js"></script>
+<!-- If this page is displayed outside of the Website Help Frameset, then reload in the Frame set -->
+<script>if (parent.location == self.location)
+{location.href = "index.html?"+extractFileNameWithoutKnownExtension(location.href);}
+</script>
+<script type="text/javascript" language="JavaScript" src="FHNonscroll.js"></script><script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script><script type="text/javascript" language="JavaScript" src="FHFlyoverPopups.js"></script><link rel="stylesheet" type="text/css" href="FHFlyoverPopupStyle.css" /></HEAD>
+<body bgcolor="#FFFFFF" scroll="no" id="MainSection"><div id="FHNonScroll"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td width="100%" align="left">
+<font size=2 color="#000000" face="Arial">
+<div><font size=4 color="#333399" face="Verdana"><b>ODBC Data Source Questions</b></font></div>
+</font>
+</td><td width="120" align="right" nowrap><font face="Verdana" size="2"><a href="Linux.html"><img src="Images/BrowseBlueLeft.png" border="0" alt="Previous Topic"></a>&nbsp;&nbsp;<a href="hs1440.html"><img src="Images/BrowseBlueRight.png" border="0" alt="Next Topic"></a>&nbsp;</font></td></tr></table></div><div id="FHScroll"><div id="width_height"></div>
+
+<p class=rvps1><span class=rvts3>Q.</span><span class=rvts2>&nbsp; Why can't I find my database in the list of ODBC sources?</span></p>
+<p class=rvps1><span class=rvts4><br></span></p>
+<p class=rvps1><span class=rvts3>A.&nbsp; </span><span class=rvts2>In order for a data source to appear in the list, you must first have installed a driver for the particular database system and, then you must have configured the driver to point to your database.</span></p>
+<p class=rvps1><span class=rvts4><br></span></p>
+<p class=rvps1><span class=rvts2>Drivers are usually supplied by your database vendor, and, particularly&nbsp; if you are using a client-server database, you must make sure that you have installed proper components for your particular workstation and network. </span></p>
+<p class=rvps1><span class=rvts4><br></span></p>
+<p class=rvps1><span class=rvts2>A data source, in ODBC parlance, is a driver configured to point to a particular database.&nbsp; For instance, you might have a driver for Oracle data and two Oracle data sources, one for each of two clinical trials you are analyzing.&nbsp; You can configure an ODBC driver to connect to a particular database by running the ODBC driver manager from the Windows Control Panel.&nbsp; Only&nbsp; properly configured data sources will appear in Stat/Transfers lists of available data sources.</span></p>
+<p class=rvps1><span class=rvts7><br></span></p>
+<p class=rvps1><span class=rvts3>Q.&nbsp; </span><span class=rvts2>I can see my data source on Stat/Transfer's list, but I encounter errors when I try to connect to it</span></p>
+<p class=rvps1><span class=rvts4><br></span></p>
+<p class=rvps1><span class=rvts3>A.&nbsp; </span><span class=rvts2>There are many possible causes for this problem.&nbsp; Your ODBC driver may not be properly installed or configured for your network.&nbsp; Your database server and/or network may be down.&nbsp; You might not have proper access rights or the proper password for your database.</span></p>
+<p class=rvps1><span class=rvts4><br></span></p>
+<p class=rvps1><span class=rvts2>We suggest you try to connect to your database with another tool, particularly one that is supplied by your database vendor or a general tool such as Microsoft Excel.&nbsp; If you still encounter difficulties, you should first seek support from your local database administrator and/or the vendor who supplied your database or driver.</span></p>
+<p class=rvps1><span class=rvts7><br></span></p>
+<p class=rvps1><span class=rvts3>Q.</span><span class=rvts2> I am having problems with ODBC or Access on 64 bit Windows.&nbsp; What should I do?</span></p>
+<p class=rvps1><span class=rvts5><br></span></p>
+<p class=rvps1><span class=rvts3>A.</span><span class=rvts2>&nbsp; First, you should understand the somewhat confusing way by which Microsoft implemented ODBC on 64 bit Windows.&nbsp; There are actually two copies of the ODBC Administration Tool.&nbsp; The first, which is reachable from the Control Panel, can only create and modify 64 bit data sources.&nbsp; The second, which is identically named, but located in an obscure directory, creates and modifies data sources that use 32 bit drivers and which are accessible to 32 bit applications such as Stat/Transfer.&nbsp; You should only use the 32 bit Administration Tool, accessible from your Stat/Transfer program group, to create data sources for Stat/Transfer.&nbsp; Also, you must use the appropriate tool to edit existing data sources (See </span><a class=rvts6 href="http://support.microsoft.com/kb/942976">this</a><span class=rvts2> Microsoft Knowledge Base article)</span></p>
+<p class=rvps1><span class=rvts4><br></span></p>
+<p class=rvps1><span class=rvts2>Second, the ODBC functions that are responsible for returning the names of data sources under 64 bit windows return both 32 and 64 bit data sources, even though 32 bit applications, such as Stat/Transfer. can only use 32 bit data sources.&nbsp; In order to avoid errors, Stat/Transfer only displays the data sources that it can use.&nbsp; Therefore, data sources that were created using the 64 bit administration tool are not visible from the Stat/Transfer menus.</span></p>
+<p class=rvps1><span class=rvts4><br></span></p>
+<p class=rvps1><span class=rvts2>Finally, if you create a data source and then cannot see it in Stat/Transfer, make sure that you have installed the 32 bit ODBC drivers.&nbsp;&nbsp; Some applications do not routinely install these on 64 bit machines, and, to make matters worse, the 32 bit Administration tool will blindly use 64 bit drivers. </span></p>
+<p class=rvps1><span class=rvts7><br></span></p>
+<p class=rvps1><span class=rvts3>Q.&nbsp; </span><span class=rvts2>How can I join two tables in a relational database?</span></p>
+<p class=rvps1><span class=rvts4><br></span></p>
+<p class=rvps1><span class=rvts3>A.&nbsp; </span><span class=rvts2>Many database systems allow you to define a "view", that will appear to Stat/Transfer as a single table.&nbsp; If you database allows this, it is the simplest and most robust way of joining tables for Stat/Transfer.&nbsp; If this option is not available, the Stat/Transfer command processor allows you to submit an SQL select statement.&nbsp; It is simply passed through to your ODBC driver, so it must be legal SQL for your particular database driver.</span></p>
+<p class=rvps1><span class=rvts1></span></p>
+
+</div></body></html><script type="text/javascript">
+var getsearch_key=getParameterByName('key');
+$('body').highlight(getsearch_key);
+$('.highlight').css('background-color',HighlightColor);
+</script>
+

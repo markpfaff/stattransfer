@@ -1,0 +1,23 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<title>Search</title>
+<script language="JavaScript1.3" type="text/javascript" src="FHSearchForm.js"></script>
+<style type="text/css"><!-- body{font-size: 10pt; font-family: "Verdana"; color: #800080;} --></style></head>
+<body bgcolor="#E6F3FF">
+
+<!-- Find -->
+<form name="jse_Form" onsubmit="search_form(jse_Form);return false">
+<input type="text" name="d">
+<input type="button" value="Go" onclick="search_form(jse_Form)">
+</form>
+
+Type in your search text and press Enter
+<script type="text/javascript">
+	var chromium = window.chrome, vendName = window.navigator.vendor, protoc = document.location.protocol;
+	if(chromium !== null && chromium !== undefined && vendName === "Google Inc." && protoc.indexOf('file') > -1){
+		document.body.innerHTML = '<div style="width:100%;text-align:center;margin-top:30px;">In this browser, the Search feature will only work once you have uploaded your website to the internet.</div>';
+	}
+</script>
+</body>
+</html>

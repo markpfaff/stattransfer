@@ -1,0 +1,1018 @@
+<!-- saved from url=(0014)about:internet -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><TITLE>File Format Specification </TITLE><meta name="generator" content="FastHelp Multi-User"><meta name="keywords" content="">
+
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+#FHNonScroll
+{padding: 6px 6px 0px 6px; border-bottom: none; background: #6699FF; vertical-align: top;z-index: 2; visibility: visible; position: absolute; left: 0; top: 0; width: 100%!important; line-height: 0; font-size: 0; overflow:hidden; }
+#FHNonScroll > table {padding: 6px;}
+#MainSection {overflow: hidden; }
+#FHScroll
+{left: 0; top: 0px; position: absolute; margin: 0; padding: 10px; z-index: 1; background-repeat: no-repeat; background-position: bottom right; background-attachment: fixed; }
+
+
+
+
+
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table /* Normal */
+{
+ font-size: 10pt;
+ font-family: 'Arial';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+ ;
+}
+span.rvts1
+{
+ font-family: 'Arial Unicode MS';
+}
+span.rvts2
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ color: #000000;
+}
+span.rvts3
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ font-style: italic;
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts4
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts5
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ color: #000000;
+ text-decoration: underline;
+}
+span.rvts6
+{
+ font-size: 9pt;
+ font-family: 'Verdana';
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts7
+{
+ font-size: 9pt;
+ font-family: 'Verdana';
+ color: #000000;
+}
+span.rvts8
+{
+ font-size: 9pt;
+ font-family: 'Verdana';
+ font-style: italic;
+ color: #000000;
+}
+a.rvts9, span.rvts9
+{
+ font-size: 9pt;
+ font-family: 'Verdana';
+ font-style: italic;
+ color: #0000ff;
+ text-decoration: underline;
+}
+a.rvts9:hover { color: #0000ff; }
+span.rvts10
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ color: #000000;
+ background-color: #ffff99;
+}
+span.rvts11
+{
+ font-size: 11pt;
+ font-family: 'Courier New';
+ color: #000000;
+}
+/* ========== Para Styles ========== */
+p,ul,ol /* Left */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1
+{
+}
+--></style>
+<script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script>
+<script src="FHSearchHighlight.js"></script>
+<script src="FHSearchHighlight2.js"></script>
+<!-- If this page is displayed outside of the Website Help Frameset, then reload in the Frame set -->
+<script>if (parent.location == self.location)
+{location.href = "index.html?"+extractFileNameWithoutKnownExtension(location.href);}
+</script>
+<script type="text/javascript" language="JavaScript" src="FHNonscroll.js"></script><script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script><script type="text/javascript" language="JavaScript" src="FHFlyoverPopups.js"></script><link rel="stylesheet" type="text/css" href="FHFlyoverPopupStyle.css" /></HEAD>
+<body bgcolor="#FFFFFF" scroll="no" id="MainSection"><div id="FHNonScroll"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td width="100%" align="left">
+<font size=2 color="#000000" face="Arial">
+<div><font size=4 color="#008080" face="Verdana"><b>File Format Specification </b></font></div>
+</font>
+</td><td width="120" align="right" nowrap><font face="Verdana" size="2"><a href="hs872.html"><img src="Images/BrowseBlueLeft.png" border="0" alt="Previous Topic"></a>&nbsp;&nbsp;<a href="hs890.html"><img src="Images/BrowseBlueRight.png" border="0" alt="Next Topic"></a>&nbsp;</font></td></tr></table></div><div id="FHScroll"><div id="width_height"></div>
+
+<p class=rvps1><span class=rvts4>Standard Extensions and File-Type Tags</span></p>
+<p class=rvps1><span class=rvts2>When a COPY command is given, Stat/Transfer tries to determine the file types of both the input and output files by looking for standard extensions.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>An alternative for specifying the file type is to use a "file-type tag" instead of a standard extension.&nbsp; In some cases, this tag is needed even when standard extensions are used.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>See the table below for a list of the standard extensions and file-type tags used by Stat/Transfer. A list of standard extensions and file-type tags can be obtained by typing:</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>&nbsp;&nbsp; </span><span class=rvts11> help formats</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>at the command prompt. </span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts4>Standard Extensions</span></p>
+<p class=rvps1><span class=rvts2>If you use standard file extensions for your input and output file names, these will usually tell the Stat/Transfer command processor what kind of file is to be read or written.&nbsp; Occasionally you will need to add a file-type tag as well.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts4>File-Type Tags</span></p>
+<p class=rvps1><span class=rvts2>File-type tags are needed in two different situations:</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<ul style="text-indent: 0px; margin-left: 24px; list-style-position: outside;">
+<li class=rvps1><span class=rvts2>For output files when the standard extension for different versions of a file type is the same.</span></li>
+</ul>
+<p class=rvps1><span class=rvts2><br></span></p>
+<ul style="text-indent: 0px; margin-left: 24px; list-style-position: outside;">
+<li class=rvps1><span class=rvts2>For file names that do not have standard extensions.</span></li>
+</ul>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts5>Distinguishing Versions of an Output File Type</span></p>
+<p class=rvps1><span class=rvts2>In those cases where different versions of a given file type use the same standard extension, the standard extension will not enable Stat/Transfer to distinguish between different versions on output. To write a version other than the default version, the output file name must be preceded by a file-type tag, which identifies the appropriate output version.&nbsp; </span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts4>Note:</span><span class=rvts2> For JMP files, a file type tag may be necessary on input as well.</span></p>
+<p class=rvps1><span class=rvts10><br></span></p>
+<p class=rvps1><span class=rvts2>Whenever the same standard extension appears in the table below for a given file type, you must use a file-type tag.&nbsp; The default version is marked with an asterisk.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts5>File Names without Standard Extensions</span></p>
+<p class=rvps1><span class=rvts2>If your file does not have a standard extension, you must precede the file name by a file-type tag, which indicates the file type.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>For example, if you want to write a Windows SAS file that has a </span><span class=rvts3>.dat</span><span class=rvts2> extension instead of an </span><span class=rvts3>.sas7bdat</span><span class=rvts2> extension, you can type</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>&nbsp; </span><span class=rvts11> copy&nbsp; indata.xls&nbsp;&nbsp; sas outdata.dat</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>where 'sas' indicates that the output file is to be a SAS Windows file, while the standard extension </span><span class=rvts3>.xls</span><span class=rvts2> identifies the input file as an Excel worksheet.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts4>Distinguishing Between File Names and File-type Tags</span></p>
+<p class=rvps1><span class=rvts2>The command processor uses the presence of a period '.' to differentiate between extensions and file-type tags.&nbsp; Therefore, when using the COPY command, you must either use a period in your file name or, if the name does not contain a period, then you must use one after the file name.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>For example, if you have a Stata file named </span><span class=rvts3>populat</span><span class=rvts2>, and you are going to a 1-2-3 file, </span><span class=rvts3>populat.wk3</span><span class=rvts2> , the COPY command would look like:</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>&nbsp;&nbsp; </span><span class=rvts11>copy stata populat.&nbsp;&nbsp; populate.wk3</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>The file-type tag must be used since the input file does not have a standard extension.&nbsp; The period after the file name tells Stat/Transfer that this is the file name. </span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>The standard extensions and file-type tags used by the command processor are:</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<div class=rvps1><table border=1 cellpadding=1 cellspacing=2 style="border-width: 0px;">
+<tr valign=top>
+<td width=1 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=195 style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts6>File Type</span></p>
+</td>
+<td width=124 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts6>Extension</span></p>
+</td>
+<td width=99 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts6>File-Type Tag</span></p>
+</td>
+<td width=92 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts6>Default</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=1 height=20 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=195 height=20 style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts7>1-2-3 </span></p>
+</td>
+<td width=124 height=20 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts7>wk?</span></p>
+</td>
+<td width=99 height=20 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7>123</span></p>
+</td>
+<td width=92 height=20 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7><br></span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=1 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=195 style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts7>Access</span></p>
+</td>
+<td width=124 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts7>mdb</span></p>
+</td>
+<td width=99 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7>access</span></p>
+</td>
+<td width=92 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7><br></span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=1 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=195 style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts7>ASCII - Delimited&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></p>
+</td>
+<td width=124 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts7>txt, csv</span></p>
+</td>
+<td width=99 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7>delim</span></p>
+</td>
+<td width=92 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7><br></span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=1 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=195 style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts7>ASCII - Delimited with Schema </span></p>
+</td>
+<td width=124 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts7>stsd (Schema file)</span></p>
+</td>
+<td width=99 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7>stdelim</span></p>
+</td>
+<td width=92 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7><br></span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=1 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=195 style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts7>ASCII - Fixed with Schema </span></p>
+</td>
+<td width=124 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts7>sts (Schema file)</span></p>
+</td>
+<td width=99 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7>stfixed</span></p>
+</td>
+<td width=92 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7><br></span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=1 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=195 style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts7>dBASE and compatibles&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></p>
+</td>
+<td width=124 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts7>dbf</span></p>
+</td>
+<td width=99 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7>xbase</span></p>
+</td>
+<td width=92 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7><br></span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=1 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=195 style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts7>DDI Schemas</span></p>
+</td>
+<td width=124 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts7>xml</span></p>
+</td>
+<td width=99 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7>ddi</span></p>
+</td>
+<td width=92 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7><br></span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=1 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=195 style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts7>Epi Info</span></p>
+</td>
+<td width=124 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts7>rec</span></p>
+</td>
+<td width=99 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7>epi</span></p>
+</td>
+<td width=92 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7><br></span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=1 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=195 style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts7>EViews</span></p>
+</td>
+<td width=124 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts7>wf1</span></p>
+</td>
+<td width=99 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7>eviews</span></p>
+</td>
+<td width=92 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7><br></span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=1 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=195 style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts7>Excel 2007+</span></p>
+</td>
+<td width=124 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts7>xlsx</span></p>
+</td>
+<td width=99 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7>excelx</span></p>
+</td>
+<td width=92 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7><br></span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=1 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=195 style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts7>Excel 97+</span></p>
+</td>
+<td width=124 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts7>xls</span></p>
+</td>
+<td width=99 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7>excel</span></p>
+</td>
+<td width=92 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7>&nbsp;&nbsp; **</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=1 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=195 style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts7>Excel Version 2</span></p>
+</td>
+<td width=124 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts7>xls</span></p>
+</td>
+<td width=99 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7>excel2</span></p>
+</td>
+<td width=92 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7><br></span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=1 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=195 style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts7>FoxPro</span></p>
+</td>
+<td width=124 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts7>dbf</span></p>
+</td>
+<td width=99 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7>xbase</span></p>
+</td>
+<td width=92 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7><br></span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=1 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=195 style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts7>Gauss '96</span></p>
+</td>
+<td width=124 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts7>dat</span></p>
+</td>
+<td width=99 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7>gauss</span></p>
+</td>
+<td width=92 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7><br></span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=1 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=195 style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts7>GenStat</span></p>
+</td>
+<td width=124 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts7>gwb</span></p>
+</td>
+<td width=99 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7>gwb</span></p>
+</td>
+<td width=92 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7><br></span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=1 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=195 style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts7>HTML</span></p>
+</td>
+<td width=124 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts7>htm*</span></p>
+</td>
+<td width=99 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7>html</span></p>
+</td>
+<td width=92 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7><br></span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=1 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=195 style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts7>JMP Version *</span></p>
+</td>
+<td width=124 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts7>jmp</span></p>
+</td>
+<td width=99 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7>jmp*</span></p>
+</td>
+<td width=92 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7><br></span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=1 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td colspan=3 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts7>&nbsp;&nbsp;&nbsp;&nbsp; </span><span class=rvts8> Please see the discussion of </span><a class=rvts9 href="hs119.html">JMP</a><span class=rvts8> in the Supported Files Section.</span></p>
+</td>
+<td width=92 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7><br></span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=1 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=195 style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts7>LIMDEP</span></p>
+</td>
+<td width=124 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts7>lpj</span></p>
+</td>
+<td width=99 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7>lpj</span></p>
+</td>
+<td width=92 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7><br></span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=1 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=195 style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts7>Matlab 7</span></p>
+</td>
+<td width=124 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts7>mat</span></p>
+</td>
+<td width=99 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7>matlab7</span></p>
+</td>
+<td width=92 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7>&nbsp;&nbsp; **</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=1 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=195 style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts7>Matlab</span></p>
+</td>
+<td width=124 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts7>mat</span></p>
+</td>
+<td width=99 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7>matlab</span></p>
+</td>
+<td width=92 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7><br></span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=1 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=195 style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts7>Mineset</span></p>
+</td>
+<td width=124 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts7>schema, sch</span></p>
+</td>
+<td width=99 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7>mineset</span></p>
+</td>
+<td width=92 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7><br></span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=1 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=195 style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts7>Minitab</span></p>
+</td>
+<td width=124 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts7>mtw</span></p>
+</td>
+<td width=99 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7>minitab</span></p>
+</td>
+<td width=92 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7><br></span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=1 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=195 style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts7>Mplus</span></p>
+</td>
+<td width=124 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts7>inp</span></p>
+</td>
+<td width=99 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7>mplus</span></p>
+</td>
+<td width=92 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7><br></span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=1 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=195 style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts7>NLOGIT</span></p>
+</td>
+<td width=124 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts7>lpj</span></p>
+</td>
+<td width=99 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7>nlogit</span></p>
+</td>
+<td width=92 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7><br></span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=1 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=195 style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts7>ODBC</span></p>
+</td>
+<td width=124 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts7>[none]</span></p>
+</td>
+<td width=99 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7>odbc</span></p>
+</td>
+<td width=92 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7><br></span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=1 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=195 style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts7>OpenDocument Spreadsheet</span></p>
+</td>
+<td width=124 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts7>ods</span></p>
+</td>
+<td width=99 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7>od</span></p>
+</td>
+<td width=92 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7><br></span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=1 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=195 style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts7>OSIRIS</span></p>
+</td>
+<td width=124 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts7>dict, dct</span></p>
+</td>
+<td width=99 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7>osiris</span></p>
+</td>
+<td width=92 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7><br></span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=1 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=195 style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts7>Paradox</span></p>
+</td>
+<td width=124 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts7>db</span></p>
+</td>
+<td width=99 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7>paradox</span></p>
+</td>
+<td width=92 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7><br></span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=1 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=195 style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts7>Quattro Pro</span></p>
+</td>
+<td width=124 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts7>wq?, wb?</span></p>
+</td>
+<td width=99 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7>quattro</span></p>
+</td>
+<td width=92 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7><br></span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=1 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=195 style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts7>R</span></p>
+</td>
+<td width=124 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts7>rdata</span></p>
+</td>
+<td width=99 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7>r</span></p>
+</td>
+<td width=92 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7><br></span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=1 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=195 style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts7>RATS</span></p>
+</td>
+<td width=124 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts7>rat</span></p>
+</td>
+<td width=99 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7>rats</span></p>
+</td>
+<td width=92 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7><br></span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=1 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=195 style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts7>SAS V6 (Windows and OS/2)</span></p>
+</td>
+<td width=124 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts7>sd2</span></p>
+</td>
+<td width=99 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7>sas2</span></p>
+</td>
+<td width=92 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7><br></span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=1 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=195 style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts7>SAS V6 (Mac, Unix-HP, Sun, IBM)</span></p>
+</td>
+<td width=124 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts7>ssd01</span></p>
+</td>
+<td width=99 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7>sas1</span></p>
+</td>
+<td width=92 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7><br></span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=1 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=195 style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts7>SAS V7and V8</span></p>
+</td>
+<td width=124 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts7>sas7bdat</span></p>
+</td>
+<td width=99 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7>sas</span></p>
+</td>
+<td width=92 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7><br></span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=1 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=195 style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts7>SAS V9</span></p>
+</td>
+<td width=124 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts7>sas7bdat</span></p>
+</td>
+<td width=99 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7>sas9</span></p>
+</td>
+<td width=92 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7>&nbsp; **</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=1 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=195 style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts7>SAS CPORT</span></p>
+</td>
+<td width=124 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts7>stc</span></p>
+</td>
+<td width=99 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7>cport</span></p>
+</td>
+<td width=92 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7><br></span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=1 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=195 style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts7>SAS Transport Files</span></p>
+</td>
+<td width=124 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts7>xpt, tpt</span></p>
+</td>
+<td width=99 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7>sasx</span></p>
+</td>
+<td width=92 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7><br></span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=1 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=195 style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts7>S-PLUS</span></p>
+</td>
+<td width=124 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts7>.</span></p>
+</td>
+<td width=99 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7>splus</span></p>
+</td>
+<td width=92 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7>&nbsp; **</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=1 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=195 style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts7>S-PLUS (HP, IBM, Sun Unix)</span></p>
+</td>
+<td width=124 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts7>.</span></p>
+</td>
+<td width=99 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7>splus-hl</span></p>
+</td>
+<td width=92 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7><br></span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=1 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=195 style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts7>SPSS Data Files</span></p>
+</td>
+<td width=124 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts7>sav</span></p>
+</td>
+<td width=99 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7>spss</span></p>
+</td>
+<td width=92 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7><br></span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=1 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=195 style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts7>SPSS Data Files (HP,IBM,SunUnix)</span></p>
+</td>
+<td width=124 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts7>sav</span></p>
+</td>
+<td width=99 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7>spss-hl</span></p>
+</td>
+<td width=92 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7><br></span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=1 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=195 style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts7>SPSS Portable Files</span></p>
+</td>
+<td width=124 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts7>por</span></p>
+</td>
+<td width=99 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7>spssp</span></p>
+</td>
+<td width=92 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7><br></span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=1 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=195 style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts7>SPSS "Syntax" and Data File</span></p>
+</td>
+<td width=124 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts7>sps</span></p>
+</td>
+<td width=99 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7>spsss</span></p>
+</td>
+<td width=92 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7><br></span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=1 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=195 style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts7>SPSS Program and ASCII data</span></p>
+</td>
+<td width=124 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts7>sps</span></p>
+</td>
+<td width=99 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7>spss-dat</span></p>
+</td>
+<td width=92 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7><br></span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=1 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=195 style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts7>Stata</span></p>
+</td>
+<td width=124 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts7>dta</span></p>
+</td>
+<td width=99 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7>stata</span></p>
+</td>
+<td width=92 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7>&nbsp; </span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=1 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=195 style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts7>Stata Program and ASCII Data</span></p>
+</td>
+<td width=124 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts7>do</span></p>
+</td>
+<td width=99 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7>stata-dat</span></p>
+</td>
+<td width=92 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7><br></span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=1 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=195 style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts7>Statistica Version 5 and 6</span></p>
+</td>
+<td width=124 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts7>sta</span></p>
+</td>
+<td width=99 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7>statistica</span></p>
+</td>
+<td width=92 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7>&nbsp; **</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=1 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=195 style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts7>Statistica Version 7+</span></p>
+</td>
+<td width=124 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts7>sta</span></p>
+</td>
+<td width=99 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7>statistica7</span></p>
+</td>
+<td width=92 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7><br></span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=1 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=195 style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none; border-bottom: none;">
+<p class=rvps1><span class=rvts7>SYSTAT</span></p>
+</td>
+<td width=124 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none;">
+<p class=rvps1><span class=rvts7>sys</span></p>
+</td>
+<td width=99 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7>systat</span></p>
+</td>
+<td width=92 style="border-width : 1px; border-color: #000000; border-style: solid; border-bottom: none; border-left: none;">
+<p class=rvps1><span class=rvts7><br></span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=1 style="border-width : 1px; border-color: #000000; border-style: solid; border-top: none; border-right: none; border-bottom: none; border-left: none;"><br>
+</td>
+<td width=195 style="border-width : 1px; border-color: #000000; border-style: solid; border-right: none;">
+<p class=rvps1><span class=rvts7>Triple-S</span></p>
+</td>
+<td width=124 style="border-width : 1px; border-color: #000000; border-style: solid;">
+<p class=rvps1><span class=rvts7>xml</span></p>
+</td>
+<td width=99 style="border-width : 1px; border-color: #000000; border-style: solid; border-left: none;">
+<p class=rvps1><span class=rvts7>sss</span></p>
+</td>
+<td width=92 style="border-width : 1px; border-color: #000000; border-style: solid; border-left: none;">
+<p class=rvps1><span class=rvts7><br></span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class=rvps1><span class=rvts1></span></p>
+
+</div></body></html><script type="text/javascript">
+var getsearch_key=getParameterByName('key');
+$('body').highlight(getsearch_key);
+$('.highlight').css('background-color',HighlightColor);
+</script>
+

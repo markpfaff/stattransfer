@@ -1,0 +1,130 @@
+<!-- saved from url=(0014)about:internet -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><TITLE>Character Encoding</TITLE><meta name="generator" content="FastHelp Multi-User"><meta name="keywords" content="Character Encoding">
+
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+#FHNonScroll
+{padding: 6px 6px 0px 6px; border-bottom: none; background: #6699FF; vertical-align: top;z-index: 2; visibility: visible; position: absolute; left: 0; top: 0; width: 100%!important; line-height: 0; font-size: 0; overflow:hidden; }
+#FHNonScroll > table {padding: 6px;}
+#MainSection {overflow: hidden; }
+#FHScroll
+{left: 0; top: 0px; position: absolute; margin: 0; padding: 10px; z-index: 1; background-repeat: no-repeat; background-position: bottom right; background-attachment: fixed; }
+
+
+
+
+
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table /* Normal */
+{
+ font-size: 10pt;
+ font-family: 'Arial';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+ ;
+}
+span.rvts1
+{
+ font-family: 'Arial Unicode MS';
+}
+span.rvts2
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ color: #000000;
+}
+span.rvts3
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts4
+{
+ font-size: 8pt;
+ font-family: 'Verdana';
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts5
+{
+ font-size: 8pt;
+ font-family: 'Verdana';
+ color: #000000;
+}
+span.rvts6
+{
+ font-size: 22pt;
+ font-family: 'Verdana';
+ color: #000000;
+}
+/* ========== Para Styles ========== */
+p,ul,ol /* Left */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1
+{
+}
+--></style>
+<script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script>
+<script src="FHSearchHighlight.js"></script>
+<script src="FHSearchHighlight2.js"></script>
+<!-- If this page is displayed outside of the Website Help Frameset, then reload in the Frame set -->
+<script>if (parent.location == self.location)
+{location.href = "index.html?"+extractFileNameWithoutKnownExtension(location.href);}
+</script>
+<script type="text/javascript" language="JavaScript" src="FHNonscroll.js"></script><script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script><script type="text/javascript" language="JavaScript" src="FHFlyoverPopups.js"></script><link rel="stylesheet" type="text/css" href="FHFlyoverPopupStyle.css" /></HEAD>
+<body bgcolor="#FFFFFF" scroll="no" id="MainSection"><div id="FHNonScroll"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td width="100%" align="left">
+<font size=2 color="#000000" face="Arial">
+<div><font size=5 color="#333399" face="Verdana"><b>Character Encoding</b></font></div>
+</font>
+</td><td width="120" align="right" nowrap><font face="Verdana" size="2"><a href="hs143.html"><img src="Images/BrowseBlueLeft.png" border="0" alt="Previous Topic"></a>&nbsp;&nbsp;<a href="hs1420.html"><img src="Images/BrowseBlueRight.png" border="0" alt="Next Topic"></a>&nbsp;</font></td></tr></table></div><div id="FHScroll"><div id="width_height"></div>
+
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts3>Q.</span><span class=rvts2>&nbsp;What are Encoding Errors?</span></p>
+<p class=rvps1><span class=rvts4><br></span></p>
+<p class=rvps1><span class=rvts3>A.</span><span class=rvts2>&nbsp; Stat/Transfer stores strings internally in Unicode, which is capable of storing all of characters in all languages, plus many, many other symbols. &nbsp;Most older character sets are of much more limited scope. &nbsp;For instance, the most common encoding, ASCII, is only capable of storing a handful of symbols, letters and numbers, since it has only 127 locations for characters and control codes. &nbsp;Other single-byte character sets double the amount of storage and allow accented characters and other useful symbols. &nbsp;There are a number of such single-byte character sets, for instance one is suitable for the Cyrillic alphabet and another for modern Greek.</span></p>
+<p class=rvps1><span class=rvts5><br></span></p>
+<p class=rvps1><span class=rvts2>When Stat/Transfer reads data, it converts it to Unicode either based on the settings for character sets in the encoding options, or information written in the input file. &nbsp;If you file does not have information on the encoding, and is in a character set that is not the default encoding used on your computer, you must tell Stat/Transfer which encoding to use. &nbsp;For instance, if a Greek colleague sends you a Stata dataset, you may need to select a Greek character set in order to properly read it and translate it to a Unicode based system such as Excel. &nbsp;If the dataset contains non-ASCII strings and you do not set the encoding properly, you will get nonsense on output.</span></p>
+<p class=rvps1><span class=rvts2>&nbsp;</span></p>
+<p class=rvps1><span class=rvts2>Because all single byte characters can be mapped to Unicode, there are seldom errors on input. However, you might encounter them if you are reading multi-byte characters such as those for Japanese.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>The most common problems occur on output, when sometimes a character that was read on input has no mapping to the output character set. &nbsp;For instance, if you read your Greek data set and attempted to write it to SAS, using your Western European machine default, there would be many encoding errors because Greek characters in Unicode cannot be mapped to a character set such as latin1.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>Some problems are more surprising because it looks as if you are dealing with ASCII, but your file has some characters that cannot be represented in the output. &nbsp;For instance all Microsoft applications use Unicode and characters such as the left apostrophe cannot be mapped to common non-unicode character sets. &nbsp;The same is true for the Euro sign, which is not present in ISO-8859-1, but is present in its more modern replacement, ISO-8859-15. &nbsp;If any of these characters are present, you may well get an encoding error.</span></p>
+<p class=rvps1><span class=rvts6><br></span></p>
+<p class=rvps1><span class=rvts3>Q.</span><span class=rvts2>&nbsp; When don't I have to worry about this?</span></p>
+<p class=rvps1><span class=rvts5><br></span></p>
+<p class=rvps1><span class=rvts3>A.</span><span class=rvts2>&nbsp; Most statistical data are numbers and ASCII letters. &nbsp;These are properly and unambiguously represented in all character sets. &nbsp;If that is what is in your data, you will not encounter encoding errors.</span></p>
+<p class=rvps1><span class=rvts5><br></span></p>
+<p class=rvps1><span class=rvts2>Also, if you are reading from or writing to a Unicode based format, the problem disappears because every character can be properly represented and there is no ambiguity. &nbsp;Excel and Access are in this class as well as versions of SPSS higher than 17. &nbsp;SAS Versions 9.1 and above store information about the encoding in the file and Stat/Transfer can use that to set the encoding. &nbsp;Anytime that encoding information is stored in the file, this information takes precedence over your option settings.</span></p>
+<p class=rvps1><span class=rvts6><br></span></p>
+<p class=rvps1><span class=rvts3>Q.</span><span class=rvts2>&nbsp;How do I fix or work around "Encoding Errors"?</span></p>
+<p class=rvps1><span class=rvts5><br></span></p>
+<p class=rvps1><span class=rvts3>A.</span><span class=rvts2>&nbsp;If the problem arises from an inappropriate character set, either for input or output, you should change the character set on the Encoding Options section of the Options dialog box. &nbsp;For instance, if you know your data contains Cyrillic characters, simply pick an appropriate character set.</span></p>
+<p class=rvps1><span class=rvts5><br></span></p>
+<p class=rvps1><span class=rvts2>If you think the problem may be due to sporadic characters that cannot be translated, choose the &#8216;Substitute&#8217; option rather than &#8216;Stop&#8217;. In that case, an underscore will be substituted for characters which cannot be converted.</span></p>
+<p class=rvps1><span class=rvts5><br></span></p>
+<p class=rvps1><span class=rvts2>Sometimes, if a transfer is necessary out of a Unicode application such as SPSS or Excel to a non-Unicode application, and the dataset contains strings in many languages, that require different encodings on output, there is simply no way to work around the problem. In that case, simply set the number of permitted substitutions to a high number and proceed with your transfer. You will then see underscores for characters that cannot be represented in your output character set.</span></p>
+<p class=rvps1><span class=rvts6><br></span></p>
+<p class=rvps1><span class=rvts3>Q.</span><span class=rvts2>&nbsp;What about Stata Version 13 and earlier?</span></p>
+<p class=rvps1><span class=rvts5><br></span></p>
+<p class=rvps1><span class=rvts3>A.</span><span class=rvts2>&nbsp; Stata before version 14 did not support Unicode and did support other multi-byte character sets, such as those necessary for Far Eastern Languages. If you are working with a data set in which all of the strings are in a language that can be represented by single byte characters (all European languages) just choose the appropriate output encoding. However, if your dataset contains strings in Far Eastern languages or multiple languages that use different character sets, you will simply not be able to properly represent all of the strings and will need to live with underscores in your data.</span></p>
+<p class=rvps1><span class=rvts5><br></span></p>
+<p class=rvps1><span class=rvts2>We highly recommend that Stata users upgrade to get the benefits of Unicode. &nbsp;Now Stat/Transfer can transfer data in any language to Stata.</span></p>
+
+</div></body></html><script type="text/javascript">
+var getsearch_key=getParameterByName('key');
+$('body').highlight(getsearch_key);
+$('.highlight').css('background-color',HighlightColor);
+</script>
+

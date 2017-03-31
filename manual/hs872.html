@@ -1,0 +1,125 @@
+<!-- saved from url=(0014)about:internet -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><TITLE>Combining Files</TITLE><meta name="generator" content="FastHelp Multi-User"><meta name="keywords" content="">
+
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+#FHNonScroll
+{padding: 6px 6px 0px 6px; border-bottom: none; background: #6699FF; vertical-align: top;z-index: 2; visibility: visible; position: absolute; left: 0; top: 0; width: 100%!important; line-height: 0; font-size: 0; overflow:hidden; }
+#FHNonScroll > table {padding: 6px;}
+#MainSection {overflow: hidden; }
+#FHScroll
+{left: 0; top: 0px; position: absolute; margin: 0; padding: 10px; z-index: 1; background-repeat: no-repeat; background-position: bottom right; background-attachment: fixed; }
+
+
+
+
+
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table /* Normal */
+{
+ font-size: 10pt;
+ font-family: 'Arial';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+ ;
+}
+span.rvts1
+{
+ font-family: 'Arial Unicode MS';
+}
+span.rvts2
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ color: #000000;
+}
+span.rvts3
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ font-style: italic;
+ font-weight: bold;
+ color: #000000;
+}
+span.rvts4
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ font-style: italic;
+ color: #000000;
+}
+span.rvts5
+{
+ font-size: 11pt;
+ font-family: 'Courier New';
+ color: #000000;
+}
+span.rvts6
+{
+ font-size: 11pt;
+ font-family: 'Courier New';
+ font-style: italic;
+ color: #000000;
+}
+a.rvts7, span.rvts7
+{
+ font-size: 11pt;
+ font-family: 'Verdana';
+ color: #0000ff;
+ text-decoration: underline;
+}
+a.rvts7:hover { color: #0000ff; }
+/* ========== Para Styles ========== */
+p,ul,ol /* Left */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1
+{
+}
+--></style>
+<script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script>
+<script src="FHSearchHighlight.js"></script>
+<script src="FHSearchHighlight2.js"></script>
+<!-- If this page is displayed outside of the Website Help Frameset, then reload in the Frame set -->
+<script>if (parent.location == self.location)
+{location.href = "index.html?"+extractFileNameWithoutKnownExtension(location.href);}
+</script>
+<script type="text/javascript" language="JavaScript" src="FHNonscroll.js"></script><script type="text/javascript" language="JavaScript" src="FHUtilities.js"></script><script type="text/javascript" language="JavaScript" src="FHFlyoverPopups.js"></script><link rel="stylesheet" type="text/css" href="FHFlyoverPopupStyle.css" /></HEAD>
+<body bgcolor="#FFFFFF" scroll="no" id="MainSection"><div id="FHNonScroll"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td width="100%" align="left">
+<font size=2 color="#000000" face="Arial">
+<div><font size=4 color="#333399" face="Verdana"><b>Combining Files</b></font></div>
+</font>
+</td><td width="120" align="right" nowrap><font face="Verdana" size="2"><a href="hs870.html"><img src="Images/BrowseBlueLeft.png" border="0" alt="Previous Topic"></a>&nbsp;&nbsp;<a href="hs880.html"><img src="Images/BrowseBlueRight.png" border="0" alt="Next Topic"></a>&nbsp;</font></td></tr></table></div><div id="FHScroll"><div id="width_height"></div>
+
+<p class=rvps1><span class=rvts2>If you wish to combine multiple input files into a single output file, use the COMBINE command instead of the COPY command:</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class=rvts5>COMBINE&nbsp; *.</span><span class=rvts6>ex1&nbsp;&nbsp; filename.ex2&nbsp; -</span><span class=rvts5>[f[+]</span><span class=rvts6>filename</span><span class=rvts5>]</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>where *.</span><span class=rvts4>ex1 </span><span class=rvts2>are the input files to be combined (all in the same directory), </span><span class=rvts4>filename.ex2 </span><span class=rvts2>is the output file and .</span><span class=rvts4>ex1 </span><span class=rvts2>and .</span><span class=rvts4>ex2 </span><span class=rvts2>are </span><a class=rvts7 href="hs880.html">standard extensions</a><span class=rvts2> used to specify the file types. The parameter -[f[+]</span><span class=rvts4>filename</span><span class=rvts2>] is described below. The input files will be concatenated into one output file.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>The syntax for this command is similar to that of the COPY command using wildcards, except that the output file specification does not contain a wildcard.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>The files to be combined do not need to have identical variables and the variables do not need to be in the same order.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>By default, the first file in alphabetical order becomes the "reference" file and the variables in this file and their characteristics determine the structure of the output file.&nbsp; The variables in succeeding files are then matched to the first file.&nbsp; If a file does not have a variable with a matching name or the type of the variable does not match, it will not be included in the output.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>The switch&nbsp; '-f ' allows you to specify which file will be used as the reference file.&nbsp; For example, if you have </span><span class=rvts3>file1</span><span class=rvts2>, </span><span class=rvts3>file2</span><span class=rvts2>, and </span><span class=rvts3>file3</span><span class=rvts2> as input and you want to use </span><span class=rvts3>file3</span><span class=rvts2> instead of </span><span class=rvts3>file1</span><span class=rvts2> as the reference, you would specify '-ffile3'.&nbsp; Note that you use the file name without the extension.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>The file name itself may contain some information about the data in the file.&nbsp; For example, you might have input files with data for each state, with files named with the state name.&nbsp; In such cases, you may wish to have an additional variable created from the input file names and written to the output file.&nbsp; The parameter '-f+' tells Stat/Transfer to create a new variable from the input file names. This can be combined with the reference file specification.&nbsp; For example, ' -f+file3' tells Stat/Transfer to use </span><span class=rvts3>file3</span><span class=rvts2> as the reference file and to create a new output variable from the input file names.</span></p>
+<p class=rvps1><span class=rvts2><br></span></p>
+<p class=rvps1><span class=rvts2>All of the options used with the COPY command can be used with the COMBINE command.</span><span class=rvts1></span></p>
+
+</div></body></html><script type="text/javascript">
+var getsearch_key=getParameterByName('key');
+$('body').highlight(getsearch_key);
+$('.highlight').css('background-color',HighlightColor);
+</script>
+
