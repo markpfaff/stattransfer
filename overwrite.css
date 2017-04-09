@@ -6,4 +6,158 @@
     padding-left: 6%;
 }
 
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm92ZXJ3cml0ZS5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7O0VBRUUiLCJmaWxlIjoib3ZlcndyaXRlLmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi8qXG4qY3VzdG9tIHN0eWxlc1xuKi9cblxuIl19 */
+body {
+    line-height: 150%;	
+	font-family: "Helvetica-Neue", Helvetica, Arial, sans-serif;
+	margin-top: 0px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    padding-bottom: 4px;
+	font-family: "Ubuntu", Helvetica, Arial, sans-serif;
+}
+
+h1, .h1 {
+    font-size: 1.65em;
+}
+
+h2, .h2 {
+    font-size: 1.45em;
+}
+
+h2, .h2 {
+    font-size: 1.25em;
+}
+
+p {
+    padding-bottom:10px;	
+}
+
+/****** HEADER ******/
+
+.container-top {
+    border-bottom: 5px solid #006fff;	
+}
+.header-buttons a:hover {
+    color: #006FFF;
+}
+
+.header-buttons a {
+    padding: 0px 10px;
+    font-size: .8em;
+	color: #00275a;
+}
+
+.header-row {
+    width: 95%;
+	
+}
+
+.logo-desktop {
+    padding:0px;	
+}
+
+/*** Nav ***/
+
+.navbar.navbar-default.navbar-static-top {
+    border-top:1px solid #fff;	
+}
+
+.navbar-nav {
+    font-family: "Ubuntu", Helvetica, Arial, sans-serif;	
+}
+
+.nav > li {
+    padding: 0px 1.25em 0px 0px;	
+}
+
+.download-button button.btn.btn-info.btn-block {
+	-moz-box-shadow: 2px 2px 2px #000;
+	-webkit-box-shadow: 2px 2px 2px #000;
+	box-shadow: 2px 2px 2px #000;
+	/* For IE 8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='#000000')";
+	/* For IE 5.5 - 7 */
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='#000000');
+	font-family: "Ubuntu", Helvetica, Arial, sans-serif;
+	border-color: none;
+}
+
+/****** HOMEPAGE ******/
+
+/*** Slider ***/
+
+.caption {
+    color: #00275A;
+	font-size: .8em;
+	padding: 30px;	
+}
+
+/*** End Slider***/
+
+.home-banner-bottom-caption {
+    background-color: #006FFF;
+	border-radius: 0px;
+		
+}
+
+.home-banner-bottom-caption-inner {
+    font-size: 26px;
+	text-transform: uppercase;
+	letter-spacing: 1.25px;	
+}
+
+.home-ctas {
+    font-family: "Helvetica-Neue", Helvetica, Arial, sans-serif;	
+}
+
+.home-ctas h2 {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.home-ctas p{
+	color: #00275A;
+}
+
+/****** TARGET PAGES ******/
+
+.title-background {
+    padding-left:0px;
+	padding-bottom:10px;	
+}
+
+/*** Informational Pages ***/
+
+.centered-screenshot img {
+    padding: 15px;
+	margin: 25px 0px;
+	-moz-box-shadow: 2px 2px 2px #eee;
+	-webkit-box-shadow: 2px 2px 2px #eee;
+	box-shadow: 2px 2px 2px #eee;
+	/* For IE 8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='#eeeeee')";
+	/* For IE 5.5 - 7 */
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='#eeeeee');
+	border: 1px solid #eee;
+		
+}
+
+/****** FOOTER ******/
+
+.try-stat h2 {
+    font-size: 27px;	
+}
+
+.try-button button.btn.btn-info.btn-block {
+    -moz-box-shadow: 2px 2px 2px #000;
+	-webkit-box-shadow: 2px 2px 2px #000;
+	box-shadow: 2px 2px 2px #000;
+	/* For IE 8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='#000000')";
+	/* For IE 5.5 - 7 */
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='#000000');
+}
+
+/*Tour the interface -transfer screen: turn OL into UL and give bullet points */
+/*Give container holding whole top of the page before the navigation (holds the logo, utility nav, and search.  Extends 100% width) the class of "container-top"*/

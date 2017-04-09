@@ -20,7 +20,7 @@
 
             <header>
 
-                <div class="container">
+                <div class="container container-top">
                     <div class="row header-row">
                         
                         <div class="logo-desktop"><!-- logo -->
