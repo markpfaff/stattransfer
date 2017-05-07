@@ -40,7 +40,7 @@ html {
 
 body {
     margin: 0 auto;
-    font-size: 1.9em;
+    font-size: 1.5em;
     color:#000;
     @media(min-width:48em){//768px
         width: 100%;              
@@ -184,12 +184,13 @@ h1,h2,h3,h4,h5,h6 {
 
 .download-button {
     float: left;
-    padding-left: 20px;
-    
+    padding-left: 10px;
+    margin-top: 10px;
     button.btn.btn-info.btn-block {
         height: 50px;
-        background-color:$brand-light-blue;
-        border-color: $brand-dark-blue;
+        background-color:$brand-green;
+                border-color: transparent;
+
     }
 }
 
@@ -197,8 +198,8 @@ h1,h2,h3,h4,h5,h6 {
     clear:both;
 }
 
-.header-row {
-    width: 90%;
+.navbar-default .row.header-row {
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -263,6 +264,7 @@ h1,h2,h3,h4,h5,h6 {
     h2 {
         text-align: center;
         margin-top: 0;
+        font-size: 30px;
         color: $brand-light-blue;
     }
     @media(min-width:62em){//992px
@@ -283,7 +285,7 @@ h1,h2,h3,h4,h5,h6 {
     position: relative;
     z-index: 2;
     width:100%;
-    margin-top: 60px;
+    margin-top: 90px;
 }
 
 .home-accuracy {
@@ -291,56 +293,79 @@ h1,h2,h3,h4,h5,h6 {
     &:before {
       @include home-fa-icon;
       content: $bullseye-icon;
+      color: $brand-green;
     }
 
-    &:after {
+    h2 {
+        color: $brand-green;
+    }
+/*    &:after {
       @include home-fa-bg;
       content: $bullseye-icon;
-    }
+    }*/
 }
 .home-reproducibility {
     &:before {
       @include home-fa-icon;
       content: $cubes-icon;
+            color: $brand-red;
+
     }
     
-    &:after {
+    h2 {
+        color: $brand-red;
+    }    
+/*    &:after {
       @include home-fa-bg;
       content: $cubes-icon;
-    }
+    }*/
 }    
 .home-flexibility {
     &:before {
       @include home-fa-icon;
       content: $group-icon;
+            color: $brand-orange;
+
     }
     
-    &:after {
+    h2 {
+        color: $brand-orange;
+    }    
+/*    &:after {
       @include home-fa-bg;
       content: $group-icon;
-    }
+    }*/
 }
 .home-ease {
     &:before {
       @include home-fa-icon;
       content: $check-icon;
+      color: $brand-purple;
     }
     
-    &:after {
+    h2 {
+        color: $brand-purple;
+    }       
+/*    &:after {
       @include home-fa-bg;
       content: $check-icon;
-    }    
+      
+    }    */
 }   
 .home-speed {
     &:before {
       @include home-fa-icon;
       content: $dash-icon;
+      color: $brand-alt-blue;
     }
     
-    &:after {
+     h2 {
+        color: $brand-alt-blue;
+    }      
+/*    &:after {
       @include home-fa-bg;
       content: $dash-icon;
-    }     
+    }     */
     
 }    
 
@@ -377,8 +402,8 @@ h1,h2,h3,h4,h5,h6 {
     
     button.btn.btn-info.btn-block {
         height: 50px;
-        background-color:$brand-light-blue;
-        border: $brand-dark-blue;
+        background-color:$brand-red;
+        border-color: transparent;
     }
 }
 
@@ -486,7 +511,8 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .navbar.navbar-default.navbar-static-top {
-    padding-left: 5%;
+    padding-left: 10px;
+    padding-top: 10px;
 }
 
 
@@ -500,6 +526,7 @@ h1,h2,h3,h4,h5,h6 {
 
 .navbar-default {
     background-color: $brand-dark-blue;
+
 }
 
 
@@ -532,7 +559,6 @@ ul.nav.navbar-nav > li > a:hover,
 }
 
 .navbar-collapse {
-    clear: both;
     
     .menu-item a {
         width:90%;
@@ -547,6 +573,8 @@ ul.nav.navbar-nav > li > a:hover,
 
 .navbar-nav {
     margin: 0px auto;
+    margin-top: 10px;
+    padding-left: 10px;
 }
 .navbar-static-top {
     clear:both;
@@ -784,7 +812,7 @@ ul.nav.navbar-nav > li > a:hover,
     margin-top:5px;
     padding-bottom:5px;
     margin-bottom: 10px;
-    
+    max-width: 300px;
     @media(min-width:48em){//768px
 
         display:block;
@@ -815,7 +843,7 @@ ul.nav.navbar-nav > li > a:hover,
 footer {
     clear:both;
     color:$body-bg;
-    background: $brand-light-blue;
+    background: $brand-dark-blue;
     overflow:hidden;
     a {
         color:$body-bg;
@@ -838,13 +866,23 @@ footer {
             padding-left: 0;
         }
     }
+    
+    .btn-primary {
+        background-color: $brand-green;
+        border: transparent;
+    }
 }
 
 .footer-brand-container {
     width: 100%;
     margin: 0 0 20px 0;
     padding: 20px;
+    clear:both;
 
+}
+
+.footer-search {
+    float:left;
 }
 
 .logo-footer {
@@ -995,6 +1033,11 @@ footer {
 .navbar-default .navbar-nav > li > a,
 .navbar-default .navbar-nav > li > a:hover {
     color: #fff;
+}
+
+.nav > li {
+    padding-right: .2em;
+    
 }
 
 .caret-border {

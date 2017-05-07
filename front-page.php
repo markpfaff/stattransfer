@@ -15,7 +15,7 @@
 
                         <div class="home-banner-bottom-caption">
                             <div class="home-banner-bottom-caption-inner">
-                                <p>Data Transfer Couldn't Be Easier</p>
+                                <p>Data transfer couldn't be easier.</p>
                             </div>
                         </div>
                     </div><!--/row-->
@@ -86,9 +86,9 @@
                                 ?>  
                             </div>
                         </div>
-                        <div class="home-ctas">
-                                <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/block-logo.png" alt="logo" id="block-logo"/>
-                        </div>
+<!--                        <div class="home-ctas">
+                                <img src="<?php //echo esc_url( get_template_directory_uri() ); ?>/images/block-logo.png" alt="logo" id="block-logo"/>
+                        </div>-->
                         <div class="home-ctas home-ease">
                             <div class="home-ctas-inner">
                                 <?php 

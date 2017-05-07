@@ -29,7 +29,11 @@
                     <div class="row footer-row">
                         <div class="row distribute-widgets">
                             <?php dynamic_sidebar( 'footer'); ?>
-                        </div>           
+                        </div>  
+                        <div class="footer-search">
+                            <?php get_search_form() ;?> 
+
+                        </div>
                         <div class="footer-brand-container">
                             <h4>Created by:</h4>
                             <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
@@ -42,6 +46,9 @@
                     </div>
                 </div>
                 <span class="login-link"><?php wp_loginout(); ?></span>
+                
+                    
+
 
             </footer>
 

@@ -20,32 +20,18 @@
 
             <header>
 
-                <div class="container container-top">
+                
+                
+                <div class="navbar navbar-default navbar-static-top" role="navigation">
                     <div class="row header-row">
                         
                         <div class="logo-desktop"><!-- logo -->
                             <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-                                <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/logo.png" alt="logo" id="logo"/>
+                                <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/logo.svg" alt="logo" id="logo"/>
                             </a>
 <!--                            <a class="navbar-brand navbar-brand-desktop" href="<?php //echo esc_url( home_url() ); ?>">West Side Music Academy</a>-->
 
                         </div><!-- /#logo -->
-                        <!--start utility-menu-desktop-->
-                        <div class="utility-menu-desktop">
-                            <div class="header-buttons">
-                                <?php wp_nav_menu( array(
-                                    'theme_location' => 'utility-menu',
-                                    'container' => 'div',
-                                    'container_id' => 'utility-menu',
-                                    'items_wrap' => '<ul id="utility-menu-items" class="utility-menu">%3$s</ul>', ) ); ?>
-                            </div><!-- /.header-buttons -->
-                            <?php get_search_form() ;?> 
-                        </div><!--/ .utility-menu-desktop-->
-                    </div><!-- /.row -->
-                </div><!-- /.container -->
-
-                
-                <div class="navbar navbar-default navbar-static-top" role="navigation">
                         <div class="logo-mobile">
                             <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
                                 <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/logo-mobile.png" alt="logo" id="logo"/>
@@ -88,7 +74,7 @@
                             </ul>
                                 <div class="download-button">
                                     <a href="<?php echo esc_url( get_permalink( get_page_by_title( 'download' ))); ?>">
-                                        <button type="button" class="btn btn-info btn-block">Download</button>
+                                        <button type="button" class="btn btn-info btn-block">Get Started</button>
                                     </a>
                                 </div>
                         </div><!--/.nav-collapse -->
