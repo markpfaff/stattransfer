@@ -103,8 +103,23 @@
                                     endwhile;
                                     wp_reset_postdata();
                                 ?>
-                            </div>    
+                            </div>     
                         </div>
+                        <div class="home-ctas home-trust">
+                            <div class="home-ctas-inner">
+                                <?php 
+                                    $homequery = new WP_Query(array( 'name' => 'ease-of-use', 'post_type' => 'page' ));
+                                    
+                                    while ( $homequery->have_posts() ) : $homequery->the_post();
+                                ?>
+                                    <h2><?php echo the_title(); ?></h2>
+                                    <?php echo the_content(); ?>
+
+                                <?php
+                                    endwhile;
+                                    wp_reset_postdata();
+                                ?>
+                            </div> 
                     </div><!--/row-->
                 </div><!--/container--> 
 

@@ -249,7 +249,7 @@ h1,h2,h3,h4,h5,h6 {
     padding: 10px;
     border-radius: $border-radius-base;
     overflow:hidden;
-    height: 300px;//to preserve background
+    height: 400px;//to preserve background
 
     a h3 {
         font-family:sans-serif;
@@ -368,6 +368,23 @@ h1,h2,h3,h4,h5,h6 {
     }     */
     
 }    
+
+.home-trust {
+    &:before {
+      @include home-fa-icon;
+      content: $trust-icon;
+      color: $brand-aqua;
+    }
+    
+     h2 {
+        color: $brand-aqua;
+    }      
+/*    &:after {
+      @include home-fa-bg;
+      content: $dash-icon;
+    }     */
+    
+}   
 
 .home-about-row {
     
