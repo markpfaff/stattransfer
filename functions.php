@@ -93,7 +93,7 @@ if (!is_admin()) {
         
         
         // Font Awesome
-        wp_enqueue_style('stattransfer-font-awesome', '//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css', array(), null, 'all');
+        wp_enqueue_style('stattransfer-font-awesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', array(), null, 'all');
 
         //bri's custom styles
         wp_enqueue_style( 'stattransfer-overwritecss', get_template_directory_uri() . '/overwrite.css');        

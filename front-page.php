@@ -108,7 +108,7 @@
                         <div class="home-ctas home-trust">
                             <div class="home-ctas-inner">
                                 <?php 
-                                    $homequery = new WP_Query(array( 'name' => 'ease-of-use', 'post_type' => 'page' ));
+                                    $homequery = new WP_Query(array( 'name' => 'trust', 'post_type' => 'page' ));
                                     
                                     while ( $homequery->have_posts() ) : $homequery->the_post();
                                 ?>
