@@ -50,7 +50,8 @@ body {
         margin-top: 10px;                    
     }    
     @media(min-width:75em){//1200px
-        font-size: 2em;
+        font-size: 1.7em;
+        
     }
 
 }
@@ -203,6 +204,21 @@ h1,h2,h3,h4,h5,h6 {
     margin: 0 auto;
 }
 
+.row.header-row {
+    
+    @media(min-width:62em){//992px
+            padding-left: 30px;
+
+    } 
+    
+    @media(min-width:75em){//1200px
+    
+        padding-left: 60px;
+    }
+
+        
+}
+
 .home-row {
     width: 100%;
     margin: 0 auto;
@@ -352,7 +368,7 @@ h1,h2,h3,h4,h5,h6 {
       
     }    */
 }   
-.home-speed {
+.home-fast {
     &:before {
       @include home-fa-icon;
       content: $dash-icon;
@@ -395,9 +411,14 @@ h1,h2,h3,h4,h5,h6 {
 
 .home-users-row {
     text-align:center;
+    padding-bottom: 40px;
     h2 {
         color: $brand-dark-blue;
     }
+    
+    @media(min-width:62em){//992px
+        padding-bottom: 80px;
+    }    
 }
 
 .try-stat {
@@ -424,47 +445,16 @@ h1,h2,h3,h4,h5,h6 {
     }
 }
 
-.home-about {
-    @include make-xs-column(12);
-    clear:both;
-    float:none;
-    background: $brand-light-blue;
-    border-radius: $border-radius-base;
-    overflow: hidden;
-    margin-bottom: 4px;//fix for flex box
-    color: $gray-darker;
 
-    @media(min-width:48em){//768px
-        @include make-sm-column(6);
-        
-    }
-}
+header {
+    height: 70px;
+    @media(min-width:75em){//1200px
 
-.home-youtube {
-    @include make-xs-column(12);
-    float:none;
-    clear:both;
-    margin-top: 20px;
-    
-    iframe {
-        width: 100%;
-        height:300px;    
-        border-radius: $border-radius-base; 
-
-    }
-
-    @media(min-width:48em){//768px
-        margin-top:0px;
+     height: auto;
+     overflow:default;
         
     }    
-    
-    @media(min-width:62em){//992px
-        @include make-sm-column(6);
-        
-    }
-    
 }
-
 
 .navbar {
     margin-bottom: 0;
@@ -512,7 +502,7 @@ h1,h2,h3,h4,h5,h6 {
 
     display:none;
     
-    @media(min-width:48em){//768px
+    @media(min-width:75em){//1200px
 
      display:block;
         
@@ -523,13 +513,23 @@ h1,h2,h3,h4,h5,h6 {
 .navbar-brand-mobile {
     @extend .hidden-sm;
     @extend  .hidden-md;
-    @extend  .hidden-lg;
+    //@extend  .hidden-lg;
     
 }
-
+.navbar-nav > li > a, .navbar-brand {
+    padding-top:5px !important; padding-bottom:0 !important;
+    height: 30px;
+}
+.navbar {min-height:30px !important;}
 .navbar.navbar-default.navbar-static-top {
-    padding-left: 10px;
-    padding-top: 10px;
+
+    
+    @media(min-width:75em){//1200px
+        height: auto;
+        padding-left: 10px;
+        padding-top: 10px;
+        
+    }   
 }
 
 
@@ -710,6 +710,15 @@ ul.nav.navbar-nav > li > a:hover,
     
 }
 
+button.mobile-toggle.navbar-toggle.collapsed.pull-right {
+        display:block;
+    
+    @media(min-width:75em){//1200px
+display: none;
+        
+    }    
+}
+
 #searchform {
     @extend  .hidden-xs;
 }
@@ -791,6 +800,8 @@ ul.nav.navbar-nav > li > a:hover,
 }
 
 .logo-mobile {
+            display:none;
+
     padding-top:5px;
     @include make-sm-column(9);
     @extend  .hidden-sm;
@@ -803,17 +814,17 @@ ul.nav.navbar-nav > li > a:hover,
 
         @media(min-width:22em){//360px
 
-            width: 65px;
+            width: 150px;
 
         }
         @media(min-width:28em){//450px
 
-            width: 75px;
+            width: 200px;
             padding-bottom:10px;
 
         }    
         
-        @media(min-width:48em){//768px
+        @media(min-width:75em){//1200px
 
         display:none;
         
@@ -826,16 +837,11 @@ ul.nav.navbar-nav > li > a:hover,
 
 .logo-desktop {
     @include make-sm-column(6);
-    display:none;
+    display:block;
     margin-top:5px;
     padding-bottom:5px;
     margin-bottom: 10px;
     max-width: 300px;
-    @media(min-width:48em){//768px
-
-        display:block;
-        
-    }
     
     img {
     height: auto;
@@ -1026,7 +1032,7 @@ footer {
     z-index: 99999999;
     color: #fff;
     
-    @media screen and (min-width: 48em){//768px
+    @media screen and (min-width: 75em){//1200px
         
         display:none;
     }
@@ -1040,7 +1046,7 @@ footer {
     
     display:none;
     
-        @media screen and (min-width:48em){//768px
+        @media screen and (min-width:75em){//1200px
         
         display:inline-block;
     }
@@ -1071,7 +1077,7 @@ footer {
         cursor: hand; 
     }
     
-    @media screen and (min-width:48em){//768px
+    @media screen and (min-width:75em){//1200px
         
         display:none;
     }
@@ -1113,30 +1119,6 @@ footer {
     width:100% !important;
 }
 
-.classes-teacher-container {
-    @include make-xs-column(12);
-    @media screen and (min-width:48em){//768px
-        @include make-sm-column(9);
-    }
-}
-
-.teachers-bio-container {
-    @include make-xs-column(12);
-    
-    @media screen and (min-width:48em){//768px
-        @include make-sm-column(6);
-        
-        &:nth-child(even) {
-            
-            &:after {
-                content:"";
-                clear:both;
-                
-            }
-        }
-    }
-}
-
 .icon-facebook {
     font-size:30px;
     position:relative;
@@ -1173,41 +1155,6 @@ p.footer-link {
     margin-right: 20px;
 }
 
-.wpcf7 {
-    float:left;
-}
-
-.wpcf7-submit {
-    color:$gray-darker;
-}
-
-.wpcf7-form-control.wpcf7-text,
-.wpcf7-form-control.wpcf7-email,
-textarea.wpcf7-form-control  {
-    width: 90%;
-    color:$gray-darker;
-    @media(min-width:28em){//450px
-        width:auto;
-    }
-}
-
-.wpcf7-form-control {
-        color:$gray-darker;
-}
-
-.ai1ec-main-container > p {//removes redundant calendar title on calendar page
-    display:none;
-}
-
-.ai1ec-date a.ai1ec-load-view {//changes dates to black on month calendar view
-    color:$gray-darker;
-}
-
-.ai1ec-agenda-widget-view .ai1ec-date.ai1ec-today, 
-.ai1ec-agenda-view .ai1ec-date.ai1ec-today {
-    border-top: none;
-    background: none;
-}
 
 .media-category-title {
     position:absolute;
@@ -1224,37 +1171,6 @@ textarea.wpcf7-form-control  {
         color:$gray-darker;
     }
     
-}
-
-.staff-member {
-    @include make-xs-column(6);
-    float:left;
-    @media screen and (min-width:48em){//768px
-        float:left;
-
-        @include make-sm-column(4);
-
-    }
-}
-
-.peg-album {
-    width: 100%;
-    img {
-        width: 100%;
-    }
-    
-    a.photoswipe {
-        float: left;
-        width:30%;
-
-        @media(min-width:28em){//450px
-        width:20%;
-        }    
-
-        @media screen and (min-width:48em){//768px
-        width: 15%;
-        }
-    }
 }
 
 .blog-pager {
@@ -1295,11 +1211,18 @@ textarea.wpcf7-form-control  {
     max-width:100% !important;
 }
 
+.navbar-collapse {
+    padding-top: 10px;
+        
+    @media screen and (min-width:48em){//768px
+        padding-top: 0px;
+    }
+}
+
 .navbar-collapse .menu-item a {
     border: #fff 2px;
     
     @media screen and (min-width:48em){//768px
-        
         border:none;
     }
 }

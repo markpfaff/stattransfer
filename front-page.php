@@ -70,10 +70,10 @@
                         </div>
                     </div><!--/row-->
                     <div class="row home-row home-cta-row">
-                        <div class="home-ctas home-speed">
+                        <div class="home-ctas home-fast">
                             <div class="home-ctas-inner">
                                 <?php 
-                                    $homequery = new WP_Query(array( 'name' => 'speed', 'post_type' => 'page' ));
+                                    $homequery = new WP_Query(array( 'name' => 'fast', 'post_type' => 'page' ));
                                     
                                     while ( $homequery->have_posts() ) : $homequery->the_post();
                                 ?>
