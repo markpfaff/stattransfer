@@ -3,7 +3,8 @@
                 <div class="container">
                     <div class="row home-row">
                         <div class="home-banner">
-                            <?php echo do_shortcode('[supsystic-slider id=1 position="center"]') ?>
+                            <!-- Load the slider -->
+                            <?php putRevSlider("home"); ?>
                             <div class="home-banner-caption">
                                 <div class="home-banner-caption-inner">
                                     <a href="<?php echo esc_url( get_permalink( get_page_by_title( 'Enroll' ) ) ); ?>">

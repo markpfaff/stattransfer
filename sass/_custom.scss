@@ -711,7 +711,7 @@ ul.nav.navbar-nav > li > a:hover,
 }
 
 button.mobile-toggle.navbar-toggle.collapsed.pull-right {
-        display:block;
+    display: none;
     
     @media(min-width:75em){//1200px
 display: none;
