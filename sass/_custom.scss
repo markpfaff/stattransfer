@@ -607,6 +607,11 @@ ul.nav.navbar-nav > li > a:hover,
 .navbar-nav {
     margin: 0px auto;
     margin-top: 20px;
+    
+    @media(min-width:62em){//992px
+           margin-top: 10px;                
+    }
+    
     padding-left: 10px;
 }
 .navbar-static-top {
