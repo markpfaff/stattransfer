@@ -7,7 +7,30 @@
     <div class="row">
         <?php if (have_posts()) : ?>
         <?php while (have_posts()) : the_post(); ?>
-        <div class="title-background">
+        <div class="title-background title-<?php
+                
+                    $random = mt_rand(1,5);  
+                    switch($random){
+                        case 1:
+                            echo 'green';
+                            break;
+                        case 2:
+                            echo 'red';
+                            break;
+                         case 3:
+                            echo 'orange';
+                            break;
+                         case 4:
+                            echo 'blue';
+                            break;
+                         case 5:
+                            echo 'purple';
+                            break; 
+                         case 6:
+                            echo 'aqua';
+                            break;
+                        }
+                ?>">
             <h1 class="col-sm-9"><?php the_title(); ?></h1>
         </div>
         <article class="page-intro-p" id="post-<?php the_ID(); ?>">

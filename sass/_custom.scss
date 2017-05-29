@@ -1053,7 +1053,7 @@ footer {
     z-index: 99999999;
     color: #fff;
     
-    @media screen and (min-width: 75em){//1200px
+    @media screen and (min-width: 62em){//992px
         
         display:none;
     }
@@ -1067,10 +1067,10 @@ footer {
     
     display:none;
     
-        @media screen and (min-width:75em){//1200px
+/*        @media screen and (min-width:62em){//992px
         
         display:inline-block;
-    }
+    }*/
 }
 
 .dropdown-menu > li > a,
@@ -1333,4 +1333,28 @@ div.wpcf7 {
     h1 {
        color: #fff;
     }
+}
+
+.title-blue {
+    background-color:$brand-alt-blue;
+}
+
+.title-red {
+    background-color:$brand-red;
+}
+
+.title-purple {
+    background-color:$brand-purple;
+}
+
+.title-green {
+    background-color:$brand-green;
+}
+
+.title-aqua {
+    background-color:$brand-aqua;
+}
+
+.title-orange {
+    background-color:$brand-orange;
 }
